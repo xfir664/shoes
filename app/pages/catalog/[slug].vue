@@ -1,8 +1,6 @@
 <script setup lang="ts">
 import { Swiper, SwiperSlide } from "swiper/vue";
 import { Pagination } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/pagination";
 import {
 	mockProducts,
 	categoryLabels,
@@ -176,22 +174,24 @@ if (product) {
 		<!-- Похожие товары — Swiper -->
 		<section v-if="similarProducts.length" class="product-page__similar similar">
 			<h2 class="similar__title">Похожие товары</h2>
-			<Swiper
-				:modules="swiperModules"
-				:slides-per-view="2"
-				:space-between="12"
-				:pagination="{ clickable: true }"
-				:breakpoints="{
-					480: { slidesPerView: 2, spaceBetween: 16 },
-					768: { slidesPerView: 3, spaceBetween: 20 },
-					1440: { slidesPerView: 4, spaceBetween: 24 },
-				}"
-				class="similar__swiper"
-			>
-				<SwiperSlide v-for="item in similarProducts" :key="item.id">
-					<ProductCard :product="item" />
-				</SwiperSlide>
-			</Swiper>
+			<ClientOnly>
+				<Swiper
+					:modules="swiperModules"
+					:slides-per-view="2"
+					:space-between="12"
+					:pagination="{ clickable: true }"
+					:breakpoints="{
+						480: { slidesPerView: 2, spaceBetween: 16 },
+						768: { slidesPerView: 3, spaceBetween: 20 },
+						1440: { slidesPerView: 4, spaceBetween: 24 },
+					}"
+					class="similar__swiper"
+				>
+					<SwiperSlide v-for="item in similarProducts" :key="item.id">
+						<ProductCard :product="item" />
+					</SwiperSlide>
+				</Swiper>
+			</ClientOnly>
 		</section>
 	</div>
 </template>

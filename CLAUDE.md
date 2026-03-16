@@ -27,7 +27,7 @@ pnpm assets:watch    # watch raw/ и перезапуск
 
 ## Стек
 
-Nuxt 4, Vue 3 (Composition API, `<script setup>`), TypeScript (strict), SCSS + CSS Custom Properties, Pinia, MDI icons, pnpm.
+Nuxt 4, Vue 3 (Composition API, `<script setup>`), TypeScript (strict), SCSS + CSS Custom Properties, Pinia, Swiper 12, MDI icons, pnpm.
 
 ## Архитектура
 

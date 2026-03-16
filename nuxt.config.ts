@@ -1,7 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import { defineNuxtConfig } from "nuxt/config";
-import createVuetifyPlugin from "vite-plugin-vuetify";
-
 export default defineNuxtConfig({
 	compatibilityDate: "2025-01-15",
 
@@ -15,7 +13,8 @@ export default defineNuxtConfig({
 	],
 
 	css: [
-		"vuetify/styles",
+		"swiper/css",
+		"swiper/css/pagination",
 		"~/assets/styles/main.scss",
 		"@mdi/font/css/materialdesignicons.css",
 		"animate.css/animate.min.css",
@@ -25,14 +24,6 @@ export default defineNuxtConfig({
 		define: {
 			"process.env.DEBUG": false,
 		},
-		ssr: {
-			noExternal: ["vuetify"],
-		},
-		plugins: [createVuetifyPlugin({ autoImport: true })],
-	},
-
-	build: {
-		transpile: ["vuetify"],
 	},
 
 	devtools: { enabled: true },

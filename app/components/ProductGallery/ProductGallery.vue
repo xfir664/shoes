@@ -4,8 +4,6 @@
 <script setup lang="ts">
 import { Swiper, SwiperSlide } from "swiper/vue";
 import { Pagination } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/pagination";
 
 const props = defineProps<{
 	images: string[];
@@ -51,19 +49,26 @@ function onSlideChange(swiper: any) {
 
 		<!-- Мобильный Swiper -->
 		<div class="gallery__mobile">
-			<Swiper
-				:modules="swiperModules"
-				:pagination="{ clickable: true }"
-				:slides-per-view="1"
-				class="gallery__swiper"
-				@slide-change="onSlideChange"
-			>
-				<SwiperSlide v-for="(img, idx) in images" :key="idx">
+			<ClientOnly>
+				<Swiper
+					:modules="swiperModules"
+					:pagination="{ clickable: true }"
+					:slides-per-view="1"
+					class="gallery__swiper"
+					@slide-change="onSlideChange"
+				>
+					<SwiperSlide v-for="(img, idx) in images" :key="idx">
+						<div class="gallery__slide">
+							<img :src="img" :alt="`${name} — фото ${idx + 1}`" />
+						</div>
+					</SwiperSlide>
+				</Swiper>
+				<template #fallback>
 					<div class="gallery__slide">
-						<img :src="img" :alt="`${name} — фото ${idx + 1}`" />
+						<img :src="images[0]" :alt="name" />
 					</div>
-				</SwiperSlide>
-			</Swiper>
+				</template>
+			</ClientOnly>
 			<MyBadge v-if="discount" variant="sale">
 				-{{ discount }}%
 			</MyBadge>

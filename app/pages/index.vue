@@ -1,8 +1,6 @@
 <script setup lang="ts">
 import { Swiper, SwiperSlide } from "swiper/vue";
 import { Pagination, Autoplay } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/pagination";
 import {
 	mockProducts,
 	mockPromos,
@@ -79,34 +77,36 @@ const swiperModules = [Pagination, Autoplay];
 		<section class="promos">
 			<div class="promos__container">
 				<h2 class="section-title">Акции и предложения</h2>
-				<Swiper
-					:modules="swiperModules"
-					:slides-per-view="1"
-					:space-between="16"
-					:pagination="{ clickable: true }"
-					:autoplay="{ delay: 4000, disableOnInteraction: false }"
-					:breakpoints="{
-						768: { slidesPerView: 2, spaceBetween: 20 },
-						1440: { slidesPerView: 3, spaceBetween: 24 },
-					}"
-					class="promos__swiper"
-				>
-					<SwiperSlide v-for="promo in promos" :key="promo.id">
-						<div class="promos__card">
-							<img
-								:src="promo.image"
-								:alt="promo.title"
-								class="promos__card-image"
-								loading="lazy"
-							/>
-							<div class="promos__card-overlay" />
-							<div class="promos__card-content">
-								<h3 class="promos__card-title">{{ promo.title }}</h3>
-								<p class="promos__card-desc">{{ promo.description }}</p>
+				<ClientOnly>
+					<Swiper
+						:modules="swiperModules"
+						:slides-per-view="1"
+						:space-between="16"
+						:pagination="{ clickable: true }"
+						:autoplay="{ delay: 4000, disableOnInteraction: false }"
+						:breakpoints="{
+							768: { slidesPerView: 2, spaceBetween: 20 },
+							1440: { slidesPerView: 3, spaceBetween: 24 },
+						}"
+						class="promos__swiper"
+					>
+						<SwiperSlide v-for="promo in promos" :key="promo.id">
+							<div class="promos__card">
+								<img
+									:src="promo.image"
+									:alt="promo.title"
+									class="promos__card-image"
+									loading="lazy"
+								/>
+								<div class="promos__card-overlay" />
+								<div class="promos__card-content">
+									<h3 class="promos__card-title">{{ promo.title }}</h3>
+									<p class="promos__card-desc">{{ promo.description }}</p>
+								</div>
 							</div>
-						</div>
-					</SwiperSlide>
-				</Swiper>
+						</SwiperSlide>
+					</Swiper>
+				</ClientOnly>
 				<div class="promos__footer">
 					<NuxtLink to="/promos" class="promos__all-btn">
 						Все акции
@@ -120,22 +120,24 @@ const swiperModules = [Pagination, Autoplay];
 		<section class="popular">
 			<div class="popular__container">
 				<h2 class="section-title">Популярные товары</h2>
-				<Swiper
-					:modules="swiperModules"
-					:slides-per-view="1"
-					:space-between="16"
-					:pagination="{ clickable: true }"
-					:breakpoints="{
-						480: { slidesPerView: 2, spaceBetween: 16 },
-						768: { slidesPerView: 3, spaceBetween: 20 },
-						1440: { slidesPerView: 4, spaceBetween: 24 },
-					}"
-					class="popular__swiper"
-				>
-					<SwiperSlide v-for="product in popularProducts" :key="product.id">
-						<ProductCard :product="product" />
-					</SwiperSlide>
-				</Swiper>
+				<ClientOnly>
+					<Swiper
+						:modules="swiperModules"
+						:slides-per-view="1"
+						:space-between="16"
+						:pagination="{ clickable: true }"
+						:breakpoints="{
+							480: { slidesPerView: 2, spaceBetween: 16 },
+							768: { slidesPerView: 3, spaceBetween: 20 },
+							1440: { slidesPerView: 4, spaceBetween: 24 },
+						}"
+						class="popular__swiper"
+					>
+						<SwiperSlide v-for="product in popularProducts" :key="product.id">
+							<ProductCard :product="product" />
+						</SwiperSlide>
+					</Swiper>
+				</ClientOnly>
 			</div>
 		</section>
 
