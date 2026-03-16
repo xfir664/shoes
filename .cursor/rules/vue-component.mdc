@@ -1,0 +1,56 @@
+---
+description: Конвенции для Vue-компонентов — структура SFC, props, emit, стили
+globs: "**/*.vue"
+alwaysApply: false
+---
+
+# Vue Component Conventions
+
+## Структура SFC
+
+```vue
+<script setup lang="ts">
+// 1. Импорты (только то, что Nuxt не авто-импортирует)
+// 2. defineProps / defineEmits
+// 3. Реактивные данные (ref, computed)
+// 4. Методы
+// 5. Хуки жизненного цикла
+</script>
+
+<template>
+  <!-- Один корневой элемент с BEM-классом -->
+</template>
+
+<style scoped lang="scss">
+// Импорт конфига и миксинов
+</style>
+```
+
+## Props
+
+- Типизируй через `defineProps<{ ... }>()`.
+- Для дефолтов: `withDefaults(defineProps<...>(), { ... })`.
+- Вариант компонента: `variant?: "base" | "primary" | "secondary"`.
+
+## CSS-классы
+
+- BEM: `.block`, `.block__element`, `.block--modifier`.
+- Вариант генерируется динамически: `:class="['btn', variant && \`btn--${variant}\`]"`.
+- Используй `scoped` всегда.
+
+## Стили UI-компонента
+
+```scss
+@use "sass:map";
+@use "./_config.scss" as cfg;
+@use "@/assets/styles/var.scss" as *;
+@use "@/assets/styles/mixins" as *;
+
+.component {
+  @each $name, $v in cfg.$variants {
+    &--#{$name} {
+      @include interactive-colors(map.get($v, color), ...);
+    }
+  }
+}
+```

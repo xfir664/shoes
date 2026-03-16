@@ -1,0 +1,73 @@
+// ============================================================================
+// GLOBAL — reset и базовые стили body.
+// Магазин обуви: PT Sans + бежевая/тёмная палитра.
+// ============================================================================
+
+@use "./var.scss" as var;
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+	scroll-behavior: smooth;
+}
+
+img {
+	max-width: 100%;
+	object-fit: contain;
+}
+
+body {
+	height: 100%;
+	margin: 0;
+	background-color: var(--c-page-bg);
+	font-family: var(--font-base);
+	font-size: var(--fs-base);
+	line-height: var(--lh-normal);
+	color: var(--c-text);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	& > #__nuxt {
+		height: 100%;
+	}
+}
+
+a {
+	color: var(--c-primary);
+	text-decoration: none;
+	transition: var(--transition-base);
+
+	&:hover {
+		color: var(--c-primary-hover);
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	font-family: var(--font-accent);
+}
+
+p {
+	margin: 0;
+}
+
+ul,
+ol {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+button {
+	font-family: var(--font-base);
+}

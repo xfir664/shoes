@@ -1,0 +1,106 @@
+// ============================================================================
+// DARK MODE — тёмная тема магазина обуви.
+// Основной — чёрный, дополнительный — бежевый, акцент — тёмное золото.
+// Текст — белый, акцентный — золотой.
+// ============================================================================
+
+[data-theme="dark"] {
+	// Фоны
+	--c-page-bg: #0f0f0f;
+	--c-surface: #1a1a1a;
+	--c-surface-hover: #242424;
+	--c-surface-elevated: #222;
+	--c-disabled-bg: #2a2a2a;
+	--c-input-bg: #1e1e1e;
+	--c-input-bg-hover: #2a2a2a;
+
+	// Текст
+	--c-text: #f0ece4;
+	--c-text-secondary: #b5a484;
+	--c-text-muted: #8a7e6a;
+
+	// Границы
+	--c-border: #3a352c;
+	--c-border-light: #2e2a24;
+
+	// Нейтральные
+	--c-neutral-50: #1a1a1a;
+	--c-neutral-100: #222;
+	--c-neutral-200: #2a2a2a;
+	--c-neutral-300: #333;
+	--c-neutral-400: #444;
+	--c-neutral-500: #666;
+	--c-neutral-600: #999;
+
+	// Primary (золото — ярче в тёмной теме)
+	--c-primary: #d4b76e;
+	--c-primary-hover: #e0c888;
+	--c-primary-active: #c9a96e;
+	--c-primary-light: rgba(212, 183, 110, 0.12);
+	--c-primary-light-active: rgba(212, 183, 110, 0.2);
+	--c-primary-text: #0f0f0f;
+
+	// Secondary (бежевый в тёмной теме)
+	--c-secondary: #e0d5c4;
+	--c-secondary-hover: #ede5d8;
+	--c-secondary-active: #d4c7b0;
+	--c-secondary-text: #0f0f0f;
+
+	// Base
+	--c-base-bg: #222;
+	--c-base-hover: #2e2a24;
+	--c-base-active: #3a352c;
+	--c-base-text: #f0ece4;
+
+	// Focus
+	--c-focus-ring: rgba(212, 183, 110, 0.4);
+
+	// Тени
+	--shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4);
+	--shadow-md: 0 4px 12px rgba(0, 0, 0, 0.5);
+	--shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.6);
+	--shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.7);
+}
+
+@media (prefers-color-scheme: dark) {
+	:root:not([data-theme]) {
+		--c-page-bg: #0f0f0f;
+		--c-surface: #1a1a1a;
+		--c-surface-hover: #242424;
+		--c-surface-elevated: #222;
+		--c-disabled-bg: #2a2a2a;
+		--c-input-bg: #1e1e1e;
+		--c-input-bg-hover: #2a2a2a;
+		--c-text: #f0ece4;
+		--c-text-secondary: #b5a484;
+		--c-text-muted: #8a7e6a;
+		--c-border: #3a352c;
+		--c-border-light: #2e2a24;
+		--c-neutral-50: #1a1a1a;
+		--c-neutral-100: #222;
+		--c-neutral-200: #2a2a2a;
+		--c-neutral-300: #333;
+		--c-neutral-400: #444;
+		--c-neutral-500: #666;
+		--c-neutral-600: #999;
+		--c-primary: #d4b76e;
+		--c-primary-hover: #e0c888;
+		--c-primary-active: #c9a96e;
+		--c-primary-light: rgba(212, 183, 110, 0.12);
+		--c-primary-light-active: rgba(212, 183, 110, 0.2);
+		--c-primary-text: #0f0f0f;
+		--c-secondary: #e0d5c4;
+		--c-secondary-hover: #ede5d8;
+		--c-secondary-active: #d4c7b0;
+		--c-secondary-text: #0f0f0f;
+		--c-base-bg: #222;
+		--c-base-hover: #2e2a24;
+		--c-base-active: #3a352c;
+		--c-base-text: #f0ece4;
+		--c-focus-ring: rgba(212, 183, 110, 0.4);
+		--shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4);
+		--shadow-md: 0 4px 12px rgba(0, 0, 0, 0.5);
+		--shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.6);
+		--shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.7);
+	}
+}

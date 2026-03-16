@@ -1,0 +1,117 @@
+// ============================================================================
+// ТИПОГРАФИКА — заголовки, текст, подзаголовки.
+// Accent шрифт (Roboto) для заголовков, base (PT Sans) для текста.
+// ============================================================================
+
+@use "sass:map";
+@use "./var.scss" as *;
+@use "./mixins" as *;
+
+$title-variants: (
+	base: (
+		mob: 24px,
+		tab: 28px,
+		desk: 33px,
+		lh: 1.3,
+		color: var(--c-text),
+		weight: 700,
+	),
+	primary: (
+		mob: 20px,
+		tab: 24px,
+		desk: 28px,
+		lh: 1.3,
+		color: var(--c-primary),
+		weight: 700,
+	),
+	secondary: (
+		mob: 18px,
+		tab: 20px,
+		desk: 24px,
+		lh: 1.3,
+		color: var(--c-text-secondary),
+		weight: 600,
+	),
+);
+
+$subtitle-variants: (
+	base: (
+		mob: 18px,
+		tab: 20px,
+		desk: 23px,
+		lh: 1.4,
+		color: var(--c-text),
+		weight: 600,
+	),
+	primary: (
+		mob: 16px,
+		tab: 18px,
+		desk: 20px,
+		lh: 1.4,
+		color: var(--c-primary),
+		weight: 600,
+	),
+	secondary: (
+		mob: 16px,
+		tab: 18px,
+		desk: 20px,
+		lh: 1.4,
+		color: var(--c-text-secondary),
+		weight: 500,
+	),
+);
+
+$text-variants: (
+	base: (
+		mob: 14px,
+		tab: 16px,
+		desk: 16px,
+		lh: 1.6,
+		color: var(--c-text),
+		weight: 400,
+	),
+	primary: (
+		mob: 14px,
+		tab: 16px,
+		desk: 16px,
+		lh: 1.6,
+		color: var(--c-primary),
+		weight: 400,
+	),
+	secondary: (
+		mob: 13px,
+		tab: 14px,
+		desk: 14px,
+		lh: 1.6,
+		color: var(--c-text-secondary),
+		weight: 400,
+	),
+);
+
+.title {
+	font-family: var(--font-accent);
+
+	@each $name, $config in $title-variants {
+		&--#{$name} {
+			@include typography-variant($config);
+		}
+	}
+}
+
+.text {
+	@each $name, $config in $text-variants {
+		&--#{$name} {
+			@include typography-variant($config);
+		}
+	}
+}
+
+.subtitle {
+	font-family: var(--font-accent);
+
+	@each $name, $config in $subtitle-variants {
+		&--#{$name} {
+			@include typography-variant($config);
+		}
+	}
+}

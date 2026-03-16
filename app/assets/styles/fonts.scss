@@ -1,0 +1,14 @@
+// ============================================================================
+// FONTS — PT Sans (основной) + Roboto (акцентный) через Google Fonts.
+// Подключение через @import в SCSS.
+// ============================================================================
+
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@400;500;700;900&display=swap");
+
+.font-base {
+	font-family: var(--font-base);
+}
+
+.font-accent {
+	font-family: var(--font-accent);
+}

@@ -1,0 +1,11 @@
+# robots.txt
+
+User-agent: *
+Disallow: /
+
+# Запретить индексацию админки (если будет)
+# Disallow: /admin/
+
+# Sitemap
+Sitemap: https://your-domain.com/sitemap.xml
+

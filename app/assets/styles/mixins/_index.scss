@@ -1,0 +1,21 @@
+// ============================================================================
+// MIXINS — точка входа. Реэкспортирует все миксины из подфайлов.
+//
+// Подключение в компоненте:
+//   @use "@/assets/styles/mixins" as *;
+//
+// Все миксины доступны напрямую:
+//   @include font-face(...);
+//   @include interactive-colors(...);
+//   @include responsive-font(...);
+//   @include typography-variant(...);
+//
+// Добавление нового миксина:
+//   1. Создайте файл mixins/_новый.scss
+//   2. Добавьте @forward "./новый"; ниже
+// ============================================================================
+
+@forward "font";
+@forward "interactive";
+@forward "responsive";
+@forward "typography";

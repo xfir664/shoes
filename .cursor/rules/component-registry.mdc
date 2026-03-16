@@ -1,0 +1,43 @@
+---
+description: Реестр всех компонентов проекта — имена, пропсы, emit-ы, варианты. Не создавай дубликатов.
+globs: "**/*.vue"
+alwaysApply: false
+---
+
+# Реестр компонентов
+
+## UI-компоненты (app/components/UI/)
+
+| Компонент | Пропсы | Emits | Варианты |
+|-----------|--------|-------|----------|
+| MyBtn | type!, disabled?, isActive?, className?, styles?, variant? | click | base, primary, secondary |
+| MyInput | modelValue?, placeholder?, disabled?, required?, variant?, isActive?, className?, styles?, type? | update:modelValue | base, primary, secondary |
+| MySearch | className?, styles?, variant?, disabled? | — | base, primary, secondary |
+| MySelect | className?, styles?, variant?, disabled? | — | base, primary, secondary |
+| MySelectOption | className?, styles?, variant? | — | base, primary, secondary |
+| MyCheckboxInput | disabled?, className?, styles?, variant?, checked? | change | base, primary, secondary |
+| MyRadioInput | className?, styles?, variant?, disabled? | change | base, primary, secondary |
+| MyFileInput | disabled?, styles?, className?, variant?, isActive? | update:modelValue | base, primary, secondary |
+| MyIcon | id?, href?, className?, variant?, disabled?, isActive?, styles? | — | base, primary, secondary |
+| MyLink | href?, target?, variant?, className?, styles?, isActive?, disabled? | — | base, primary, secondary |
+| MyNavLink | to?, variant?, className?, styles?, isActive?, disabled? | — | base, primary, secondary |
+| MyPagination | className?, styles?, variant?, disabled? | click | base, primary, secondary |
+
+`!` = обязательный, `?` = опциональный.
+
+Каждый UI-компонент имеет `_config.scss` с SCSS map вариантов. Стили генерируются через `@each`.
+
+## Layout-компоненты (app/components/Layout/)
+
+| Компонент | Пропсы | Slots |
+|-----------|--------|-------|
+| AppHeader | — | logo, actions |
+| AppFooter | — | default |
+
+## State-компоненты (app/components/State/)
+
+| Компонент | Пропсы | Emits |
+|-----------|--------|-------|
+| AppLoading | variant?("spinner"\|"skeleton"\|"dots"), size?(32) | — |
+| AppError | title!, message?, retryable? | retry |
+| AppEmpty | title!, message?, icon? | — |

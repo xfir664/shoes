@@ -1,0 +1,224 @@
+// ============================================================================
+// COMMON — утилитарные (utility) классы для быстрой вёрстки.
+//
+// Использование в шаблонах:
+//   <div class="flex flex-center">Центрированный контейнер</div>
+//   <span class="visually-hidden">Скрытый текст для скринридеров</span>
+//   <div class="container-breakpoint-desktop m-0-auto">Контейнер по центру</div>
+//
+// Правила:
+//   - Каждый класс делает ровно одну вещь (Single Responsibility).
+//   - НЕ добавляйте сюда стили компонентов — для этого есть <style scoped>.
+//   - Можно комбинировать классы: <div class="flex flex-center flex-wrap">
+//
+// Добавление нового утилитарного класса:
+//   Просто добавьте его в соответствующую секцию ниже.
+// ============================================================================
+
+@use "@/assets/styles/var.scss" as var;
+
+// --- Доступность ---
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+// --- Контейнеры ---
+
+.container-breakpoint-desktop {
+	max-width: var.$breakpoint-desktop;
+}
+
+// --- Ширина / Высота ---
+
+.width-100 {
+	width: 100%;
+}
+
+.height-100 {
+	height: 100%;
+}
+
+// --- Margin ---
+// Именование: .m-{направление?}-{токен}
+// Значения берутся из _tokens.scss (--spacing-*)
+
+.m-0 {
+	margin: 0;
+}
+
+.m-0-auto {
+	margin: 0 auto;
+}
+
+.mt-xs {
+	margin-top: var(--spacing-xs);
+}
+
+.mt-sm {
+	margin-top: var(--spacing-sm);
+}
+
+.mt-md {
+	margin-top: var(--spacing-md);
+}
+
+.mt-lg {
+	margin-top: var(--spacing-lg);
+}
+
+.mb-xs {
+	margin-bottom: var(--spacing-xs);
+}
+
+.mb-sm {
+	margin-bottom: var(--spacing-sm);
+}
+
+.mb-md {
+	margin-bottom: var(--spacing-md);
+}
+
+.mb-lg {
+	margin-bottom: var(--spacing-lg);
+}
+
+// --- Padding ---
+// Именование: .p-{направление?}-{токен}
+// Значения берутся из _tokens.scss (--spacing-*)
+
+.p-0 {
+	padding: 0;
+}
+
+.px-xs {
+	padding-inline: var(--spacing-xs);
+}
+
+.px-sm {
+	padding-inline: var(--spacing-sm);
+}
+
+.px-md {
+	padding-inline: var(--spacing-md);
+}
+
+.px-lg {
+	padding-inline: var(--spacing-lg);
+}
+
+.px-xl {
+	padding-inline: var(--spacing-xl);
+}
+
+.py-xs {
+	padding-block: var(--spacing-xs);
+}
+
+.py-sm {
+	padding-block: var(--spacing-sm);
+}
+
+.py-md {
+	padding-block: var(--spacing-md);
+}
+
+.py-lg {
+	padding-block: var(--spacing-lg);
+}
+
+// --- Gap ---
+// Для flex/grid контейнеров
+
+.gap-xs {
+	gap: var(--spacing-xs);
+}
+
+.gap-sm {
+	gap: var(--spacing-sm);
+}
+
+.gap-md {
+	gap: var(--spacing-md);
+}
+
+.gap-lg {
+	gap: var(--spacing-lg);
+}
+
+// --- Текст ---
+// Выравнивание, обрезка, перенос.
+
+.text-left {
+	text-align: left;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-truncate {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.text-nowrap {
+	white-space: nowrap;
+}
+
+.text-break {
+	overflow-wrap: break-word;
+	word-break: break-word;
+}
+
+// --- Flexbox ---
+
+.flex {
+	display: flex;
+
+	&-center {
+		align-items: center;
+		justify-content: center;
+	}
+
+	&-between {
+		justify-content: space-between;
+	}
+
+	&-direction-column {
+		flex-direction: column;
+	}
+
+	&-wrap {
+		flex-wrap: wrap;
+	}
+}
+
+.flex-grow-1 {
+	flex-grow: 1;
+}
+
+// --- Grid ---
+
+.grid {
+	display: grid;
+
+	&-center {
+		align-items: center;
+		justify-content: center;
+	}
+}

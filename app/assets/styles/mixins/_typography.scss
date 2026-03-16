@@ -1,0 +1,26 @@
+// ============================================================================
+// МИКСИН: типографика.
+//
+// Генерирует стили из SCSS map для глобальных классов .title, .text, .subtitle.
+// Используется в _typography.scss.
+//
+// Map должен содержать ключи: mob, tab, desk, lh, color, weight (опционально).
+// ============================================================================
+
+@use "sass:map";
+@use "../var.scss" as *;
+
+@mixin typography-variant($config) {
+	font-size: map.get($config, mob);
+	line-height: map.get($config, lh);
+	color: map.get($config, color);
+	font-weight: map.get($config, weight);
+
+	@media (min-width: $breakpoint-tablet) {
+		font-size: map.get($config, tab);
+	}
+
+	@media (min-width: $breakpoint-desktop) {
+		font-size: map.get($config, desk);
+	}
+}

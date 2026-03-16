@@ -1,0 +1,193 @@
+// ============================================================================
+// ANIMATIONS — keyframes и утилитарные классы для анимаций.
+//
+// Использование в шаблоне:
+//   <div class="animate-fade-in">Плавное появление</div>
+//   <div class="animate-slide-up">Выезд снизу</div>
+//
+// Использование в <style scoped>:
+//   .my-element {
+//     animation: fadeIn var(--duration-base) ease;
+//   }
+//
+// Skeleton-загрузка:
+//   <div class="animate-skeleton" style="width: 200px; height: 20px;"></div>
+//
+// Длительности (определены в _tokens.scss):
+//   --duration-fast: 150ms — микроинтеракции (hover-подсветка, toggle)
+//   --duration-base: 300ms — стандартная анимация (появление, скрытие)
+//   --duration-slow: 500ms — крупные переходы (модальные окна, страницы)
+//
+// Добавление новой анимации:
+//   1. Создайте @keyframes ниже
+//   2. Создайте утилитарный класс .animate-{имя}
+//   3. Добавьте демо на странице /animations
+// ============================================================================
+
+// ---------------------------------------------------------------------------
+// Keyframes
+// ---------------------------------------------------------------------------
+
+// fadeIn — плавное появление элемента.
+// Использование: модальные окна, тосты, контент после загрузки.
+// Класс: .animate-fade-in
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+// fadeOut — плавное исчезновение элемента.
+// Использование: закрытие модалок, удаление элементов.
+// Класс: .animate-fade-out
+@keyframes fadeOut {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+
+// slideInUp — появление снизу вверх (16px сдвиг + fade).
+// Использование: списки при загрузке, карточки, dropdown снизу.
+// Класс: .animate-slide-up
+@keyframes slideInUp {
+	from {
+		opacity: 0;
+		transform: translateY(16px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+// slideInDown — появление сверху вниз (16px сдвиг + fade).
+// Использование: dropdown-меню, уведомления сверху.
+// Класс: .animate-slide-down
+@keyframes slideInDown {
+	from {
+		opacity: 0;
+		transform: translateY(-16px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+// slideInLeft — появление слева (16px сдвиг + fade).
+// Использование: sidebar, боковые панели.
+// Класс: .animate-slide-left
+@keyframes slideInLeft {
+	from {
+		opacity: 0;
+		transform: translateX(-16px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+// slideInRight — появление справа (16px сдвиг + fade).
+// Использование: slide-панели, мобильное меню.
+// Класс: .animate-slide-right
+@keyframes slideInRight {
+	from {
+		opacity: 0;
+		transform: translateX(16px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+// scaleIn — масштабирование с появлением (0.9 → 1 + fade).
+// Использование: попапы, модалки, tooltip при появлении.
+// Класс: .animate-scale-in
+@keyframes scaleIn {
+	from {
+		opacity: 0;
+		transform: scale(0.9);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+// skeletonPulse — пульсация фона для загрузочных плейсхолдеров.
+// Использование: skeleton-экраны, карточки-заглушки при загрузке данных.
+// Класс: .animate-skeleton
+@keyframes skeletonPulse {
+	0% {
+		background-color: var(--c-neutral-200);
+	}
+	50% {
+		background-color: var(--c-neutral-400);
+	}
+	100% {
+		background-color: var(--c-neutral-200);
+	}
+}
+
+// spin — бесконечное вращение на 360°.
+// Использование: спиннеры загрузки, индикаторы обработки.
+// Класс: .animate-spin
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+// ---------------------------------------------------------------------------
+// Утилитарные классы
+// Каждый класс использует animation-fill-mode: both для сохранения
+// конечного состояния анимации.
+// ---------------------------------------------------------------------------
+
+.animate-fade-in {
+	animation: fadeIn var(--duration-base) ease both;
+}
+
+.animate-fade-out {
+	animation: fadeOut var(--duration-base) ease both;
+}
+
+.animate-slide-up {
+	animation: slideInUp var(--duration-base) ease both;
+}
+
+.animate-slide-down {
+	animation: slideInDown var(--duration-base) ease both;
+}
+
+.animate-slide-left {
+	animation: slideInLeft var(--duration-base) ease both;
+}
+
+.animate-slide-right {
+	animation: slideInRight var(--duration-base) ease both;
+}
+
+.animate-scale-in {
+	animation: scaleIn var(--duration-base) ease both;
+}
+
+.animate-skeleton {
+	animation: skeletonPulse 1.5s ease-in-out infinite;
+	border-radius: var(--radius-sm);
+}
+
+.animate-spin {
+	animation: spin 1s linear infinite;
+}

@@ -1,0 +1,147 @@
+// ============================================================================
+// МИКСИНЫ: интерактивные состояния (hover, focus, active, disabled, .active)
+//
+// Три варианта для разных типов компонентов:
+//   interactive-colors — текст + фон (btn, link, navlink, pagination, select, input, search)
+//   interactive-bg     — только фон (radio, checkbox, file input)
+//   interactive-icon   — только цвет SVG (icon)
+//
+// Focus ring: все миксины добавляют box-shadow через токен --c-focus-ring.
+// ============================================================================
+
+@mixin interactive-colors($color, $bg, $bg-hover, $bg-click, $color-active, $bg-active) {
+	color: $color;
+	background-color: $bg;
+
+	&:hover:not(:disabled) {
+		color: rgba($color, 0.8);
+		background-color: $bg-hover;
+	}
+
+	&:focus-visible:not(:disabled) {
+		outline: none;
+		box-shadow: 0 0 0 3px var(--c-focus-ring);
+	}
+
+	&:active:not(:disabled) {
+		color: rgba($color, 0.6);
+		background-color: $bg-click;
+	}
+
+	&:disabled {
+		opacity: 0.5;
+		cursor: not-allowed;
+	}
+
+	&.active {
+		color: $color-active;
+		background-color: $bg-active;
+
+		&:hover:not(:disabled) {
+			color: rgba($color-active, 0.8);
+			background-color: $bg-hover;
+		}
+
+		&:focus-visible:not(:disabled) {
+			outline: none;
+			box-shadow: 0 0 0 3px var(--c-focus-ring);
+		}
+
+		&:active:not(:disabled) {
+			color: rgba($color-active, 0.6);
+			background-color: $bg-click;
+		}
+
+		&:disabled {
+			opacity: 0.5;
+			cursor: not-allowed;
+		}
+	}
+}
+
+@mixin interactive-bg($bg, $bg-hover, $bg-click, $bg-active) {
+	background-color: $bg;
+
+	&:hover:not(:disabled) {
+		background-color: $bg-hover;
+	}
+
+	&:focus-visible:not(:disabled) {
+		outline: none;
+		box-shadow: 0 0 0 3px var(--c-focus-ring);
+	}
+
+	&:active:not(:disabled) {
+		background-color: $bg-click;
+	}
+
+	&:disabled {
+		opacity: 0.5;
+		cursor: not-allowed;
+	}
+
+	&.active {
+		background-color: $bg-active;
+
+		&:hover:not(:disabled) {
+			background-color: $bg-hover;
+		}
+
+		&:focus-visible:not(:disabled) {
+			outline: none;
+			box-shadow: 0 0 0 3px var(--c-focus-ring);
+		}
+
+		&:active:not(:disabled) {
+			background-color: $bg-click;
+		}
+
+		&:disabled {
+			opacity: 0.5;
+			cursor: not-allowed;
+		}
+	}
+}
+
+@mixin interactive-icon($color, $color-hover, $color-active) {
+	color: $color;
+
+	&:hover {
+		color: $color-hover;
+	}
+
+	&:focus-visible {
+		outline: none;
+		box-shadow: 0 0 0 3px var(--c-focus-ring);
+		border-radius: var(--radius-sm);
+	}
+
+	&:active {
+		color: rgba($color-hover, 0.6);
+	}
+
+	&.disabled {
+		opacity: 0.5;
+	}
+
+	&.active {
+		color: $color-active;
+
+		&:hover {
+			color: $color-hover;
+		}
+
+		&:focus-visible {
+			outline: none;
+			box-shadow: 0 0 0 3px var(--c-focus-ring);
+		}
+
+		&:active {
+			color: rgba($color-hover, 0.6);
+		}
+
+		&.disabled {
+			opacity: 0.5;
+		}
+	}
+}

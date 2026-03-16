@@ -1,0 +1,61 @@
+// ============================================================================
+// МИКСИНЫ: адаптивность по брейкпоинтам (mobile → tablet → desktop).
+//
+// Все миксины принимают 3+ значений: мобильное, планшетное, десктопное.
+// Брейкпоинты берутся из var.scss ($breakpoint-tablet, $breakpoint-desktop).
+// ============================================================================
+
+@use "../var.scss" as *;
+
+// Адаптивный font-size.
+//
+// Пример:
+//   @include responsive-font(16px, 18px, 20px);
+@mixin responsive-font($mob, $tab, $desk) {
+	font-size: $mob;
+
+	@media (min-width: $breakpoint-tablet) {
+		font-size: $tab;
+	}
+
+	@media (min-width: $breakpoint-desktop) {
+		font-size: $desk;
+	}
+}
+
+// Адаптивный line-height.
+//
+// Пример:
+//   @include responsive-line-height(20px, 22px, 24px);
+@mixin responsive-line-height($mob, $tab, $desk) {
+	line-height: $mob;
+
+	@media (min-width: $breakpoint-tablet) {
+		line-height: $tab;
+	}
+
+	@media (min-width: $breakpoint-desktop) {
+		line-height: $desk;
+	}
+}
+
+// Адаптивные width + height.
+// Подходит для: icon, radio, checkbox, file input.
+//
+// Пример:
+//   @include responsive-size(16px, 20px,  18px, 20px,  20px, 20px);
+//                           w-mob h-mob   w-tab h-tab   w-desk h-desk
+@mixin responsive-size($w-mob, $h-mob, $w-tab, $h-tab, $w-desk, $h-desk) {
+	width: $w-mob;
+	height: $h-mob;
+
+	@media (min-width: $breakpoint-tablet) {
+		width: $w-tab;
+		height: $h-tab;
+	}
+
+	@media (min-width: $breakpoint-desktop) {
+		width: $w-desk;
+		height: $h-desk;
+	}
+}

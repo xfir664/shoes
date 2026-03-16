@@ -1,0 +1,42 @@
+---
+description: Конвенции для SCSS-файлов — токены, миксины, переменные
+globs: "**/*.scss"
+alwaysApply: false
+---
+
+# SCSS Conventions
+
+## Дизайн-токены
+
+Токены хранятся в `_tokens.scss` как CSS Custom Properties (`:root { --c-blue-600: #2563eb; }`).
+
+Используй в стилях: `color: var(--c-blue-600);`, `padding: var(--spacing-md);`.
+
+НЕ хардкодь цвета, отступы, тени, радиусы — бери из токенов.
+
+## Брейкпоинты
+
+SCSS-переменные в `var.scss`: `$breakpoint-mobile: 320px`, `$breakpoint-tablet: 768px`, `$breakpoint-desktop: 1440px`.
+
+CSS Custom Properties НЕ работают в `@media`. Используй только SCSS-переменные или миксины.
+
+## Миксины
+
+Папка `mixins/` с `_index.scss`. Подключение: `@use "@/assets/styles/mixins" as *;`.
+
+Доступные миксины:
+- `font-face($family, $weight, $style, $src, $formats)` — подключение шрифтов
+- `interactive-colors($color, $bg, $bg-hover, $bg-click, $color-active, $bg-active)` — интерактивные состояния
+- `responsive-font($mob, $tab, $desk)` — адаптивный размер шрифта
+- `responsive-line-height($mob, $tab, $desk)` — адаптивный line-height
+- `typography-variant($map)` — генерация типографики из SCSS map
+
+## Конфиги компонентов
+
+`_config.scss` рядом с `.vue` файлом. SCSS map с вариантами. Ключи: `color`, `bg`, `bg-hover`, `bg-click`, `color-active`, `bg-active`, `size-mob/tab/desk`, `lh-mob/tab/desk`.
+
+## Новый вариант
+
+1. Добавь ключ в map `_config.scss`
+2. Добавь значение в `variant` prop TypeScript
+3. Класс `.component--name` сгенерируется автоматически через `@each`

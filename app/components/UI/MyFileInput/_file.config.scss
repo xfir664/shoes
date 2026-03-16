@@ -1,0 +1,29 @@
+$file-variants: (
+	base: (
+		bg: var(--c-base-bg),
+		bg-hover: var(--c-base-hover),
+		bg-click: var(--c-base-active),
+		bg-active: var(--c-primary-light),
+		padding: var(--spacing-sm) var(--spacing-md),
+		radius: var(--radius-md),
+		border: 1px solid var(--c-border),
+	),
+	primary: (
+		bg: var(--c-primary),
+		bg-hover: var(--c-primary-hover),
+		bg-click: var(--c-primary-active),
+		bg-active: var(--c-primary-active),
+		padding: var(--spacing-sm) var(--spacing-md),
+		radius: var(--radius-md),
+		border: 1px solid transparent,
+	),
+	secondary: (
+		bg: transparent,
+		bg-hover: var(--c-primary-light),
+		bg-click: var(--c-primary-light-active),
+		bg-active: var(--c-primary-light),
+		padding: var(--spacing-sm) var(--spacing-md),
+		radius: var(--radius-md),
+		border: 1px solid var(--c-primary),
+	),
+);

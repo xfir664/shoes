@@ -1,0 +1,28 @@
+// ============================================================================
+// MAIN — точка входа для всех глобальных стилей.
+// Подключается в nuxt.config.ts → css: ["~/assets/styles/main.scss"]
+//
+// Порядок импорта важен:
+//   1. Токены (_tokens) — CSS Custom Properties, доступны везде
+//   2. Тёмная тема (_dark) — переопределение токенов для dark mode
+//   3. Переменные (var) — SCSS-брейкпоинты для @media
+//   4. Миксины (mixins/) — папка с переиспользуемыми паттернами
+//   5. Шрифты (fonts) — @font-face
+//   6. Глобальные стили (global) — reset, body
+//   7. Утилиты (common) — .flex, .visually-hidden, .text-truncate и т.д.
+//   8. Типографика (_typography) — .title, .text, .subtitle
+//   9. Анимации (_animations) — keyframes + .animate-* классы
+//
+// Стили компонентов НЕ импортируются здесь — они живут в <style scoped>
+// внутри каждого .vue файла (принцип колокации).
+// ============================================================================
+
+@use "@/assets/styles/_tokens.scss";
+@use "@/assets/styles/_dark.scss";
+@use "@/assets/styles/var.scss";
+@use "@/assets/styles/mixins";
+@use "@/assets/styles/fonts.scss";
+@use "@/assets/styles/global.scss";
+@use "@/assets/styles/common.scss";
+@use "@/assets/styles/_typography.scss";
+@use "@/assets/styles/_animations.scss";

@@ -1,0 +1,49 @@
+# =============================================================================
+# .dockerignore - Игнорируемые файлы при сборке Docker образов
+# =============================================================================
+#
+# Описание:
+#   Указывает какие файлы и папки НЕ копировать в Docker контейнер
+#   Ускоряет сборку и уменьшает размер образа
+#
+# Категории игнорируемых файлов:
+#   - Зависимости (node_modules)
+#   - Сгенерированные файлы (.nuxt, .next)
+#   - Git файлы (.git, .gitignore)
+#   - Документация (README.md)
+#   - Docker файлы (Dockerfile*, docker-compose*.yml)
+#   - Логи (*.log)
+#   - Системные файлы (.DS_Store)
+#
+# =============================================================================
+
+# Зависимости
+node_modules
+
+# Сгенерированные файлы
+.nuxt
+.next
+
+# Git
+.git
+.gitignore
+
+# Документация
+README.md
+
+# Docker файлы
+Dockerfile
+Dockerfile.dev
+Dockerfile.prod
+Dockerfile.test
+docker-compose.yml
+docker-compose.dev.yml
+docker-compose.prod.yml
+docker-compose.test.yml
+.dockerignore
+
+# Логи
+*.log
+
+# Системные файлы
+.DS_Store

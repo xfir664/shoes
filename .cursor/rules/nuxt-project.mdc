@@ -1,0 +1,29 @@
+---
+description: Базовые конвенции Nuxt-проекта — структура, именование, импорты
+alwaysApply: true
+---
+
+# Nuxt Project Conventions
+
+## Авто-импорты
+
+Nuxt автоматически импортирует: `ref`, `computed`, `watch`, `onMounted`, `useState`, `useRuntimeConfig`, `navigateTo`, `definePageMeta`, `useSeoMeta`, `useHead`. НЕ добавляй лишние импорты из `vue` или `nuxt/app` для этих символов.
+
+## Файловый роутинг
+
+Страницы живут в `app/pages/`. Имя файла = путь. `index.vue` = `/`. Динамические: `[id].vue`.
+
+## Компоненты
+
+- `pathPrefix: false` в `nuxt.config.ts` — компоненты доступны по имени без префикса пути.
+- UI-компоненты: `app/components/UI/MyName/MyName.vue`
+- Layout-компоненты: `app/components/Layout/AppName.vue`
+- State-компоненты: `app/components/State/AppName.vue`
+
+## RuntimeConfig
+
+Публичные переменные: `useRuntimeConfig().public.apiUrl`. Приватные (серверные): `useRuntimeConfig().fastApiUrl`.
+
+## SEO
+
+На каждой странице использовать `useSeoMeta({ title, description, ogTitle, ogDescription })`.

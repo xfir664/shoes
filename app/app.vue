@@ -1,0 +1,20 @@
+<!--
+  Корневой компонент — интернет-магазин обуви ShoeStore.
+-->
+<script setup lang="ts">
+useHead({
+	htmlAttrs: { lang: "ru" },
+	meta: [
+		{ charset: "utf-8" },
+		{ name: "viewport", content: "width=device-width, initial-scale=1" },
+	],
+	titleTemplate: (title) =>
+		title ? `${title} — ShoeStore` : "ShoeStore — Интернет-магазин обуви",
+});
+</script>
+
+<template>
+	<NuxtLayout>
+		<NuxtPage />
+	</NuxtLayout>
+</template>
