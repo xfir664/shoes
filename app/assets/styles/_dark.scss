@@ -8,11 +8,22 @@
 	// Фоны
 	--c-page-bg: #0f0f0f;
 	--c-surface: #1a1a1a;
+	--c-surface-rgb: 26, 26, 26;
 	--c-surface-hover: #242424;
 	--c-surface-elevated: #222;
 	--c-disabled-bg: #2a2a2a;
 	--c-input-bg: #1e1e1e;
 	--c-input-bg-hover: #2a2a2a;
+
+	// Бежевые оттенки (тёмные версии)
+	--c-beige-50: #1a1815;
+	--c-beige-100: #242018;
+	--c-beige-200: #2e2a22;
+	--c-beige-300: #3a352c;
+	--c-beige-400: #4a4438;
+	--c-beige-500: #6b6050;
+	--c-beige-600: #8a7e6a;
+	--c-beige-700: #a09070;
 
 	// Текст
 	--c-text: #f0ece4;
@@ -52,6 +63,12 @@
 	--c-base-active: #3a352c;
 	--c-base-text: #f0ece4;
 
+	// Статусные (ярче в тёмной теме)
+	--c-success: #43a047;
+	--c-error: #ef5350;
+	--c-warning: #ffa726;
+	--c-info: #42a5f5;
+
 	// Focus
 	--c-focus-ring: rgba(212, 183, 110, 0.4);
 
@@ -66,11 +83,20 @@
 	:root:not([data-theme]) {
 		--c-page-bg: #0f0f0f;
 		--c-surface: #1a1a1a;
+		--c-surface-rgb: 26, 26, 26;
 		--c-surface-hover: #242424;
 		--c-surface-elevated: #222;
 		--c-disabled-bg: #2a2a2a;
 		--c-input-bg: #1e1e1e;
 		--c-input-bg-hover: #2a2a2a;
+		--c-beige-50: #1a1815;
+		--c-beige-100: #242018;
+		--c-beige-200: #2e2a22;
+		--c-beige-300: #3a352c;
+		--c-beige-400: #4a4438;
+		--c-beige-500: #6b6050;
+		--c-beige-600: #8a7e6a;
+		--c-beige-700: #a09070;
 		--c-text: #f0ece4;
 		--c-text-secondary: #b5a484;
 		--c-text-muted: #8a7e6a;
@@ -97,6 +123,10 @@
 		--c-base-hover: #2e2a24;
 		--c-base-active: #3a352c;
 		--c-base-text: #f0ece4;
+		--c-success: #43a047;
+		--c-error: #ef5350;
+		--c-warning: #ffa726;
+		--c-info: #42a5f5;
 		--c-focus-ring: rgba(212, 183, 110, 0.4);
 		--shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4);
 		--shadow-md: 0 4px 12px rgba(0, 0, 0, 0.5);

@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "Bash(ls -la /e/domain/shoes/*.json)",
-      "Bash(cd \"E:/domain/shoes\" && pnpm dev 2>&1 | head -30)"
+      "Bash(cd \"E:/domain/shoes\" && pnpm dev 2>&1 | head -30)",
+      "Bash(find:*)",
+      "Bash(pnpm add:*)"
     ]
   }
 }

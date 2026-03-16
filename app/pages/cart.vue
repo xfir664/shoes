@@ -8,6 +8,47 @@ useSeoMeta({
 });
 
 const cartStore = useCartStore();
+
+/** Форма оформления */
+const isCheckoutOpen = ref(false);
+const orderForm = reactive({
+	name: "",
+	phone: "",
+	email: "",
+	city: "",
+	address: "",
+	comment: "",
+});
+const isOrderSubmitted = ref(false);
+
+const checkoutRef = ref<HTMLElement | null>(null);
+
+const scrollToCheckout = () => {
+	nextTick(() => {
+		requestAnimationFrame(() => {
+			requestAnimationFrame(() => {
+				const el = checkoutRef.value;
+				if (!el) return;
+				const header = document.querySelector(".header") as HTMLElement | null;
+				const headerH = header ? header.offsetHeight : 0;
+				const top = el.getBoundingClientRect().top + window.scrollY - headerH - 20;
+				window.scrollTo({ top, behavior: "smooth" });
+			});
+		});
+	});
+};
+
+const toggleCheckout = () => {
+	isCheckoutOpen.value = !isCheckoutOpen.value;
+	if (isCheckoutOpen.value) {
+		scrollToCheckout();
+	}
+};
+
+const submitOrder = () => {
+	isOrderSubmitted.value = true;
+	cartStore.clearCart();
+};
 </script>
 
 <template>
@@ -15,7 +56,7 @@ const cartStore = useCartStore();
 		<h1 class="cart__title">Корзина</h1>
 
 		<!-- Пустая корзина -->
-		<div v-if="cartStore.isEmpty" class="cart__empty">
+		<div v-if="cartStore.isEmpty && !isOrderSubmitted" class="cart__empty">
 			<span class="mdi mdi-cart-off" style="font-size: 64px" />
 			<p class="cart__empty-text">Ваша корзина пуста</p>
 			<p class="cart__empty-hint">
@@ -24,6 +65,18 @@ const cartStore = useCartStore();
 			<NuxtLink to="/catalog" class="cart__empty-link">
 				<MyBtn type="button" variant="primary">
 					Перейти в каталог
+				</MyBtn>
+			</NuxtLink>
+		</div>
+
+		<!-- Успешное оформление -->
+		<div v-else-if="isOrderSubmitted" class="cart__success">
+			<span class="mdi mdi-check-circle" style="font-size: 64px; color: var(--c-success)" />
+			<p class="cart__success-title">Заказ оформлен!</p>
+			<p class="cart__success-text">Мы свяжемся с вами для подтверждения заказа</p>
+			<NuxtLink to="/catalog">
+				<MyBtn type="button" variant="primary">
+					Вернуться в каталог
 				</MyBtn>
 			</NuxtLink>
 		</div>
@@ -94,9 +147,88 @@ const cartStore = useCartStore();
 						{{ formatPrice(cartStore.totalPrice) }}
 					</span>
 				</div>
-				<MyBtn type="button" variant="primary" class="cart__checkout-btn">
-					Оформить заказ
+				<MyBtn
+					type="button"
+					variant="primary"
+					class="cart__checkout-btn"
+					@click="toggleCheckout"
+				>
+					{{ isCheckoutOpen ? "Скрыть форму" : "Оформить заказ" }}
 				</MyBtn>
+			</div>
+
+			<!-- Форма оформления заказа -->
+			<div v-if="isCheckoutOpen" ref="checkoutRef" class="cart__checkout">
+				<h2 class="cart__checkout-heading">Оформление заказа</h2>
+
+				<form class="cart__form" @submit.prevent="submitOrder">
+					<div class="cart__form-row">
+						<div class="cart__form-field">
+							<label class="cart__form-label">Имя *</label>
+							<MyInput
+								v-model="orderForm.name"
+								variant="base"
+								placeholder="Иван Иванов"
+								required
+							/>
+						</div>
+						<div class="cart__form-field">
+							<label class="cart__form-label">Телефон *</label>
+							<MyInput
+								v-model="orderForm.phone"
+								variant="base"
+								type="tel"
+								placeholder="+7 (999) 123-45-67"
+								required
+							/>
+						</div>
+					</div>
+
+					<div class="cart__form-row">
+						<div class="cart__form-field">
+							<label class="cart__form-label">Email</label>
+							<MyInput
+								v-model="orderForm.email"
+								variant="base"
+								type="email"
+								placeholder="email@example.com"
+							/>
+						</div>
+						<div class="cart__form-field">
+							<label class="cart__form-label">Город *</label>
+							<MyInput
+								v-model="orderForm.city"
+								variant="base"
+								placeholder="Москва"
+								required
+							/>
+						</div>
+					</div>
+
+					<div class="cart__form-field">
+						<label class="cart__form-label">Адрес доставки *</label>
+						<MyInput
+							v-model="orderForm.address"
+							variant="base"
+							placeholder="Улица, дом, квартира"
+							required
+						/>
+					</div>
+
+					<div class="cart__form-field">
+						<label class="cart__form-label">Комментарий</label>
+						<textarea
+							v-model="orderForm.comment"
+							class="cart__form-textarea"
+							placeholder="Пожелания к заказу..."
+							rows="3"
+						/>
+					</div>
+
+					<MyBtn type="submit" variant="primary" class="cart__form-submit">
+						Подтвердить заказ
+					</MyBtn>
+				</form>
 			</div>
 		</template>
 	</div>
@@ -145,6 +277,30 @@ const cartStore = useCartStore();
 
 	&__empty-link {
 		text-decoration: none;
+	}
+
+	// Успешное оформление
+	&__success {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding: var(--spacing-3xl) var(--spacing-lg);
+		text-align: center;
+	}
+
+	&__success-title {
+		font-family: var(--font-accent);
+		font-size: var(--fs-xl);
+		font-weight: var(--fw-semibold);
+		color: var(--c-text);
+		margin: var(--spacing-lg) 0 var(--spacing-sm);
+	}
+
+	&__success-text {
+		font-size: var(--fs-base);
+		color: var(--c-text-muted);
+		margin: 0 0 var(--spacing-lg);
 	}
 
 	// Список товаров
@@ -321,6 +477,84 @@ const cartStore = useCartStore();
 
 	&__checkout-btn {
 		flex-shrink: 0;
+
+		@media (max-width: $breakpoint-tablet) {
+			width: 100%;
+		}
+	}
+
+	// Форма оформления
+	&__checkout {
+		margin-top: var(--spacing-xl);
+		padding: var(--spacing-lg);
+		background: var(--c-surface);
+		border: 1px solid var(--c-border-light);
+		border-radius: var(--radius-md);
+
+	}
+
+	&__checkout-heading {
+		font-family: var(--font-accent);
+		font-size: var(--fs-xl);
+		font-weight: var(--fw-semibold);
+		color: var(--c-text);
+		margin: 0 0 var(--spacing-lg);
+	}
+
+	&__form {
+		display: flex;
+		flex-direction: column;
+		gap: var(--spacing-md);
+	}
+
+	&__form-row {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: var(--spacing-md);
+
+		@media (max-width: $breakpoint-tablet) {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	&__form-field {
+		display: flex;
+		flex-direction: column;
+		gap: var(--spacing-xs);
+	}
+
+	&__form-label {
+		font-size: var(--fs-sm);
+		font-weight: var(--fw-medium);
+		color: var(--c-text-secondary);
+	}
+
+	&__form-textarea {
+		width: 100%;
+		padding: var(--spacing-sm);
+		border: 1px solid var(--c-border);
+		border-radius: var(--radius-md);
+		background: var(--c-input-bg);
+		font-family: var(--font-base);
+		font-size: var(--fs-base);
+		color: var(--c-text);
+		resize: vertical;
+		transition: var(--transition-base);
+
+		&:focus {
+			outline: none;
+			border-color: var(--c-primary);
+			box-shadow: 0 0 0 3px var(--c-focus-ring);
+		}
+
+		&::placeholder {
+			color: var(--c-text-muted);
+		}
+	}
+
+	&__form-submit {
+		align-self: flex-start;
+		margin-top: var(--spacing-sm);
 
 		@media (max-width: $breakpoint-tablet) {
 			width: 100%;

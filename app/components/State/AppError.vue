@@ -52,7 +52,7 @@ const emit = defineEmits<{
 		height: 48px;
 		margin-bottom: var(--spacing-md);
 		border-radius: 50%;
-		background-color: var(--c-red-700);
+		background-color: var(--c-error);
 		color: var(--c-white);
 		font-size: var(--fs-xl);
 		font-weight: 700;
@@ -66,22 +66,22 @@ const emit = defineEmits<{
 
 	&__message {
 		margin: 0 0 var(--spacing-md);
-		color: var(--c-brown-500);
+		color: var(--c-text-secondary);
 		font-size: var(--fs-base);
 	}
 
 	&__retry {
 		padding: var(--spacing-sm) var(--spacing-lg);
-		border: 2px solid var(--c-blue-500);
+		border: 2px solid var(--c-info);
 		border-radius: var(--radius-md);
 		background: transparent;
-		color: var(--c-blue-500);
+		color: var(--c-info);
 		font-size: var(--fs-base);
 		cursor: pointer;
 		transition: var(--transition-base);
 
 		&:hover {
-			background-color: var(--c-blue-500);
+			background-color: var(--c-info);
 			color: var(--c-white);
 		}
 	}

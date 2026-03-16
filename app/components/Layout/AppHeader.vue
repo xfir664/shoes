@@ -5,8 +5,10 @@
 -->
 <script setup lang="ts">
 import type { MenuItem } from "~/types/ui";
+import { mockProducts, formatPrice } from "~/utils/mockProducts";
 
 const navItems: MenuItem[] = [
+	{ label: "Главная", to: "/" },
 	{ label: "Каталог", to: "/catalog" },
 	{ label: "Акции", to: "/promos" },
 	{ label: "Доставка", to: "/delivery" },
@@ -17,6 +19,48 @@ const { isDark, toggleTheme } = useTheme();
 const cartStore = useCartStore();
 const isMobileMenuOpen = ref(false);
 const searchQuery = ref("");
+const isScrolled = ref(false);
+const isSearchFocused = ref(false);
+
+/** Результаты поиска (макс. 5) */
+const searchResults = computed(() => {
+	const q = searchQuery.value.trim().toLowerCase();
+	if (!q) return [];
+	return mockProducts
+		.filter((p) => p.name.toLowerCase().includes(q))
+		.slice(0, 5);
+});
+
+const isDropdownVisible = computed(() => {
+	return isSearchFocused.value && searchQuery.value.trim().length > 0;
+});
+
+/** Переход к товару из результатов */
+function goToProduct(slug: string) {
+	searchQuery.value = "";
+	isSearchFocused.value = false;
+	navigateTo(`/catalog/${slug}`);
+}
+
+/** Скрыть dropdown с задержкой (чтобы клик по результату успел сработать) */
+function handleBlur() {
+	setTimeout(() => {
+		isSearchFocused.value = false;
+	}, 200);
+}
+
+onMounted(() => {
+	const onScroll = () => {
+		const y = window.scrollY;
+		if (!isScrolled.value && y > 80) {
+			isScrolled.value = true;
+		} else if (isScrolled.value && y < 20) {
+			isScrolled.value = false;
+		}
+	};
+	window.addEventListener("scroll", onScroll, { passive: true });
+	onUnmounted(() => window.removeEventListener("scroll", onScroll));
+});
 
 /** Переход к каталогу с поиском */
 function handleSearch() {
@@ -38,7 +82,7 @@ watch(
 </script>
 
 <template>
-	<header class="header">
+	<header class="header" :class="{ 'header--scrolled': isScrolled }">
 		<!-- Верхняя полоса: телефон + тема -->
 		<div class="header__top">
 			<div class="header__top-container">
@@ -51,7 +95,12 @@ watch(
 					8 (800) 123-45-67
 				</a>
 				<button class="header__theme-toggle" @click="toggleTheme">
-					<span :class="isDark ? 'mdi mdi-weather-sunny' : 'mdi mdi-weather-night'" />
+					<ClientOnly>
+						<span :class="isDark ? 'mdi mdi-weather-sunny' : 'mdi mdi-weather-night'" />
+						<template #fallback>
+							<span class="mdi mdi-weather-night" />
+						</template>
+					</ClientOnly>
 				</button>
 			</div>
 		</div>
@@ -70,10 +119,39 @@ watch(
 						type="search"
 						class="header__search-input"
 						placeholder="Поиск по каталогу..."
+						@focus="isSearchFocused = true"
+						@blur="handleBlur"
 					/>
 					<button type="submit" class="header__search-btn">
 						<span class="mdi mdi-magnify" />
 					</button>
+
+					<!-- Результаты поиска -->
+					<div v-if="isDropdownVisible" class="header__search-dropdown">
+						<template v-if="searchResults.length > 0">
+							<button
+								v-for="product in searchResults"
+								:key="product.id"
+								class="header__search-item"
+								type="button"
+								@click="goToProduct(product.slug)"
+							>
+								<img
+									:src="product.images[0]"
+									:alt="product.name"
+									class="header__search-item-img"
+									loading="lazy"
+								/>
+								<div class="header__search-item-info">
+									<span class="header__search-item-name">{{ product.name }}</span>
+									<span class="header__search-item-price">{{ formatPrice(product.price) }}</span>
+								</div>
+							</button>
+						</template>
+						<div v-else class="header__search-empty">
+							Ничего не найдено
+						</div>
+					</div>
 				</form>
 
 				<div class="header__actions">
@@ -97,6 +175,47 @@ watch(
 		<!-- Навигация -->
 		<nav class="header__nav" :class="{ 'header__nav--open': isMobileMenuOpen }">
 			<div class="header__nav-container">
+				<!-- Мобильный поиск -->
+				<form class="header__mobile-search" @submit.prevent="handleSearch">
+					<input
+						v-model="searchQuery"
+						type="search"
+						class="header__search-input"
+						placeholder="Поиск по каталогу..."
+						@focus="isSearchFocused = true"
+						@blur="handleBlur"
+					/>
+					<button type="submit" class="header__search-btn">
+						<span class="mdi mdi-magnify" />
+					</button>
+
+					<div v-if="isDropdownVisible" class="header__search-dropdown">
+						<template v-if="searchResults.length > 0">
+							<button
+								v-for="product in searchResults"
+								:key="product.id"
+								class="header__search-item"
+								type="button"
+								@click="goToProduct(product.slug)"
+							>
+								<img
+									:src="product.images[0]"
+									:alt="product.name"
+									class="header__search-item-img"
+									loading="lazy"
+								/>
+								<div class="header__search-item-info">
+									<span class="header__search-item-name">{{ product.name }}</span>
+									<span class="header__search-item-price">{{ formatPrice(product.price) }}</span>
+								</div>
+							</button>
+						</template>
+						<div v-else class="header__search-empty">
+							Ничего не найдено
+						</div>
+					</div>
+				</form>
+
 				<NuxtLink
 					v-for="item in navItems"
 					:key="item.to"
@@ -119,11 +238,26 @@ watch(
 	z-index: var(--z-sticky);
 	background-color: var(--c-surface);
 	box-shadow: var(--shadow-sm);
+	transition: background-color 0.3s ease, backdrop-filter 0.3s ease, box-shadow 0.3s ease;
+
+	&--scrolled {
+		background-color: rgba(var(--c-surface-rgb, 255, 255, 255), 0.85);
+		backdrop-filter: blur(12px);
+		box-shadow: var(--shadow-md);
+	}
 
 	&__top {
 		background-color: var(--c-secondary);
 		color: var(--c-secondary-text);
 		font-size: var(--fs-sm);
+		max-height: 40px;
+		overflow: hidden;
+		transition: max-height 0.3s ease, opacity 0.3s ease;
+
+		.header--scrolled & {
+			max-height: 0;
+			opacity: 0;
+		}
 	}
 
 	&__top-container {
@@ -175,6 +309,11 @@ watch(
 		max-width: var(--container-max);
 		margin-inline: auto;
 		padding: var(--spacing-md);
+		transition: padding 0.3s ease;
+
+		.header--scrolled & {
+			padding: var(--spacing-sm) var(--spacing-md);
+		}
 	}
 
 	&__logo {
@@ -202,10 +341,84 @@ watch(
 		flex: 1;
 		display: flex;
 		max-width: 500px;
+		position: relative;
 
 		@media (max-width: $breakpoint-tablet) {
 			display: none;
 		}
+	}
+
+	&__search-dropdown {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		background: var(--c-surface);
+		border: 1px solid var(--c-border);
+		border-top: none;
+		border-radius: 0 0 var(--radius-md) var(--radius-md);
+		box-shadow: var(--shadow-md);
+		z-index: 100;
+		max-height: 320px;
+		overflow-y: auto;
+	}
+
+	&__search-item {
+		display: flex;
+		align-items: center;
+		gap: var(--spacing-sm);
+		width: 100%;
+		padding: var(--spacing-sm) var(--spacing-md);
+		background: none;
+		border: none;
+		border-bottom: 1px solid var(--c-border-light);
+		cursor: pointer;
+		text-align: left;
+		font-family: var(--font-base);
+		transition: var(--transition-base);
+
+		&:last-child {
+			border-bottom: none;
+		}
+
+		&:hover {
+			background: var(--c-base-hover);
+		}
+	}
+
+	&__search-item-img {
+		width: 40px;
+		height: 40px;
+		border-radius: var(--radius-sm);
+		object-fit: cover;
+		flex-shrink: 0;
+	}
+
+	&__search-item-info {
+		display: flex;
+		flex-direction: column;
+		min-width: 0;
+	}
+
+	&__search-item-name {
+		font-size: var(--fs-sm);
+		color: var(--c-text);
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	&__search-item-price {
+		font-size: var(--fs-sm);
+		color: var(--c-primary);
+		font-weight: var(--fw-semibold);
+	}
+
+	&__search-empty {
+		padding: var(--spacing-md);
+		text-align: center;
+		font-size: var(--fs-sm);
+		color: var(--c-text-muted);
 	}
 
 	&__search-input {
@@ -321,6 +534,17 @@ watch(
 		@media (max-width: $breakpoint-tablet) {
 			flex-direction: column;
 			padding: var(--spacing-sm) var(--spacing-md);
+		}
+	}
+
+	&__mobile-search {
+		display: none;
+		position: relative;
+
+		@media (max-width: $breakpoint-tablet) {
+			display: flex;
+			width: 100%;
+			margin-bottom: var(--spacing-sm);
 		}
 	}
 

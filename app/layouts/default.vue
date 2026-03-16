@@ -11,6 +11,7 @@
 			<slot />
 		</main>
 		<AppFooter />
+		<MyToast />
 	</div>
 </template>
 

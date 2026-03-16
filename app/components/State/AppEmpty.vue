@@ -57,7 +57,7 @@ defineProps<{
 
 	&__message {
 		margin: 0;
-		color: var(--c-brown-500);
+		color: var(--c-text-secondary);
 		font-size: var(--fs-base);
 	}
 }

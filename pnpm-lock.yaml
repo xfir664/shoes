@@ -29,6 +29,9 @@ dependencies:
   nuxt:
     specifier: ^4.0.3
     version: 4.2.1(@vue/compiler-sfc@3.5.25)(eslint@8.57.1)(ioredis@5.8.2)(mysql2@3.15.3)(sass@1.94.2)(typescript@5.9.3)(vite@7.2.7)
+  swiper:
+    specifier: ^12.1.2
+    version: 12.1.2
   vue:
     specifier: ^3.5.18
     version: 3.5.25(typescript@5.9.3)
@@ -8623,6 +8626,11 @@ packages:
       csso: 5.0.5
       picocolors: 1.1.1
       sax: 1.4.3
+    dev: false
+
+  /swiper@12.1.2:
+    resolution: {integrity: sha512-4gILrI3vXZqoZh71I1PALqukCFgk+gpOwe1tOvz5uE9kHtl2gTDzmYflYCwWvR4LOvCrJi6UEEU+gnuW5BtkgQ==}
+    engines: {node: '>= 4.7.0'}
     dev: false
 
   /system-architecture@0.1.0:

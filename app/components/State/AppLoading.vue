@@ -61,7 +61,7 @@ const sizeStyle = computed(() => ({
 
 	&__spinner {
 		border: 3px solid var(--c-neutral-200);
-		border-top-color: var(--c-blue-500);
+		border-top-color: var(--c-info);
 		border-radius: 50%;
 		animation: spin 0.8s linear infinite;
 	}
@@ -75,7 +75,14 @@ const sizeStyle = computed(() => ({
 		&-line {
 			height: 16px;
 			border-radius: var(--radius-sm);
-			animation: skeletonPulse 1.5s ease-in-out infinite;
+			background: linear-gradient(
+				90deg,
+				var(--c-neutral-200) 25%,
+				var(--c-neutral-100) 50%,
+				var(--c-neutral-200) 75%
+			);
+			background-size: 200% 100%;
+			animation: shimmer 1.5s ease-in-out infinite;
 
 			&--long {
 				width: 100%;
@@ -100,7 +107,7 @@ const sizeStyle = computed(() => ({
 		width: 8px;
 		height: 8px;
 		border-radius: 50%;
-		background-color: var(--c-blue-500);
+		background-color: var(--c-info);
 		animation: dotPulse 1.2s ease-in-out infinite;
 
 		&:nth-child(2) {
@@ -110,6 +117,15 @@ const sizeStyle = computed(() => ({
 		&:nth-child(3) {
 			animation-delay: 0.4s;
 		}
+	}
+}
+
+@keyframes shimmer {
+	0% {
+		background-position: 200% 0;
+	}
+	100% {
+		background-position: -200% 0;
 	}
 }
 

@@ -1,10 +1,12 @@
 import type { Product, Promo } from "~/types/product";
 
-/** Генерация размеров с рандомным наличием */
+/** Генерация размеров с детерминированным наличием */
 function generateSizes(from: number, to: number): Product["sizes"] {
 	const sizes: Product["sizes"] = [];
 	for (let s = from; s <= to; s++) {
-		sizes.push({ size: s, inStock: Math.random() > 0.25 });
+		// Детерминированная «псевдослучайность» на основе размера
+		const hash = ((s * 2654435761) >>> 0) % 100;
+		sizes.push({ size: s, inStock: hash > 25 });
 	}
 	return sizes;
 }
@@ -18,11 +20,7 @@ export const mockProducts: Product[] = [
 		category: "sneakers",
 		price: 8990,
 		oldPrice: 11990,
-		images: [
-			"https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&h=600&fit=crop",
-			"https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=600&h=600&fit=crop",
-			"https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=600&h=600&fit=crop",
-		],
+		images: ["/img/Urban_Runner.jpg", "/img/spec1.jpg", "/img/spec2.jpg", "/img/spec3.jpg"],
 		colors: [
 			{ name: "Чёрный", hex: "#1a1a1a" },
 			{ name: "Белый", hex: "#f5f5f5" },
@@ -44,10 +42,7 @@ export const mockProducts: Product[] = [
 		slug: "winter-shield",
 		category: "boots",
 		price: 14990,
-		images: [
-			"https://images.unsplash.com/photo-1638247025967-b4e38f787b76?w=600&h=600&fit=crop",
-			"https://images.unsplash.com/photo-1605733160314-4fc7dac4bb16?w=600&h=600&fit=crop",
-		],
+		images: ["/img/Ботинки Winter Shield.jpg", "/img/spec2.jpg", "/img/spec4.jpg", "/img/spec1.jpg"],
 		colors: [
 			{ name: "Коричневый", hex: "#5b3a1a" },
 			{ name: "Чёрный", hex: "#1a1a1a" },
@@ -70,10 +65,7 @@ export const mockProducts: Product[] = [
 		category: "trainers",
 		price: 4990,
 		oldPrice: 6490,
-		images: [
-			"https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=600&h=600&fit=crop",
-			"https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=600&h=600&fit=crop",
-		],
+		images: ["/img/Кеды Classic Canvas.jpg", "/img/spec3.jpg", "/img/spec1.jpg"],
 		colors: [
 			{ name: "Белый", hex: "#f5f5f5" },
 			{ name: "Синий", hex: "#1e3a5f" },
@@ -96,9 +88,7 @@ export const mockProducts: Product[] = [
 		slug: "elegance-loafers",
 		category: "loafers",
 		price: 9990,
-		images: [
-			"https://images.unsplash.com/photo-1614252369475-531eba835eb1?w=600&h=600&fit=crop",
-		],
+		images: ["/img/spec1.jpg", "/img/spec3.jpg", "/img/spec4.jpg"],
 		colors: [
 			{ name: "Бежевый", hex: "#c8b99c" },
 			{ name: "Чёрный", hex: "#1a1a1a" },
@@ -121,9 +111,7 @@ export const mockProducts: Product[] = [
 		category: "sandals",
 		price: 5490,
 		oldPrice: 7990,
-		images: [
-			"https://images.unsplash.com/photo-1603487742131-4160ec999306?w=600&h=600&fit=crop",
-		],
+		images: ["/img/Сандалии Breeze.jpg", "/img/spec2.jpg", "/img/spec3.jpg"],
 		colors: [
 			{ name: "Коричневый", hex: "#8b5e3c" },
 			{ name: "Чёрный", hex: "#1a1a1a" },
@@ -145,10 +133,7 @@ export const mockProducts: Product[] = [
 		slug: "sport-pro",
 		category: "sneakers",
 		price: 12490,
-		images: [
-			"https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=600&h=600&fit=crop",
-			"https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=600&h=600&fit=crop",
-		],
+		images: ["/img/Кроссовки Sport Pro.jpg", "/img/spec4.jpg", "/img/spec1.jpg", "/img/spec2.jpg"],
 		colors: [
 			{ name: "Чёрный", hex: "#1a1a1a" },
 			{ name: "Серый", hex: "#6b6b6b" },
@@ -171,9 +156,7 @@ export const mockProducts: Product[] = [
 		category: "boots",
 		price: 11990,
 		oldPrice: 15990,
-		images: [
-			"https://images.unsplash.com/photo-1608256246200-53e635b5b65f?w=600&h=600&fit=crop",
-		],
+		images: ["/img/Ботинки Chelsea Dark.jpg", "/img/spec1.jpg", "/img/spec4.jpg"],
 		colors: [{ name: "Чёрный", hex: "#1a1a1a" }],
 		sizes: generateSizes(39, 45),
 		gender: "male",
@@ -192,9 +175,7 @@ export const mockProducts: Product[] = [
 		slug: "grace-flats",
 		category: "flats",
 		price: 6990,
-		images: [
-			"https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=600&h=600&fit=crop",
-		],
+		images: ["/img/Балетки Grace.jpg", "/img/spec3.jpg", "/img/spec2.jpg"],
 		colors: [
 			{ name: "Бежевый", hex: "#e0d5c4" },
 			{ name: "Чёрный", hex: "#1a1a1a" },
@@ -217,9 +198,7 @@ export const mockProducts: Product[] = [
 		slug: "street-style",
 		category: "sneakers",
 		price: 7490,
-		images: [
-			"https://images.unsplash.com/photo-1549298916-b41d501d3772?w=600&h=600&fit=crop",
-		],
+		images: ["/img/Кроссовки Street Style.jpg", "/img/spec4.jpg", "/img/spec2.jpg", "/img/spec3.jpg"],
 		colors: [
 			{ name: "Белый", hex: "#f5f5f5" },
 			{ name: "Зелёный", hex: "#2e7d32" },
@@ -242,9 +221,7 @@ export const mockProducts: Product[] = [
 		category: "boots",
 		price: 16990,
 		oldPrice: 21990,
-		images: [
-			"https://images.unsplash.com/photo-1610398752800-146f269dfcc8?w=600&h=600&fit=crop",
-		],
+		images: ["/img/Зимние сапоги Frost.jpg", "/img/spec1.jpg", "/img/spec3.jpg", "/img/spec4.jpg"],
 		colors: [
 			{ name: "Чёрный", hex: "#1a1a1a" },
 			{ name: "Коричневый", hex: "#5b3a1a" },
@@ -266,9 +243,7 @@ export const mockProducts: Product[] = [
 		slug: "comfort-slippers",
 		category: "slippers",
 		price: 1990,
-		images: [
-			"https://images.unsplash.com/photo-1631984564919-1f6b2313a71c?w=600&h=600&fit=crop",
-		],
+		images: ["/img/spec2.jpg", "/img/spec4.jpg", "/img/spec1.jpg"],
 		colors: [
 			{ name: "Серый", hex: "#8a8a8a" },
 			{ name: "Бежевый", hex: "#c8b99c" },
@@ -291,9 +266,7 @@ export const mockProducts: Product[] = [
 		category: "sneakers",
 		price: 10990,
 		oldPrice: 13990,
-		images: [
-			"https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=600&h=600&fit=crop",
-		],
+		images: ["/img/Кроссовки Air Motion.jpg", "/img/spec2.jpg", "/img/spec4.jpg", "/img/spec1.jpg"],
 		colors: [
 			{ name: "Чёрный", hex: "#1a1a1a" },
 			{ name: "Белый", hex: "#f5f5f5" },
@@ -344,29 +317,25 @@ export const mockPromos: Promo[] = [
 		id: 1,
 		title: "Скидки до 40% на кроссовки",
 		description: "Весенняя распродажа лучших моделей",
-		image:
-			"https://images.unsplash.com/photo-1556906781-9a412961c28c?w=800&h=400&fit=crop",
+		image: "/img/spec3.jpg",
 	},
 	{
 		id: 2,
 		title: "2+1 на летнюю коллекцию",
 		description: "Купи 2 пары — получи 3-ю в подарок",
-		image:
-			"https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=800&h=400&fit=crop",
+		image: "/img/Кеды Classic Canvas.jpg",
 	},
 	{
 		id: 3,
 		title: "Зимние ботинки от 9990",
 		description: "Натуральная кожа и мех по доступным ценам",
-		image:
-			"https://images.unsplash.com/photo-1638247025967-b4e38f787b76?w=800&h=400&fit=crop",
+		image: "/img/Ботинки Winter Shield.jpg",
 	},
 	{
 		id: 4,
 		title: "Бесплатная доставка от 5000",
 		description: "На все заказы по Москве и МО",
-		image:
-			"https://images.unsplash.com/photo-1595341888016-a392ef81b7de?w=800&h=400&fit=crop",
+		image: "/img/spec4.jpg",
 	},
 ];
 

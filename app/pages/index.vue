@@ -1,24 +1,27 @@
 <script setup lang="ts">
+import { Swiper, SwiperSlide } from "swiper/vue";
+import { Pagination, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
 import {
 	mockProducts,
 	mockPromos,
 	categoryLabels,
-	formatPrice,
-	getDiscount,
 } from "~/utils/mockProducts";
 
 useSeoMeta({
 	title: "ShoeStore — Обувь с характером",
 	description:
 		"Премиальная обувь на каждый день. Кроссовки, ботинки, лоферы и другая обувь с доставкой по всей России.",
+	ogImage: "/img/main.jpg",
 });
 
 const categories = [
 	{ key: "sneakers", icon: "mdi-shoe-sneaker" },
 	{ key: "trainers", icon: "mdi-shoe-formal" },
-	{ key: "boots", icon: "mdi-boot" },
+	{ key: "boots", icon: "mdi-shoe-print" },
 	{ key: "loafers", icon: "mdi-shoe-cleat" },
-	{ key: "sandals", icon: "mdi-sandal" },
+	{ key: "sandals", icon: "mdi-shoe-ballet" },
 	{ key: "flats", icon: "mdi-shoe-ballet" },
 	{ key: "slippers", icon: "mdi-shoe-print" },
 	{ key: "heels", icon: "mdi-shoe-heel" },
@@ -26,6 +29,8 @@ const categories = [
 
 const promos = mockPromos.slice(0, 3);
 const popularProducts = mockProducts.filter(p => p.isPopular);
+const swiperModules = [Pagination, Autoplay];
+
 </script>
 
 <template>
@@ -70,25 +75,38 @@ const popularProducts = mockProducts.filter(p => p.isPopular);
 			</div>
 		</section>
 
-		<!-- Акции -->
+		<!-- Акции — Swiper -->
 		<section class="promos">
 			<div class="promos__container">
 				<h2 class="section-title">Акции и предложения</h2>
-				<div class="promos__grid">
-					<div v-for="promo in promos" :key="promo.id" class="promos__card">
-						<img
-							:src="promo.image"
-							:alt="promo.title"
-							class="promos__card-image"
-							loading="lazy"
-						/>
-						<div class="promos__card-overlay" />
-						<div class="promos__card-content">
-							<h3 class="promos__card-title">{{ promo.title }}</h3>
-							<p class="promos__card-desc">{{ promo.description }}</p>
+				<Swiper
+					:modules="swiperModules"
+					:slides-per-view="1"
+					:space-between="16"
+					:pagination="{ clickable: true }"
+					:autoplay="{ delay: 4000, disableOnInteraction: false }"
+					:breakpoints="{
+						768: { slidesPerView: 2, spaceBetween: 20 },
+						1440: { slidesPerView: 3, spaceBetween: 24 },
+					}"
+					class="promos__swiper"
+				>
+					<SwiperSlide v-for="promo in promos" :key="promo.id">
+						<div class="promos__card">
+							<img
+								:src="promo.image"
+								:alt="promo.title"
+								class="promos__card-image"
+								loading="lazy"
+							/>
+							<div class="promos__card-overlay" />
+							<div class="promos__card-content">
+								<h3 class="promos__card-title">{{ promo.title }}</h3>
+								<p class="promos__card-desc">{{ promo.description }}</p>
+							</div>
 						</div>
-					</div>
-				</div>
+					</SwiperSlide>
+				</Swiper>
 				<div class="promos__footer">
 					<NuxtLink to="/promos" class="promos__all-btn">
 						Все акции
@@ -98,102 +116,52 @@ const popularProducts = mockProducts.filter(p => p.isPopular);
 			</div>
 		</section>
 
-		<!-- Популярные товары -->
+		<!-- Популярные товары — Swiper -->
 		<section class="popular">
 			<div class="popular__container">
 				<h2 class="section-title">Популярные товары</h2>
-				<div class="popular__grid">
-					<div
-						v-for="product in popularProducts"
-						:key="product.id"
-						class="product-card"
-					>
-						<NuxtLink :to="`/catalog/${product.slug}`">
-							<div class="product-card__image-wrap">
-								<img
-									:src="product.images[0]"
-									:alt="product.name"
-									class="product-card__image"
-									loading="lazy"
-								/>
-								<span
-									v-if="
-										product.oldPrice &&
-										getDiscount(product.price, product.oldPrice)
-									"
-									class="product-card__badge"
-								>
-									-{{ getDiscount(product.price, product.oldPrice) }}%
-								</span>
-							</div>
-							<div class="product-card__body">
-								<h3 class="product-card__name">{{ product.name }}</h3>
-								<div class="product-card__prices">
-									<span class="product-card__price">{{
-										formatPrice(product.price)
-									}}</span>
-									<span v-if="product.oldPrice" class="product-card__old-price">
-										{{ formatPrice(product.oldPrice) }}
-									</span>
-								</div>
-								<div class="product-card__actions">
-									<button class="product-card__btn product-card__btn--cart">
-										<span class="mdi mdi-cart-outline" />
-										В корзину
-									</button>
-									<NuxtLink
-										:to="`/catalog/${product.slug}`"
-										class="product-card__btn product-card__btn--details"
-									>
-										Подробнее
-									</NuxtLink>
-								</div>
-							</div>
-						</NuxtLink>
-					</div>
-				</div>
+				<Swiper
+					:modules="swiperModules"
+					:slides-per-view="1"
+					:space-between="16"
+					:pagination="{ clickable: true }"
+					:breakpoints="{
+						480: { slidesPerView: 2, spaceBetween: 16 },
+						768: { slidesPerView: 3, spaceBetween: 20 },
+						1440: { slidesPerView: 4, spaceBetween: 24 },
+					}"
+					class="popular__swiper"
+				>
+					<SwiperSlide v-for="product in popularProducts" :key="product.id">
+						<ProductCard :product="product" />
+					</SwiperSlide>
+				</Swiper>
 			</div>
 		</section>
 
 		<!-- Карта -->
-		<section class="map-section">
-			<div class="map-section__container">
-				<h2 class="section-title">Наш магазин</h2>
-				<div class="map-section__content">
-					<div class="map-section__info">
-						<div class="map-section__info-item">
-							<span class="mdi mdi-map-marker" />
-							<p>г. Москва, ул. Тверская, д. 15</p>
-						</div>
-						<div class="map-section__info-item">
-							<span class="mdi mdi-clock-outline" />
-							<p>Ежедневно с 10:00 до 22:00</p>
-						</div>
-						<div class="map-section__info-item">
-							<span class="mdi mdi-phone" />
-							<p>+7 (495) 123-45-67</p>
-						</div>
-						<div class="map-section__info-item">
-							<span class="mdi mdi-email-outline" />
-							<p>info@shoestore.ru</p>
-						</div>
-					</div>
-					<div class="map-section__map">
-						<iframe
-							src="https://yandex.ru/map-widget/v1/?ll=37.608879%2C55.762592&z=16&pt=37.608879%2C55.762592%2Cpm2rdm"
-							width="100%"
-							height="400"
-							frameborder="0"
-							allowfullscreen
-							loading="lazy"
-							title="Расположение магазина на карте"
-						/>
-					</div>
-				</div>
-			</div>
-		</section>
+		<StoreMap />
 	</div>
 </template>
+
+<style lang="scss">
+// Swiper pagination — стиль сайта
+.home {
+	.swiper-pagination-bullet {
+		width: 10px;
+		height: 10px;
+		background: var(--c-neutral-400);
+		opacity: 1;
+		transition: all 0.2s ease;
+
+		&-active {
+			background: var(--c-primary);
+			width: 24px;
+			border-radius: 5px;
+		}
+	}
+}
+</style>
 
 <style scoped lang="scss">
 @use "@/assets/styles/var.scss" as *;
@@ -230,8 +198,7 @@ const popularProducts = mockProducts.filter(p => p.isPopular);
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background: url("https://images.unsplash.com/photo-1549298916-b41d501d3772?w=1600&h=900&fit=crop")
-		center / cover no-repeat;
+	background: url("/img/main.jpg") center / cover no-repeat;
 	overflow: hidden;
 
 	@media (min-width: $breakpoint-tablet) {
@@ -241,12 +208,7 @@ const popularProducts = mockProducts.filter(p => p.isPopular);
 	&__overlay {
 		position: absolute;
 		inset: 0;
-		background: linear-gradient(
-			135deg,
-			rgba(26, 26, 26, 0.85) 0%,
-			rgba(26, 26, 26, 0.6) 50%,
-			rgba(26, 26, 26, 0.75) 100%
-		);
+		background: rgba(26, 26, 26, 0.75);
 		z-index: 1;
 	}
 
@@ -275,7 +237,7 @@ const popularProducts = mockProducts.filter(p => p.isPopular);
 	&__subtitle {
 		font-family: var(--font-base);
 		font-size: var(--fs-md);
-		color: var(--c-beige-300);
+		color: rgba(255, 255, 255, 0.8);
 		line-height: var(--lh-relaxed);
 		margin-bottom: var(--spacing-xl);
 
@@ -402,14 +364,8 @@ const popularProducts = mockProducts.filter(p => p.isPopular);
 		margin: 0 auto;
 	}
 
-	&__grid {
-		display: grid;
-		grid-template-columns: 1fr;
-		gap: var(--spacing-lg);
-
-		@media (min-width: $breakpoint-tablet) {
-			grid-template-columns: repeat(3, 1fr);
-		}
+	&__swiper {
+		padding-bottom: var(--spacing-xl);
 	}
 
 	&__card {
@@ -442,8 +398,9 @@ const popularProducts = mockProducts.filter(p => p.isPopular);
 		inset: 0;
 		background: linear-gradient(
 			to top,
-			rgba(26, 26, 26, 0.85) 0%,
-			rgba(26, 26, 26, 0.2) 100%
+			rgba(26, 26, 26, 0.92) 0%,
+			rgba(26, 26, 26, 0.5) 50%,
+			rgba(26, 26, 26, 0.25) 100%
 		);
 	}
 
@@ -465,13 +422,13 @@ const popularProducts = mockProducts.filter(p => p.isPopular);
 
 	&__card-desc {
 		font-size: var(--fs-sm);
-		color: var(--c-beige-300);
+		color: rgba(255, 255, 255, 0.75);
 		line-height: var(--lh-normal);
 	}
 
 	&__footer {
 		text-align: center;
-		margin-top: var(--spacing-xl);
+		margin-top: var(--spacing-md);
 	}
 
 	&__all-btn {
@@ -508,196 +465,8 @@ const popularProducts = mockProducts.filter(p => p.isPopular);
 		margin: 0 auto;
 	}
 
-	&__grid {
-		display: grid;
-		grid-template-columns: 1fr;
-		gap: var(--spacing-lg);
-
-		@media (min-width: $breakpoint-tablet) {
-			grid-template-columns: repeat(2, 1fr);
-		}
-
-		@media (min-width: $breakpoint-desktop) {
-			grid-template-columns: repeat(4, 1fr);
-		}
-	}
-}
-
-.product-card {
-	background: var(--c-surface);
-	border-radius: var(--radius-lg);
-	overflow: hidden;
-	border: 1px solid var(--c-border-light);
-	transition: var(--transition-base);
-
-	&:hover {
-		transform: translateY(-4px);
-		box-shadow: var(--shadow-lg);
-	}
-
-	&__image-wrap {
-		position: relative;
-		aspect-ratio: 1;
-		overflow: hidden;
-		background: var(--c-beige-100);
-	}
-
-	&__image {
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-		transition: var(--transition-slow);
-
-		.product-card:hover & {
-			transform: scale(1.05);
-		}
-	}
-
-	&__badge {
-		position: absolute;
-		top: var(--spacing-sm);
-		left: var(--spacing-sm);
-		padding: var(--spacing-xs) var(--spacing-sm);
-		background: var(--c-error);
-		color: var(--c-white);
-		font-family: var(--font-accent);
-		font-size: var(--fs-xs);
-		font-weight: var(--fw-bold);
-		border-radius: var(--radius-sm);
-	}
-
-	&__body {
-		padding: var(--spacing-md);
-	}
-
-	&__name {
-		font-family: var(--font-accent);
-		font-size: var(--fs-base);
-		font-weight: var(--fw-semibold);
-		color: var(--c-text);
-		margin-bottom: var(--spacing-sm);
-		line-height: var(--lh-tight);
-	}
-
-	&__prices {
-		display: flex;
-		align-items: baseline;
-		gap: var(--spacing-sm);
-		margin-bottom: var(--spacing-md);
-	}
-
-	&__price {
-		font-family: var(--font-accent);
-		font-size: var(--fs-lg);
-		font-weight: var(--fw-bold);
-		color: var(--c-text);
-	}
-
-	&__old-price {
-		font-size: var(--fs-sm);
-		color: var(--c-text-muted);
-		text-decoration: line-through;
-	}
-
-	&__actions {
-		display: flex;
-		gap: var(--spacing-sm);
-	}
-
-	&__btn {
-		flex: 1;
-		display: inline-flex;
-		align-items: center;
-		justify-content: center;
-		gap: var(--spacing-xs);
-		padding: var(--spacing-sm) var(--spacing-md);
-		font-family: var(--font-accent);
-		font-size: var(--fs-xs);
-		font-weight: var(--fw-semibold);
-		text-transform: uppercase;
-		letter-spacing: 0.5px;
-		border: none;
-		border-radius: var(--radius-md);
-		cursor: pointer;
-		text-decoration: none;
-		transition: var(--transition-base);
-
-		&--cart {
-			background: var(--c-primary);
-			color: var(--c-primary-text);
-
-			&:hover {
-				background: var(--c-primary-hover);
-			}
-		}
-
-		&--details {
-			background: var(--c-base-bg);
-			color: var(--c-base-text);
-
-			&:hover {
-				background: var(--c-base-hover);
-			}
-		}
-	}
-}
-
-// ── Map section ─────────────────────────────────────────────────────────────
-.map-section {
-	padding: var(--spacing-3xl) var(--spacing-lg);
-	background: var(--c-surface);
-
-	&__container {
-		max-width: var(--container-max);
-		margin: 0 auto;
-	}
-
-	&__content {
-		display: grid;
-		grid-template-columns: 1fr;
-		gap: var(--spacing-xl);
-
-		@media (min-width: $breakpoint-tablet) {
-			grid-template-columns: 1fr 2fr;
-			align-items: start;
-		}
-	}
-
-	&__info {
-		display: flex;
-		flex-direction: column;
-		gap: var(--spacing-lg);
-	}
-
-	&__info-item {
-		display: flex;
-		align-items: flex-start;
-		gap: var(--spacing-md);
-
-		.mdi {
-			font-size: 24px;
-			color: var(--c-primary);
-			flex-shrink: 0;
-			margin-top: 2px;
-		}
-
-		p {
-			font-family: var(--font-base);
-			font-size: var(--fs-base);
-			color: var(--c-text);
-			line-height: var(--lh-normal);
-			margin: 0;
-		}
-	}
-
-	&__map {
-		border-radius: var(--radius-lg);
-		overflow: hidden;
-		border: 1px solid var(--c-border-light);
-
-		iframe {
-			display: block;
-		}
+	&__swiper {
+		padding-bottom: var(--spacing-xl);
 	}
 }
 </style>
