@@ -1,12 +1,9 @@
 <script setup lang="ts">
-import { Swiper, SwiperSlide } from "swiper/vue";
-import { Pagination } from "swiper/modules";
 import {
 	mockProducts,
 	categoryLabels,
 	seasonLabels,
 	genderLabels,
-	formatPrice,
 	getDiscount,
 } from "~/utils/mockProducts";
 
@@ -25,8 +22,6 @@ const similarProducts = computed(() =>
 				.slice(0, 8)
 		: [],
 );
-
-const swiperModules = [Pagination];
 
 // Табы
 const activeTab = ref("description");
@@ -171,27 +166,16 @@ if (product) {
 			</MyTabs>
 		</section>
 
-		<!-- Похожие товары — Swiper -->
+		<!-- Похожие товары -->
 		<section v-if="similarProducts.length" class="product-page__similar similar">
 			<h2 class="similar__title">Похожие товары</h2>
-			<ClientOnly>
-				<Swiper
-					:modules="swiperModules"
-					:slides-per-view="2"
-					:space-between="12"
-					:pagination="{ clickable: true }"
-					:breakpoints="{
-						480: { slidesPerView: 2, spaceBetween: 16 },
-						768: { slidesPerView: 3, spaceBetween: 20 },
-						1440: { slidesPerView: 4, spaceBetween: 24 },
-					}"
-					class="similar__swiper"
-				>
-					<SwiperSlide v-for="item in similarProducts" :key="item.id">
-						<ProductCard :product="item" />
-					</SwiperSlide>
-				</Swiper>
-			</ClientOnly>
+			<div class="similar__grid">
+				<ProductCard
+					v-for="item in similarProducts"
+					:key="item.id"
+					:product="item"
+				/>
+			</div>
 		</section>
 	</div>
 </template>
@@ -331,8 +315,20 @@ if (product) {
 		margin-bottom: var(--spacing-lg);
 	}
 
-	&__swiper {
-		padding-bottom: var(--spacing-xl);
+	&__grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: var(--spacing-md);
+
+		@media (min-width: $breakpoint-tablet) {
+			grid-template-columns: repeat(3, 1fr);
+			gap: var(--spacing-lg);
+		}
+
+		@media (min-width: $breakpoint-desktop) {
+			grid-template-columns: repeat(4, 1fr);
+			gap: var(--spacing-xl);
+		}
 	}
 }
 </style>

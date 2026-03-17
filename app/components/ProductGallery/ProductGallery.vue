@@ -1,10 +1,7 @@
 <!--
-  ProductGallery — галерея товара с миниатюрами и Swiper на мобильном.
+  ProductGallery — галерея товара с основным фото, zoom при наведении и миниатюрами.
 -->
 <script setup lang="ts">
-import { Swiper, SwiperSlide } from "swiper/vue";
-import { Pagination } from "swiper/modules";
-
 const props = defineProps<{
 	images: string[];
 	name: string;
@@ -13,65 +10,109 @@ const props = defineProps<{
 
 const activeImageIndex = ref(0);
 const activeImage = computed(() => props.images[activeImageIndex.value] ?? "");
-const swiperModules = [Pagination];
 
-function onSlideChange(swiper: any) {
-	activeImageIndex.value = swiper.activeIndex;
+// Zoom при наведении — через CSS background (надёжнее чем img)
+const mainRef = ref<HTMLElement | null>(null);
+const mainImgRef = ref<HTMLImageElement | null>(null);
+const zoomVisible = ref(false);
+const zoomBlockStyle = ref<Record<string, string>>({});
+
+const ZOOM_SIZE = 200;
+const ZOOM_FACTOR = 2.5;
+const CURSOR_OFFSET = 16;
+
+function onZoomMove(e: MouseEvent) {
+	if (!mainRef.value || !mainImgRef.value) return;
+
+	const img = mainImgRef.value;
+	const containerRect = mainRef.value.getBoundingClientRect();
+	const containerX = e.clientX - containerRect.left;
+	const containerY = e.clientY - containerRect.top;
+
+	const naturalW = img.naturalWidth;
+	const naturalH = img.naturalHeight;
+	const containerW = containerRect.width;
+	const containerH = containerRect.height;
+
+	const hasNaturalSize = naturalW > 0 && naturalH > 0;
+	const scale = hasNaturalSize
+		? Math.max(containerW / naturalW, containerH / naturalH)
+		: 1;
+	const displayedW = hasNaturalSize ? naturalW * scale : containerW;
+	const displayedH = hasNaturalSize ? naturalH * scale : containerH;
+	const offsetX = (displayedW - containerW) / 2;
+	const offsetY = (displayedH - containerH) / 2;
+
+	const imgX = containerX + offsetX;
+	const imgY = containerY + offsetY;
+	const halfZoom = ZOOM_SIZE / 2;
+
+	const spaceRight = window.innerWidth - e.clientX;
+	const spaceLeft = e.clientX;
+	const showRight = spaceRight >= ZOOM_SIZE + CURSOR_OFFSET || spaceRight >= spaceLeft;
+	const blockLeft = showRight
+		? e.clientX + CURSOR_OFFSET
+		: e.clientX - ZOOM_SIZE - CURSOR_OFFSET;
+	const blockTop = Math.max(
+		CURSOR_OFFSET,
+		Math.min(window.innerHeight - ZOOM_SIZE - CURSOR_OFFSET, e.clientY - halfZoom),
+	);
+
+	// CSS-переменные для background-position (px) и background-size
+	const bgPosX = -(imgX * ZOOM_FACTOR - halfZoom);
+	const bgPosY = -(imgY * ZOOM_FACTOR - halfZoom);
+	const bgSizeW = displayedW * ZOOM_FACTOR;
+	const bgSizeH = displayedH * ZOOM_FACTOR;
+	const imgUrl = activeImage.value ? `url("${activeImage.value.replace(/"/g, "%22")}")` : "none";
+
+	zoomBlockStyle.value = {
+		left: `${blockLeft}px`,
+		top: `${blockTop}px`,
+		"--zoom-bg": imgUrl,
+		"--zoom-bg-size": `${bgSizeW}px ${bgSizeH}px`,
+		"--zoom-bg-pos": `${bgPosX}px ${bgPosY}px`,
+	};
 }
 </script>
 
 <template>
 	<div class="gallery">
-		<!-- Десктоп -->
-		<div class="gallery__desktop">
-			<div class="gallery__main">
-				<img
-					:src="activeImage"
-					:alt="name"
-					class="gallery__main-image"
+		<div
+			ref="mainRef"
+			class="gallery__main"
+			@mousemove="onZoomMove"
+			@mouseenter="(e) => { zoomVisible = true; onZoomMove(e); }"
+			@mouseleave="zoomVisible = false"
+		>
+			<img
+				ref="mainImgRef"
+				:src="activeImage"
+				:alt="name"
+				class="gallery__main-image"
+			/>
+			<!-- Приближённый фрагмент через CSS background -->
+			<Teleport to="body">
+				<div
+					v-show="zoomVisible"
+					class="gallery__zoom-block"
+					:style="zoomBlockStyle"
+					:aria-label="`Увеличение: ${name}`"
 				/>
-				<MyBadge v-if="discount" variant="sale">
-					-{{ discount }}%
-				</MyBadge>
-			</div>
-			<div v-if="images.length > 1" class="gallery__thumbnails">
-				<button
-					v-for="(img, idx) in images"
-					:key="idx"
-					class="gallery__thumb"
-					:class="{ 'gallery__thumb--active': idx === activeImageIndex }"
-					@click="activeImageIndex = idx"
-				>
-					<img :src="img" :alt="`${name} — фото ${idx + 1}`" loading="lazy" />
-				</button>
-			</div>
-		</div>
-
-		<!-- Мобильный Swiper -->
-		<div class="gallery__mobile">
-			<ClientOnly>
-				<Swiper
-					:modules="swiperModules"
-					:pagination="{ clickable: true }"
-					:slides-per-view="1"
-					class="gallery__swiper"
-					@slide-change="onSlideChange"
-				>
-					<SwiperSlide v-for="(img, idx) in images" :key="idx">
-						<div class="gallery__slide">
-							<img :src="img" :alt="`${name} — фото ${idx + 1}`" />
-						</div>
-					</SwiperSlide>
-				</Swiper>
-				<template #fallback>
-					<div class="gallery__slide">
-						<img :src="images[0]" :alt="name" />
-					</div>
-				</template>
-			</ClientOnly>
+			</Teleport>
 			<MyBadge v-if="discount" variant="sale">
 				-{{ discount }}%
 			</MyBadge>
+		</div>
+		<div v-if="images.length > 1" class="gallery__thumbnails">
+			<button
+				v-for="(img, idx) in images"
+				:key="idx"
+				class="gallery__thumb"
+				:class="{ 'gallery__thumb--active': idx === activeImageIndex }"
+				@click="activeImageIndex = idx"
+			>
+				<img :src="img" :alt="`${name} — фото ${idx + 1}`" loading="lazy" />
+			</button>
 		</div>
 	</div>
 </template>
@@ -82,23 +123,6 @@ function onSlideChange(swiper: any) {
 .gallery {
 	position: relative;
 
-	&__desktop {
-		display: none;
-
-		@media (min-width: $breakpoint-tablet) {
-			display: block;
-		}
-	}
-
-	&__mobile {
-		display: block;
-		position: relative;
-
-		@media (min-width: $breakpoint-tablet) {
-			display: none;
-		}
-	}
-
 	&__main {
 		position: relative;
 		border-radius: var(--radius-lg);
@@ -106,6 +130,11 @@ function onSlideChange(swiper: any) {
 		background: var(--c-beige-100);
 		aspect-ratio: 1 / 1;
 		margin-bottom: var(--spacing-md);
+		cursor: zoom-in;
+
+		@media (hover: none) {
+			cursor: default;
+		}
 	}
 
 	&__main-image {
@@ -115,10 +144,37 @@ function onSlideChange(swiper: any) {
 		display: block;
 	}
 
+	&__zoom-block {
+		position: fixed;
+		width: 200px;
+		height: 200px;
+		border-radius: var(--radius-lg);
+		overflow: hidden;
+		pointer-events: none;
+		box-shadow: var(--shadow-xl);
+		border: 1px solid var(--c-border-light);
+		z-index: 9999;
+		background-color: var(--c-surface);
+		background-image: var(--zoom-bg);
+		background-repeat: no-repeat;
+		background-size: var(--zoom-bg-size);
+		background-position: var(--zoom-bg-pos);
+
+		@media (hover: none) {
+			display: none;
+		}
+	}
+
 	&__thumbnails {
 		display: flex;
 		gap: var(--spacing-sm);
 		overflow-x: auto;
+		scrollbar-width: none;
+		-ms-overflow-style: none;
+
+		&::-webkit-scrollbar {
+			display: none;
+		}
 	}
 
 	&__thumb {
@@ -140,23 +196,6 @@ function onSlideChange(swiper: any) {
 		&:hover:not(&--active) {
 			border-color: var(--c-border);
 		}
-
-		img {
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-			display: block;
-		}
-	}
-
-	&__swiper {
-		border-radius: var(--radius-lg);
-		overflow: hidden;
-	}
-
-	&__slide {
-		aspect-ratio: 1 / 1;
-		background: var(--c-beige-100);
 
 		img {
 			width: 100%;

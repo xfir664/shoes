@@ -60,6 +60,12 @@
 
 **Причина:** Swiper Thumbs при связке двух экземпляров (основной + превью) вычисляет ширину слайдов некорректно (~28 млн px). Проблема воспроизводится при любом порядке инициализации (thumbs первым, v-if на готовность, ClientOnly). Вероятная причина — конфликт SSR/hydration или особенности расчёта размеров в Nuxt.
 
+## 2026-03-17: ProductGallery без Swiper + zoom через CSS background
+
+**Решение:** Полностью убрать Swiper из ProductGallery и со страницы товара. Галерея: единый layout (основное фото + миниатюры) для всех экранов. Zoom при наведении: приближённый фрагмент рядом с курсором, реализован через `background-image` и CSS-переменные (`--zoom-bg`, `--zoom-bg-size`, `--zoom-bg-pos`). Маппинг координат с учётом `object-fit: cover` (naturalWidth/naturalHeight, scale, offset).
+
+**Причина:** Swiper на странице товара вызывал проблемы (гигантская ширина на мобильном, некорректная работа на десктопе). Реализация zoom через `<img>` давала пустой/тёмный блок — переход на CSS background решил проблему рендеринга.
+
 ## 2026-03-17: Удаление Vuetify
 
 **Решение:** Полностью удалить Vuetify (vuetify, vite-plugin-vuetify, @nuxtjs/vuetify, плагин, конфиг).
@@ -71,6 +77,12 @@
 **Решение:** CSS Swiper (`swiper/css`, `swiper/css/pagination`) вынесен в `nuxt.config.ts` → `css[]`. Все `<Swiper>` обёрнуты в `<ClientOnly>`.
 
 **Причина:** Локальный `import "swiper/css"` внутри компонентов мог загружаться с задержкой — Swiper инициализировался до применения своего CSS (`overflow: hidden` на `.swiper`). Без этого правила flex-контейнер `.swiper-wrapper` растягивал родителя до суммарной ширины всех слайдов. `<ClientOnly>` защищает от SSR-расчётов при отсутствии реального DOM.
+
+## 2026-03-17: Swiper min-width: 0 для flex/grid
+
+**Решение:** Глобально для `.swiper` задать `min-width: 0`, `min-height: 0`, `width: 100%`, `max-width: 100%` в `main.scss`. Дополнительно: `width: 100%`, `min-width: 0` для `gallery__mobile`, `gallery__swiper` (ProductGallery) и `similar__swiper` ([slug].vue).
+
+**Причина:** В flex/grid контейнерах `min-width: auto` по умолчанию не даёт Swiper сжиматься, что приводит к гигантским размерам (~28 млн px) при расчёте ширины слайдов. Фикс из nolimits4web/swiper#3599.
 
 ## 2026-03-16: Детерминированный generateSizes
 

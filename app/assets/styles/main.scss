@@ -26,3 +26,12 @@
 @use "@/assets/styles/common.scss";
 @use "@/assets/styles/_typography.scss";
 @use "@/assets/styles/_animations.scss";
+
+// Swiper fix: flex/grid overflow (nolimits4web/swiper#3599)
+// min-width: 0 и min-height: 0 позволяют flex/grid-потомкам сжиматься
+.swiper {
+	width: 100%;
+	max-width: 100%;
+	min-width: 0;
+	min-height: 0;
+}
