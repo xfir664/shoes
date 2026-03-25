@@ -14,6 +14,7 @@ const route = useRoute();
 /** Фильтры */
 const isFiltersOpen = ref(false);
 const isDrawerOpen = ref(false);
+const isSortDrawerOpen = ref(false);
 const isInStockOnly = ref(false);
 const selectedCategories = ref<string[]>([]);
 const selectedGenders = ref<string[]>([]);
@@ -182,16 +183,6 @@ watch(
 			</button>
 		</div>
 
-		<!-- Мобильная кнопка фильтров -->
-		<button
-			class="catalog__filter-toggle"
-			type="button"
-			@click="isDrawerOpen = true"
-		>
-			<span class="mdi mdi-filter-outline" />
-			Фильтры
-		</button>
-
 		<!-- Мобильный drawer с фильтрами -->
 		<MyDrawer v-model="isDrawerOpen" title="Фильтры">
 			<CatalogFilters
@@ -210,6 +201,66 @@ watch(
 				@reset="resetFilters"
 			/>
 		</MyDrawer>
+
+		<!-- Мобильный toolbar: кнопки фильтров и сортировки -->
+		<div class="catalog__mobile-toolbar">
+			<button
+				class="catalog__filter-toggle"
+				type="button"
+				@click="isDrawerOpen = true"
+			>
+				<span class="mdi mdi-filter-outline" />
+				Фильтры
+			</button>
+			<button
+				class="catalog__sort-toggle"
+				type="button"
+				@click="isSortDrawerOpen = true"
+			>
+				<span class="mdi mdi-sort-variant" />
+				{{ sortOptions.find(o => o.value === currentSort)?.label }}
+			</button>
+			<span class="catalog__mobile-count">
+				{{ sortedProducts.length }} {{ sortedProducts.length === 1 ? "товар" : "товаров" }}
+			</span>
+		</div>
+
+		<!-- Мобильный drawer сортировки -->
+		<MyDrawer v-model="isSortDrawerOpen" title="Сортировка">
+			<div class="catalog__sort-list">
+				<button
+					v-for="option in sortOptions"
+					:key="option.value"
+					class="catalog__sort-list-item"
+					:class="{ 'catalog__sort-list-item--active': currentSort === option.value }"
+					type="button"
+					@click="currentSort = option.value; isSortDrawerOpen = false"
+				>
+					{{ option.label }}
+					<span v-if="currentSort === option.value" class="mdi mdi-check" />
+				</button>
+			</div>
+		</MyDrawer>
+
+		<!-- Десктопная сортировка -->
+		<div class="catalog__sort-bar">
+			<span class="catalog__sort-label">Сортировка:</span>
+			<div class="catalog__sort-options">
+				<button
+					v-for="option in sortOptions"
+					:key="option.value"
+					class="catalog__sort-btn"
+					:class="{ 'catalog__sort-btn--active': currentSort === option.value }"
+					type="button"
+					@click="currentSort = option.value"
+				>
+					{{ option.label }}
+				</button>
+			</div>
+			<span class="catalog__results-count">
+				{{ sortedProducts.length }} {{ sortedProducts.length === 1 ? "товар" : "товаров" }}
+			</span>
+		</div>
 
 		<div class="catalog__layout">
 			<!-- Десктопный сайдбар фильтров -->
@@ -238,25 +289,6 @@ watch(
 
 			<!-- Основной контент -->
 			<div class="catalog__content">
-				<!-- Сортировка -->
-				<div class="catalog__sort-bar">
-					<span class="catalog__sort-label">Сортировка:</span>
-					<div class="catalog__sort-options">
-						<button
-							v-for="option in sortOptions"
-							:key="option.value"
-							class="catalog__sort-btn"
-							:class="{ 'catalog__sort-btn--active': currentSort === option.value }"
-							type="button"
-							@click="currentSort = option.value"
-						>
-							{{ option.label }}
-						</button>
-					</div>
-					<span class="catalog__results-count">
-						{{ sortedProducts.length }} {{ sortedProducts.length === 1 ? "товар" : "товаров" }}
-					</span>
-				</div>
 
 				<!-- Пустое состояние -->
 				<AppEmpty
@@ -347,27 +379,80 @@ watch(
 		}
 	}
 
-	&__filter-toggle {
+	&__mobile-toolbar {
 		display: flex;
 		align-items: center;
 		gap: var(--spacing-sm);
 		margin-bottom: var(--spacing-md);
+
+		@media (min-width: $breakpoint-tablet) {
+			display: none;
+		}
+	}
+
+	&__filter-toggle,
+	&__sort-toggle {
+		display: flex;
+		align-items: center;
+		gap: var(--spacing-sm);
 		padding: var(--spacing-sm) var(--spacing-md);
 		background: var(--c-surface);
 		border: 1px solid var(--c-border);
 		border-radius: var(--radius-md);
 		cursor: pointer;
 		font-family: var(--font-base);
-		font-size: var(--fs-base);
+		font-size: var(--fs-sm);
 		color: var(--c-text);
 		transition: var(--transition-base);
+		white-space: nowrap;
 
 		&:hover {
 			border-color: var(--c-primary);
 		}
+	}
 
-		@media (min-width: $breakpoint-tablet) {
-			display: none;
+	&__mobile-count {
+		margin-left: auto;
+		font-size: var(--fs-sm);
+		color: var(--c-text-muted);
+		white-space: nowrap;
+	}
+
+	&__sort-list {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__sort-list-item {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: var(--spacing-md);
+		background: none;
+		border: none;
+		border-bottom: 1px solid var(--c-border-light);
+		cursor: pointer;
+		font-family: var(--font-base);
+		font-size: var(--fs-base);
+		color: var(--c-text);
+		transition: var(--transition-base);
+
+		&:last-child {
+			border-bottom: none;
+		}
+
+		&:hover {
+			background: var(--c-base-hover);
+		}
+
+		&--active {
+			color: var(--c-primary);
+			font-weight: var(--fw-semibold);
+		}
+
+		.mdi {
+			font-size: var(--fs-lg);
+			color: var(--c-primary);
 		}
 	}
 
@@ -423,7 +508,7 @@ watch(
 	}
 
 	&__sort-bar {
-		display: flex;
+		display: none;
 		align-items: center;
 		flex-wrap: wrap;
 		gap: var(--spacing-sm);
@@ -432,6 +517,10 @@ watch(
 		background: var(--c-surface);
 		border: 1px solid var(--c-border-light);
 		border-radius: var(--radius-md);
+
+		@media (min-width: $breakpoint-tablet) {
+			display: flex;
+		}
 	}
 
 	&__sort-label {
@@ -479,6 +568,8 @@ watch(
 		margin-left: auto;
 		font-size: var(--fs-sm);
 		color: var(--c-text-muted);
+		flex-shrink: 0;
+		white-space: nowrap;
 	}
 
 	&__grid {

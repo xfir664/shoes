@@ -6,7 +6,7 @@
 
 ```
 plugins/
-└── vuetify.ts        # Инициализация Vuetify 3
+└── (пусто или пользовательские плагины)
 ```
 
 ## 🎯 Назначение папки
@@ -19,7 +19,7 @@ plugins/
 
 Плагины используются для:
 
-- Инициализации библиотек (Vuetify, i18n, etc.)
+- Инициализации библиотек (i18n, dayjs, etc.)
 - Добавления глобальных компонентов
 - Регистрации директив
 - Настройки Vue плагинов
@@ -55,30 +55,6 @@ const { $myFunction } = useNuxtApp();
 
 console.log($myFunction()); // 'Hello!'
 </script>
-```
-
-### Плагин Vuetify (текущий)
-
-```typescript
-// plugins/vuetify.ts
-import { createVuetify } from "vuetify";
-
-export default defineNuxtPlugin(nuxtApp => {
-	const vuetify = createVuetify({
-		ssr: true,
-		display: {
-			mobileBreakpoint: "sm",
-			thresholds: {
-				xs: 0,
-				sm: 320,
-				md: 768,
-				lg: 1440,
-			},
-		},
-	});
-
-	nuxtApp.vueApp.use(vuetify);
-});
 ```
 
 ## 🚀 Типы плагинов
@@ -497,8 +473,6 @@ export default defineNuxtPlugin(nuxtApp => {
 
 - [Nuxt Plugins Documentation](https://nuxt.com/docs/guide/directory-structure/plugins)
 - [Vue 3 Plugins](https://vuejs.org/guide/reusability/plugins.html)
-- [Vuetify Documentation](https://vuetifyjs.com/)
-
 ---
 
 [← Назад к app/](../README.md) | [← Назад к главному README](../../README.md)

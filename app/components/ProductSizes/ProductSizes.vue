@@ -69,7 +69,8 @@ function selectSize(size: number) {
 		justify-content: center;
 		border: 1px solid var(--c-border);
 		border-radius: var(--radius-sm);
-		background: var(--c-surface);
+		background: var(--c-base-bg);
+		color: var(--c-base-text);
 		font-size: var(--fs-sm);
 		font-weight: var(--fw-medium);
 		cursor: pointer;
@@ -90,8 +91,8 @@ function selectSize(size: number) {
 
 		&--unavailable {
 			color: var(--c-neutral-400);
-			background: var(--c-neutral-100);
-			border-color: var(--c-neutral-200);
+			background: var(--c-neutral-200);
+			border-color: var(--c-neutral-300);
 			cursor: not-allowed;
 
 			&::after {

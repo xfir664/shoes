@@ -235,6 +235,7 @@ if (product) {
 	margin: 0 auto;
 	padding: var(--spacing-lg) var(--spacing-md);
 	padding-bottom: 80px; // для sticky CTA на мобильном
+	overflow-x: hidden;
 
 	@media (min-width: $breakpoint-tablet) {
 		padding-bottom: var(--spacing-lg);

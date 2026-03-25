@@ -21,7 +21,7 @@ app/
   pages/           # Файловый роутинг (index, icons, animations)
   middleware/      # Route middleware (auth)
   layouts/         # Nuxt layouts (default)
-  plugins/         # Nuxt plugins (vuetify)
+  plugins/         # Nuxt plugins
   scripts/         # Скрипты сборки
   app.vue          # Корневой компонент (SEO, titleTemplate)
 ```
@@ -29,7 +29,7 @@ app/
 ## Ключевые файлы
 
 - `app.vue` — корневой компонент с `useHead` (lang, charset, viewport, titleTemplate)
-- `nuxt.config.ts` — конфигурация Nuxt, Vuetify, Pinia, runtimeConfig
+- `nuxt.config.ts` — конфигурация Nuxt, Pinia, runtimeConfig
 - `assets/styles/main.scss` — точка входа для глобальных стилей
 
 ## Быстрый старт

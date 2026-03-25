@@ -267,6 +267,10 @@ watch(
 		max-width: var(--container-max);
 		margin-inline: auto;
 		padding: var(--spacing-xs) var(--spacing-md);
+
+		@media (max-width: $breakpoint-tablet) {
+			gap: var(--spacing-sm);
+		}
 	}
 
 	&__phone {
@@ -280,6 +284,14 @@ watch(
 
 		&:hover {
 			color: var(--c-primary);
+		}
+
+		@media (max-width: $breakpoint-tablet) {
+			font-size: var(--fs-xs);
+
+			.mdi {
+				display: none;
+			}
 		}
 	}
 
@@ -314,6 +326,12 @@ watch(
 		.header--scrolled & {
 			padding: var(--spacing-sm) var(--spacing-md);
 		}
+
+		@media (max-width: $breakpoint-tablet) {
+			justify-content: space-between;
+			gap: var(--spacing-sm);
+			padding: var(--spacing-sm) var(--spacing-md);
+		}
 	}
 
 	&__logo {
@@ -327,6 +345,10 @@ watch(
 	&__logo-icon {
 		font-size: 32px;
 		color: var(--c-primary);
+
+		@media (max-width: $breakpoint-tablet) {
+			font-size: 24px;
+		}
 	}
 
 	&__logo-text {
@@ -335,6 +357,10 @@ watch(
 		font-weight: 700;
 		color: var(--c-text);
 		letter-spacing: -0.5px;
+
+		@media (max-width: $breakpoint-tablet) {
+			font-size: var(--fs-lg);
+		}
 	}
 
 	&__search {
