@@ -19,7 +19,9 @@
       "Bash(ls -d */)",
       "Bash(dir /b /ad \"E:\\\\domain\")",
       "Bash(wc -l /e/domain/nuxt-template/.ai/*.md /e/domain/nuxt-template/.cursor/rules/*.mdc /e/domain/nuxt-template/.cursor/skills/*/SKILL.md)",
-      "Bash(wc -l /e/domain/nest-template/.ai/*.md /e/domain/nest-template/.cursor/rules/*.mdc /e/domain/nest-template/.cursor/skills/*/SKILL.md)"
+      "Bash(wc -l /e/domain/nest-template/.ai/*.md /e/domain/nest-template/.cursor/rules/*.mdc /e/domain/nest-template/.cursor/skills/*/SKILL.md)",
+      "Bash(wc -l C:/Users/3/.claude/CLAUDE.md C:/Users/3/.claude/skills/*/SKILL.md C:/Users/3/.claude/skills/*/references/*.md)",
+      "Bash(git -C E:/domain/shoes status --short)"
     ]
   }
 }

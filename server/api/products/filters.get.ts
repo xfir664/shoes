@@ -1,5 +1,4 @@
-import { readFileSync } from "node:fs";
-import { resolve } from "node:path";
+import productsData from "../../products.json";
 
 interface RawProduct {
 	name: string;
@@ -11,19 +10,9 @@ interface RawProduct {
 	sizes: { size: string; count: number }[];
 }
 
-let cachedProducts: RawProduct[] | null = null;
-
-function loadProducts(): RawProduct[] {
-	if (!cachedProducts) {
-		const filePath = resolve("server/products.json");
-		const raw = readFileSync(filePath, "utf-8");
-		cachedProducts = JSON.parse(raw);
-	}
-	return cachedProducts!;
-}
+const products = productsData as RawProduct[];
 
 export default defineEventHandler(() => {
-	const products = loadProducts();
 
 	const categories = [...new Set(products.map((p) => p.category))].sort(
 		(a, b) => a.localeCompare(b, "ru"),

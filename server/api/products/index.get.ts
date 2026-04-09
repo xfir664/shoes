@@ -1,5 +1,4 @@
-import { readFileSync } from "node:fs";
-import { resolve } from "node:path";
+import productsData from "../../products.json";
 
 interface RawProduct {
 	name: string;
@@ -22,16 +21,7 @@ const MOCK_IMAGES = [
 	"/img/Ботинки Chelsea Dark.jpg",
 ];
 
-let cachedProducts: RawProduct[] | null = null;
-
-function loadProducts(): RawProduct[] {
-	if (!cachedProducts) {
-		const filePath = resolve("server/products.json");
-		const raw = readFileSync(filePath, "utf-8");
-		cachedProducts = JSON.parse(raw);
-	}
-	return cachedProducts!;
-}
+const allProductsRaw = productsData as RawProduct[];
 
 export default defineEventHandler((event) => {
 	const query = getQuery(event);
@@ -47,7 +37,7 @@ export default defineEventHandler((event) => {
 	const priceFrom = Number(query.priceFrom) || 0;
 	const priceTo = Number(query.priceTo) || 0;
 
-	let products = loadProducts();
+	let products = allProductsRaw;
 
 	// Фильтрация
 	if (search) {
@@ -108,9 +98,8 @@ export default defineEventHandler((event) => {
 	const paged = products.slice(start, start + perPage);
 
 	// Маппинг в формат ответа с моковыми картинками
-	const allProducts = loadProducts();
 	const items = paged.map((p) => {
-		const globalIndex = allProducts.indexOf(p);
+		const globalIndex = allProductsRaw.indexOf(p);
 		return {
 			id: globalIndex + 1,
 			name: p.name,

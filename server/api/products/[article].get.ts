@@ -1,5 +1,4 @@
-import { readFileSync } from "node:fs";
-import { resolve } from "node:path";
+import productsData from "../../products.json";
 
 interface RawProduct {
 	name: string;
@@ -22,20 +21,10 @@ const MOCK_IMAGES = [
 	"/img/Ботинки Chelsea Dark.jpg",
 ];
 
-let cachedProducts: RawProduct[] | null = null;
-
-function loadProducts(): RawProduct[] {
-	if (!cachedProducts) {
-		const filePath = resolve("server/products.json");
-		const raw = readFileSync(filePath, "utf-8");
-		cachedProducts = JSON.parse(raw);
-	}
-	return cachedProducts!;
-}
+const products = productsData as RawProduct[];
 
 export default defineEventHandler((event) => {
 	const article = getRouterParam(event, "article");
-	const products = loadProducts();
 	const index = products.findIndex((p) => p.article === article);
 
 	if (index === -1) {
