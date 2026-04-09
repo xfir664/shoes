@@ -29,16 +29,27 @@ const searchApiQuery = computed(() => ({
 	perPage: 5,
 }));
 
-const { data: searchData } = useFetch<ProductsResponse>("/api/products", {
+const { data: searchData, execute: executeSearch, clear: clearSearchData } = useFetch<ProductsResponse>("/api/products", {
 	query: searchApiQuery,
-	watch: [searchApiQuery],
 	immediate: false,
+	server: false,
 });
 
 const searchResults = computed(() => {
 	if (!searchQuery.value.trim()) return [];
 	return searchData.value?.items ?? [];
 });
+
+watch(
+	() => searchQuery.value.trim(),
+	(value) => {
+		if (!value) {
+			clearSearchData();
+			return;
+		}
+		void executeSearch();
+	},
+);
 
 const isDropdownVisible = computed(() => {
 	return isSearchFocused.value && searchQuery.value.trim().length > 0;

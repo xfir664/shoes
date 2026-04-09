@@ -55,6 +55,14 @@ const initFromQuery = () => {
 
 initFromQuery();
 
+/** Синхронизация с query при навигации (поиск из хедера на том же роуте) */
+watch(
+	() => route.query.q,
+	(q) => {
+		searchQuery.value = typeof q === "string" ? q : "";
+	}
+);
+
 /** Применить фильтры из компонента */
 function applyFilters(payload: {
 	categories: string[];
