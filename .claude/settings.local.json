@@ -7,7 +7,19 @@
       "Bash(pnpm add:*)",
       "Bash(cd:*)",
       "Bash(grep:*)",
-      "Bash(pnpm build:*)"
+      "Bash(pnpm build:*)",
+      "Bash(curl -s \"http://localhost:3000/api/products/filters\")",
+      "Bash(curl -s \"http://localhost:3000/api/products/70399B-YP\")",
+      "Bash(curl -s \"http://localhost:3000/api/products?category=%D0%9A%D1%80%D0%BE%D1%81%D1%81%D0%BE%D0%B2%D0%BA%D0%B8&sort=cheap&perPage=3\")",
+      "Bash(curl -s \"http://localhost:3000/\")",
+      "Bash(curl -s \"http://localhost:3000/catalog\")",
+      "Bash(curl -s \"http://localhost:3000/catalog/70399B-YP\")",
+      "mcp__Claude_Preview__preview_start",
+      "Read(//e/domain/**)",
+      "Bash(ls -d */)",
+      "Bash(dir /b /ad \"E:\\\\domain\")",
+      "Bash(wc -l /e/domain/nuxt-template/.ai/*.md /e/domain/nuxt-template/.cursor/rules/*.mdc /e/domain/nuxt-template/.cursor/skills/*/SKILL.md)",
+      "Bash(wc -l /e/domain/nest-template/.ai/*.md /e/domain/nest-template/.cursor/rules/*.mdc /e/domain/nest-template/.cursor/skills/*/SKILL.md)"
     ]
   }
 }

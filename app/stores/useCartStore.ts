@@ -31,7 +31,7 @@ export const useCartStore = defineStore("cart", {
 
 	actions: {
 		/** Добавить товар в корзину */
-		addItem(product: Product, size: number) {
+		addItem(product: Product, size: string) {
 			const existing = this.items.find(
 				(item) => item.product.id === product.id && item.size === size,
 			);
@@ -44,14 +44,14 @@ export const useCartStore = defineStore("cart", {
 		},
 
 		/** Удалить товар из корзины */
-		removeItem(productId: number, size: number) {
+		removeItem(productId: number, size: string) {
 			this.items = this.items.filter(
 				(item) => !(item.product.id === productId && item.size === size),
 			);
 		},
 
 		/** Изменить количество */
-		updateQuantity(productId: number, size: number, quantity: number) {
+		updateQuantity(productId: number, size: string, quantity: number) {
 			const item = this.items.find(
 				(i) => i.product.id === productId && i.size === size,
 			);

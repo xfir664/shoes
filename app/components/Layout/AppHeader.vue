@@ -5,7 +5,8 @@
 -->
 <script setup lang="ts">
 import type { MenuItem } from "~/types/ui";
-import { mockProducts, formatPrice } from "~/utils/mockProducts";
+import type { ProductsResponse } from "~/types/product";
+import { formatPrice } from "~/utils/mockProducts";
 
 const navItems: MenuItem[] = [
 	{ label: "Главная", to: "/" },
@@ -22,13 +23,21 @@ const searchQuery = ref("");
 const isScrolled = ref(false);
 const isSearchFocused = ref(false);
 
-/** Результаты поиска (макс. 5) */
+/** Поиск через API */
+const searchApiQuery = computed(() => ({
+	search: searchQuery.value.trim(),
+	perPage: 5,
+}));
+
+const { data: searchData } = useFetch<ProductsResponse>("/api/products", {
+	query: searchApiQuery,
+	watch: [searchApiQuery],
+	immediate: false,
+});
+
 const searchResults = computed(() => {
-	const q = searchQuery.value.trim().toLowerCase();
-	if (!q) return [];
-	return mockProducts
-		.filter((p) => p.name.toLowerCase().includes(q))
-		.slice(0, 5);
+	if (!searchQuery.value.trim()) return [];
+	return searchData.value?.items ?? [];
 });
 
 const isDropdownVisible = computed(() => {
@@ -36,10 +45,10 @@ const isDropdownVisible = computed(() => {
 });
 
 /** Переход к товару из результатов */
-function goToProduct(slug: string) {
+function goToProduct(article: string) {
 	searchQuery.value = "";
 	isSearchFocused.value = false;
-	navigateTo(`/catalog/${slug}`);
+	navigateTo(`/catalog/${article}`);
 }
 
 /** Скрыть dropdown с задержкой (чтобы клик по результату успел сработать) */
@@ -134,10 +143,10 @@ watch(
 								:key="product.id"
 								class="header__search-item"
 								type="button"
-								@click="goToProduct(product.slug)"
+								@click="goToProduct(product.article)"
 							>
 								<img
-									:src="product.images[0]"
+									:src="product.image"
 									:alt="product.name"
 									class="header__search-item-img"
 									loading="lazy"
@@ -196,10 +205,10 @@ watch(
 								:key="product.id"
 								class="header__search-item"
 								type="button"
-								@click="goToProduct(product.slug)"
+								@click="goToProduct(product.article)"
 							>
 								<img
-									:src="product.images[0]"
+									:src="product.image"
 									:alt="product.name"
 									class="header__search-item-img"
 									loading="lazy"

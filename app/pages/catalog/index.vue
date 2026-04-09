@@ -1,6 +1,10 @@
 <script setup lang="ts">
-import { mockProducts, formatPrice, getDiscount } from "~/utils/mockProducts";
-import type { SortOption } from "~/types/product";
+import type {
+	ProductsResponse,
+	FilterOptions,
+	SortOption,
+} from "~/types/product";
+import { formatPrice } from "~/utils/mockProducts";
 
 useSeoMeta({
 	title: "Каталог",
@@ -12,19 +16,18 @@ useSeoMeta({
 const route = useRoute();
 
 /** Фильтры */
-const isFiltersOpen = ref(false);
 const isDrawerOpen = ref(false);
 const isSortDrawerOpen = ref(false);
-const isInStockOnly = ref(false);
 const selectedCategories = ref<string[]>([]);
 const selectedGenders = ref<string[]>([]);
-const selectedSeasons = ref<string[]>([]);
+const selectedColors = ref<string[]>([]);
+const selectedSizes = ref<string[]>([]);
 const priceFrom = ref<string>("");
 const priceTo = ref<string>("");
 const searchQuery = ref<string>("");
 
 /** Сортировка */
-const currentSort = ref<SortOption>("popular");
+const currentSort = ref<SortOption>("name");
 
 /** Пагинация */
 const currentPage = ref(1);
@@ -34,8 +37,7 @@ const perPage = 12;
 const sortOptions: { value: SortOption; label: string }[] = [
 	{ value: "cheap", label: "Дешевле" },
 	{ value: "expensive", label: "Дороже" },
-	{ value: "popular", label: "Популярные" },
-	{ value: "discount", label: "По скидкам" },
+	{ value: "name", label: "По названию" },
 ];
 
 /** Инициализация из query-параметров */
@@ -53,102 +55,87 @@ const initFromQuery = () => {
 
 initFromQuery();
 
-/** Переключение значения в массиве */
-function toggleCategory(value: string) {
-	const idx = selectedCategories.value.indexOf(value);
-	idx === -1 ? selectedCategories.value.push(value) : selectedCategories.value.splice(idx, 1);
-}
-
-function toggleGender(value: string) {
-	const idx = selectedGenders.value.indexOf(value);
-	idx === -1 ? selectedGenders.value.push(value) : selectedGenders.value.splice(idx, 1);
-}
-
-function toggleSeason(value: string) {
-	const idx = selectedSeasons.value.indexOf(value);
-	idx === -1 ? selectedSeasons.value.push(value) : selectedSeasons.value.splice(idx, 1);
+/** Применить фильтры из компонента */
+function applyFilters(payload: {
+	categories: string[];
+	genders: string[];
+	colors: string[];
+	sizes: string[];
+	priceFrom: string;
+	priceTo: string;
+}) {
+	selectedCategories.value = payload.categories;
+	selectedGenders.value = payload.genders;
+	selectedColors.value = payload.colors;
+	selectedSizes.value = payload.sizes;
+	priceFrom.value = payload.priceFrom;
+	priceTo.value = payload.priceTo;
+	isDrawerOpen.value = false;
 }
 
 /** Сброс всех фильтров */
 const resetFilters = () => {
-	isInStockOnly.value = false;
 	selectedCategories.value = [];
 	selectedGenders.value = [];
-	selectedSeasons.value = [];
+	selectedColors.value = [];
+	selectedSizes.value = [];
 	priceFrom.value = "";
 	priceTo.value = "";
 	searchQuery.value = "";
 	currentPage.value = 1;
 };
 
-/** Отфильтрованные товары */
-const filteredProducts = computed(() => {
-	let result = [...mockProducts];
+/** Параметры запроса к API */
+const apiQuery = computed(() => {
+	const q: Record<string, string | number> = {
+		page: currentPage.value,
+		perPage,
+	};
 
-	if (searchQuery.value) {
-		const q = searchQuery.value.toLowerCase();
-		result = result.filter((p) => p.name.toLowerCase().includes(q));
-	}
+	if (currentSort.value) q.sort = currentSort.value;
+	if (searchQuery.value) q.search = searchQuery.value;
+	if (selectedCategories.value.length === 1)
+		q.category = selectedCategories.value[0];
+	if (selectedGenders.value.length === 1) q.gender = selectedGenders.value[0];
+	if (selectedColors.value.length === 1) q.color = selectedColors.value[0];
+	if (selectedSizes.value.length === 1) q.size = selectedSizes.value[0];
+	if (priceFrom.value) q.priceFrom = Number(priceFrom.value);
+	if (priceTo.value) q.priceTo = Number(priceTo.value);
 
-	if (isInStockOnly.value) {
-		result = result.filter((p) => p.sizes.some((s) => s.inStock));
-	}
-
-	if (selectedCategories.value.length > 0) {
-		result = result.filter((p) => selectedCategories.value.includes(p.category));
-	}
-
-	if (selectedGenders.value.length > 0) {
-		result = result.filter((p) => selectedGenders.value.includes(p.gender));
-	}
-
-	if (selectedSeasons.value.length > 0) {
-		result = result.filter((p) => selectedSeasons.value.includes(p.season));
-	}
-
-	const from = Number(priceFrom.value);
-	const to = Number(priceTo.value);
-	if (from > 0) {
-		result = result.filter((p) => p.price >= from);
-	}
-	if (to > 0) {
-		result = result.filter((p) => p.price <= to);
-	}
-
-	return result;
+	return q;
 });
 
-/** Отсортированные товары */
-const sortedProducts = computed(() => {
-	const items = [...filteredProducts.value];
-
-	switch (currentSort.value) {
-		case "cheap":
-			return items.sort((a, b) => a.price - b.price);
-		case "expensive":
-			return items.sort((a, b) => b.price - a.price);
-		case "popular":
-			return items.sort((a, b) => (b.isPopular ? 1 : 0) - (a.isPopular ? 1 : 0));
-		case "discount":
-			return items.sort((a, b) => getDiscount(b.price, b.oldPrice) - getDiscount(a.price, a.oldPrice));
-		default:
-			return items;
+/** Загрузка товаров */
+const { data: productsData, pending } = useFetch<ProductsResponse>(
+	"/api/products",
+	{
+		query: apiQuery,
+		watch: [apiQuery],
 	}
-});
+);
 
-/** Общее количество страниц */
-const totalPages = computed(() => Math.ceil(sortedProducts.value.length / perPage));
+/** Загрузка опций фильтров */
+const { data: filterOptions } = useFetch<FilterOptions>(
+	"/api/products/filters"
+);
 
-/** Товары на текущей странице */
-const paginatedProducts = computed(() => {
-	const start = (currentPage.value - 1) * perPage;
-	return sortedProducts.value.slice(start, start + perPage);
-});
+/** Данные для шаблона */
+const products = computed(() => productsData.value?.items ?? []);
+const totalPages = computed(() => productsData.value?.totalPages ?? 0);
+const totalItems = computed(() => productsData.value?.total ?? 0);
 
 /** Номера страниц для пагинации */
 const pageNumbers = computed(() => {
 	const pages: number[] = [];
-	for (let i = 1; i <= totalPages.value; i++) {
+	const total = totalPages.value;
+	const current = currentPage.value;
+
+	// Показываем максимум 7 страниц
+	let start = Math.max(1, current - 3);
+	let end = Math.min(total, start + 6);
+	start = Math.max(1, end - 6);
+
+	for (let i = start; i <= end; i++) {
 		pages.push(i);
 	}
 	return pages;
@@ -164,10 +151,19 @@ const goToPage = (page: number) => {
 
 /** Сброс пагинации при изменении фильтров */
 watch(
-	[isInStockOnly, selectedCategories, selectedGenders, selectedSeasons, priceFrom, priceTo, searchQuery, currentSort],
+	[
+		selectedCategories,
+		selectedGenders,
+		selectedColors,
+		selectedSizes,
+		priceFrom,
+		priceTo,
+		searchQuery,
+		currentSort,
+	],
 	() => {
 		currentPage.value = 1;
-	},
+	}
 );
 </script>
 
@@ -178,7 +174,11 @@ watch(
 		<!-- Поиск -->
 		<div v-if="searchQuery" class="catalog__search-info">
 			Результаты поиска: «{{ searchQuery }}»
-			<button class="catalog__search-clear" type="button" @click="searchQuery = ''">
+			<button
+				class="catalog__search-clear"
+				type="button"
+				@click="searchQuery = ''"
+			>
 				Сбросить
 			</button>
 		</div>
@@ -186,18 +186,14 @@ watch(
 		<!-- Мобильный drawer с фильтрами -->
 		<MyDrawer v-model="isDrawerOpen" title="Фильтры">
 			<CatalogFilters
-				:is-in-stock-only="isInStockOnly"
+				:filters="filterOptions"
 				:selected-categories="selectedCategories"
 				:selected-genders="selectedGenders"
-				:selected-seasons="selectedSeasons"
+				:selected-colors="selectedColors"
+				:selected-sizes="selectedSizes"
 				:price-from="priceFrom"
 				:price-to="priceTo"
-				@update:is-in-stock-only="isInStockOnly = $event"
-				@toggle-category="toggleCategory"
-				@toggle-gender="toggleGender"
-				@toggle-season="toggleSeason"
-				@update:price-from="priceFrom = $event"
-				@update:price-to="priceTo = $event"
+				@apply="applyFilters"
 				@reset="resetFilters"
 			/>
 		</MyDrawer>
@@ -221,7 +217,7 @@ watch(
 				{{ sortOptions.find(o => o.value === currentSort)?.label }}
 			</button>
 			<span class="catalog__mobile-count">
-				{{ sortedProducts.length }} {{ sortedProducts.length === 1 ? "товар" : "товаров" }}
+				{{ totalItems }} {{ totalItems === 1 ? "товар" : "товаров" }}
 			</span>
 		</div>
 
@@ -232,9 +228,14 @@ watch(
 					v-for="option in sortOptions"
 					:key="option.value"
 					class="catalog__sort-list-item"
-					:class="{ 'catalog__sort-list-item--active': currentSort === option.value }"
+					:class="{
+						'catalog__sort-list-item--active': currentSort === option.value,
+					}"
 					type="button"
-					@click="currentSort = option.value; isSortDrawerOpen = false"
+					@click="
+						currentSort = option.value;
+						isSortDrawerOpen = false;
+					"
 				>
 					{{ option.label }}
 					<span v-if="currentSort === option.value" class="mdi mdi-check" />
@@ -258,7 +259,7 @@ watch(
 				</button>
 			</div>
 			<span class="catalog__results-count">
-				{{ sortedProducts.length }} {{ sortedProducts.length === 1 ? "товар" : "товаров" }}
+				{{ totalItems }} {{ totalItems === 1 ? "товар" : "товаров" }}
 			</span>
 		</div>
 
@@ -270,18 +271,14 @@ watch(
 						<h2 class="catalog__filters-title">Фильтры</h2>
 					</div>
 					<CatalogFilters
-						:is-in-stock-only="isInStockOnly"
+						:filters="filterOptions"
 						:selected-categories="selectedCategories"
 						:selected-genders="selectedGenders"
-						:selected-seasons="selectedSeasons"
+						:selected-colors="selectedColors"
+						:selected-sizes="selectedSizes"
 						:price-from="priceFrom"
 						:price-to="priceTo"
-						@update:is-in-stock-only="isInStockOnly = $event"
-						@toggle-category="toggleCategory"
-						@toggle-gender="toggleGender"
-						@toggle-season="toggleSeason"
-						@update:price-from="priceFrom = $event"
-						@update:price-to="priceTo = $event"
+						@apply="applyFilters"
 						@reset="resetFilters"
 					/>
 				</div>
@@ -289,10 +286,12 @@ watch(
 
 			<!-- Основной контент -->
 			<div class="catalog__content">
+				<!-- Загрузка -->
+				<AppLoading v-if="pending" />
 
 				<!-- Пустое состояние -->
 				<AppEmpty
-					v-if="paginatedProducts.length === 0"
+					v-else-if="products.length === 0"
 					title="Ничего не найдено"
 					message="Попробуйте изменить параметры фильтрации"
 				/>
@@ -300,7 +299,7 @@ watch(
 				<!-- Сетка товаров -->
 				<div v-else class="catalog__grid">
 					<ProductCard
-						v-for="product in paginatedProducts"
+						v-for="product in products"
 						:key="product.id"
 						:product="product"
 						show-category
@@ -472,6 +471,7 @@ watch(
 	}
 
 	&__filters {
+		height: 100%;	
 		position: sticky;
 		top: var(--spacing-lg);
 		max-height: calc(100vh - var(--spacing-lg) * 2);

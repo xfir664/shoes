@@ -1,57 +1,26 @@
-/** Категория обуви */
-export type ShoeCategory =
-	| "sneakers"
-	| "boots"
-	| "sandals"
-	| "loafers"
-	| "heels"
-	| "flats"
-	| "slippers"
-	| "trainers";
-
-/** Сезон */
-export type Season = "winter" | "summer" | "demi";
-
-/** Пол */
-export type Gender = "male" | "female" | "unisex";
-
 /** Размер товара */
 export interface ProductSize {
-	size: number;
-	inStock: boolean;
-}
-
-/** Цвет товара */
-export interface ProductColor {
-	name: string;
-	hex: string;
+	size: string;
+	count: number;
 }
 
 /** Товар */
 export interface Product {
 	id: number;
 	name: string;
-	slug: string;
-	category: ShoeCategory;
+	article: string;
+	category: string;
+	gender: string | null;
 	price: number;
-	oldPrice?: number;
-	images: string[];
-	colors: ProductColor[];
+	color: string;
 	sizes: ProductSize[];
-	gender: Gender;
-	season: Season;
-	material: string;
-	liningMaterial: string;
-	insoleMaterial: string;
-	description: string;
-	isPopular: boolean;
-	isPromo: boolean;
+	image: string;
 }
 
 /** Элемент корзины */
 export interface CartItem {
 	product: Product;
-	size: number;
+	size: string;
 	quantity: number;
 }
 
@@ -65,18 +34,32 @@ export interface Promo {
 
 /** Фильтры каталога */
 export interface CatalogFilters {
-	category?: ShoeCategory;
-	gender?: Gender;
-	season?: Season;
-	material?: string;
-	liningMaterial?: string;
-	insoleMaterial?: string;
+	category?: string;
+	gender?: string;
 	color?: string;
-	size?: number;
+	size?: string;
 	priceFrom?: number;
 	priceTo?: number;
-	inStock?: boolean;
 }
 
 /** Сортировка */
-export type SortOption = "cheap" | "expensive" | "popular" | "discount";
+export type SortOption = "cheap" | "expensive" | "name";
+
+/** Опции фильтров (с сервера) */
+export interface FilterOptions {
+	categories: string[];
+	genders: string[];
+	colors: string[];
+	sizes: string[];
+	priceMin: number;
+	priceMax: number;
+}
+
+/** Ответ API списка товаров */
+export interface ProductsResponse {
+	items: Product[];
+	total: number;
+	page: number;
+	perPage: number;
+	totalPages: number;
+}

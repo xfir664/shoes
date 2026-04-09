@@ -6,15 +6,15 @@ import type { ProductSize } from "~/types/product";
 
 defineProps<{
 	sizes: ProductSize[];
-	modelValue: number | null;
+	modelValue: string | null;
 	showWarning?: boolean;
 }>();
 
 const emit = defineEmits<{
-	"update:modelValue": [value: number];
+	"update:modelValue": [value: string];
 }>();
 
-function selectSize(size: number) {
+function selectSize(size: string) {
 	emit("update:modelValue", size);
 }
 </script>
@@ -29,9 +29,9 @@ function selectSize(size: number) {
 				class="sizes__btn"
 				:class="{
 					'sizes__btn--active': modelValue === s.size,
-					'sizes__btn--unavailable': !s.inStock,
+					'sizes__btn--unavailable': s.count === 0,
 				}"
-				:disabled="!s.inStock"
+				:disabled="s.count === 0"
 				@click="selectSize(s.size)"
 			>
 				{{ s.size }}

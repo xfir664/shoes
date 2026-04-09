@@ -3,54 +3,51 @@
 -->
 <script setup lang="ts">
 import type { Product } from "~/types/product";
-import { formatPrice, getDiscount, categoryLabels } from "~/utils/mockProducts";
+import { formatPrice } from "~/utils/mockProducts";
 
-const props = defineProps<{
+defineProps<{
 	product: Product;
 	showCategory?: boolean;
 }>();
-
-const discount = computed(() => getDiscount(props.product.price, props.product.oldPrice));
 </script>
 
 <template>
 	<article class="product-card">
 		<NuxtLink
-			:to="`/catalog/${product.slug}`"
+			:to="`/catalog/${product.article}`"
 			class="product-card__image-link"
 		>
 			<img
-				:src="product.images[0]"
+				:src="product.image"
 				:alt="product.name"
 				class="product-card__image"
 				loading="lazy"
 			/>
-			<MyBadge v-if="discount > 0" variant="sale">
-				-{{ discount }}%
-			</MyBadge>
 		</NuxtLink>
 
 		<div class="product-card__body">
 			<span v-if="showCategory" class="product-card__category">
-				{{ categoryLabels[product.category] || product.category }}
+				{{ product.category }}
 			</span>
 
 			<h3 class="product-card__name">
-				<NuxtLink :to="`/catalog/${product.slug}`" class="product-card__name-link">
+				<NuxtLink :to="`/catalog/${product.article}`" class="product-card__name-link">
 					{{ product.name }}
 				</NuxtLink>
 			</h3>
 
+			<div class="product-card__meta">
+				<span class="product-card__color">{{ product.color }}</span>
+				<span class="product-card__article">арт. {{ product.article }}</span>
+			</div>
+
 			<div class="product-card__prices">
 				<span class="product-card__price">{{ formatPrice(product.price) }}</span>
-				<span v-if="product.oldPrice" class="product-card__old-price">
-					{{ formatPrice(product.oldPrice) }}
-				</span>
 			</div>
 
 			<div class="product-card__actions">
 				<NuxtLink
-					:to="`/catalog/${product.slug}`"
+					:to="`/catalog/${product.article}`"
 					class="product-card__detail-link"
 				>
 					Подробнее
@@ -123,6 +120,19 @@ const discount = computed(() => getDiscount(props.product.price, props.product.o
 		}
 	}
 
+	&__meta {
+		display: flex;
+		align-items: center;
+		gap: var(--spacing-sm);
+		margin-bottom: var(--spacing-sm);
+		font-size: var(--fs-xs);
+		color: var(--c-text-muted);
+	}
+
+	&__article {
+		opacity: 0.7;
+	}
+
 	&__prices {
 		display: flex;
 		align-items: baseline;
@@ -135,12 +145,6 @@ const discount = computed(() => getDiscount(props.product.price, props.product.o
 		font-size: var(--fs-lg);
 		font-weight: var(--fw-bold);
 		color: var(--c-text);
-	}
-
-	&__old-price {
-		font-size: var(--fs-sm);
-		color: var(--c-text-muted);
-		text-decoration: line-through;
 	}
 
 	&__actions {

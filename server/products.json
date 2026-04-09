@@ -1,0 +1,8988 @@
+[
+  {
+    "name": "Босоножки 70399B-YP",
+    "article": "70399B-YP",
+    "catalogDescription": "Женские",
+    "type": "Женские",
+    "category": "Босоножки",
+    "gender": null,
+    "price": 1999,
+    "color": "черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Босоножки YD916-03-Y150+YP01",
+    "article": "YD916-03-Y150+YP01",
+    "catalogDescription": "Женские",
+    "type": "Женские",
+    "category": "Босоножки",
+    "gender": null,
+    "price": 1999,
+    "color": "пудровый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Ботильоны женские PCM757-1",
+    "article": "PCM757-1",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Ботильоны",
+    "gender": "женский",
+    "price": 2999,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Ботильоны женские RJ2826A-921-2",
+    "article": "RJ2826A-921-2",
+    "catalogDescription": "Женские",
+    "type": "Женские",
+    "category": "Ботильоны",
+    "gender": "женский",
+    "price": 1999,
+    "color": "бордовый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "35",
+        "count": 1
+      },
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "39",
+        "count": 1
+      }
+    ],
+    "totalStock": 3
+  },
+  {
+    "name": "Ботильоны RJ2826A-1023-1",
+    "article": "RJ2826A-1023-1",
+    "catalogDescription": "Женские",
+    "type": "Женские",
+    "category": "Ботильоны",
+    "gender": "женский",
+    "price": 4999,
+    "color": "белый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "35",
+        "count": 1
+      },
+      {
+        "size": "39",
+        "count": 1
+      }
+    ],
+    "totalStock": 2
+  },
+  {
+    "name": "Ботильоны RJ3666A-100-2",
+    "article": "RJ3666A-100-2",
+    "catalogDescription": "Женские",
+    "type": "Женские",
+    "category": "Ботильоны",
+    "gender": "женский",
+    "price": 2999,
+    "color": "серый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Ботинки женские 10441B-B",
+    "article": "10441B-B",
+    "catalogDescription": "Женские",
+    "type": "Женские",
+    "category": "Ботинки",
+    "gender": "женский",
+    "price": 4999,
+    "color": "черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "35",
+        "count": 1
+      },
+      {
+        "size": "38",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 3
+  },
+  {
+    "name": "Ботинки женские 10527B-QM",
+    "article": "10527B-QM",
+    "catalogDescription": "Женские",
+    "type": "Женские",
+    "category": "Ботинки",
+    "gender": "женский",
+    "price": 2999,
+    "color": "пудровый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "37",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Ботинки женские 12575B-B",
+    "article": "12575B-B",
+    "catalogDescription": "Женские",
+    "type": "Женские",
+    "category": "Ботинки",
+    "gender": "женский",
+    "price": 2999,
+    "color": "белый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Ботинки женские 13452B-QM",
+    "article": "13452B-QM",
+    "catalogDescription": "Женские",
+    "type": "Женские",
+    "category": "Ботинки",
+    "gender": "женский",
+    "price": 2999,
+    "color": "черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "37",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Ботинки женские 211-535-2",
+    "article": "211-535-2",
+    "catalogDescription": "Женские",
+    "type": "Женские",
+    "category": "Ботинки",
+    "gender": "женский",
+    "price": 4999,
+    "color": "белый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 2
+      }
+    ],
+    "totalStock": 3
+  },
+  {
+    "name": "Ботинки женские AM521-1",
+    "article": "AM521-1",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Ботинки",
+    "gender": "женский",
+    "price": 2999,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Ботинки женские AM521-3",
+    "article": "AM521-3",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Ботинки",
+    "gender": "женский",
+    "price": 3440,
+    "color": "Коричневый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 1
+      },
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 7
+  },
+  {
+    "name": "Ботинки женские B130409B-B",
+    "article": "B130409B-B",
+    "catalogDescription": "Женские",
+    "type": "Женские",
+    "category": "Ботинки",
+    "gender": "женский",
+    "price": 2999,
+    "color": "черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Ботинки женские BT05-5A",
+    "article": "BT05-5A",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Ботинки",
+    "gender": "женский",
+    "price": 4999,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 1
+      },
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 2
+      }
+    ],
+    "totalStock": 5
+  },
+  {
+    "name": "Ботинки женские BT05-5B",
+    "article": "BT05-5B",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Ботинки",
+    "gender": "женский",
+    "price": 2999,
+    "color": "Бежевый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Ботинки женские BT2221Н-10-1",
+    "article": "BT2221Н-10-1",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Ботинки",
+    "gender": "женский",
+    "price": 4999,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 2
+  },
+  {
+    "name": "Ботинки женские BT2242Н-12-1",
+    "article": "BT2242Н-12-1",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Ботинки",
+    "gender": "женский",
+    "price": 2999,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Ботинки женские BT2668-1A",
+    "article": "BT2668-1A",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Ботинки",
+    "gender": "женский",
+    "price": 2999,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "37",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Ботинки женские BT976X-G0605-N128",
+    "article": "BT976X-G0605-N128",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Ботинки",
+    "gender": "женский",
+    "price": 4999,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 4
+  },
+  {
+    "name": "Ботинки женские FAL380-1Z",
+    "article": "FAL380-1Z",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Ботинки",
+    "gender": "женский",
+    "price": 5120,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 5
+  },
+  {
+    "name": "Ботинки женские FAX117-1Z",
+    "article": "FAX117-1Z",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Ботинки",
+    "gender": "женский",
+    "price": 5120,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 2
+  },
+  {
+    "name": "Ботинки женские FBML36-1Z",
+    "article": "FBML36-1Z",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Ботинки",
+    "gender": "женский",
+    "price": 5560,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "37",
+        "count": 1
+      },
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "39",
+        "count": 1
+      }
+    ],
+    "totalStock": 4
+  },
+  {
+    "name": "Ботинки женские PAHW29-3Z",
+    "article": "PAHW29-3Z",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Ботинки",
+    "gender": "женский",
+    "price": 6400,
+    "color": "Коричневый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "39",
+        "count": 2
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 6
+  },
+  {
+    "name": "Ботинки женские PAJW60-1Z",
+    "article": "PAJW60-1Z",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Ботинки",
+    "gender": "женский",
+    "price": 5560,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 3
+  },
+  {
+    "name": "Ботинки женские PAJW60-3Z",
+    "article": "PAJW60-3Z",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Ботинки",
+    "gender": "женский",
+    "price": 5560,
+    "color": "Коричневый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 2
+  },
+  {
+    "name": "Ботинки женские PAL377-2Z",
+    "article": "PAL377-2Z",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Ботинки",
+    "gender": "женский",
+    "price": 6160,
+    "color": "Бежевый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 1
+      },
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "39",
+        "count": 2
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 8
+  },
+  {
+    "name": "Ботинки женские PAL383-1Z",
+    "article": "PAL383-1Z",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Ботинки",
+    "gender": "женский",
+    "price": 6160,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "37",
+        "count": 1
+      },
+      {
+        "size": "38",
+        "count": 1
+      },
+      {
+        "size": "39",
+        "count": 2
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 6
+  },
+  {
+    "name": "Ботинки женские PAL395-1Z",
+    "article": "PAL395-1Z",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Ботинки",
+    "gender": "женский",
+    "price": 6160,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 1
+      },
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "39",
+        "count": 2
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 7
+  },
+  {
+    "name": "Ботинки женские PAL395-2Z",
+    "article": "PAL395-2Z",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Ботинки",
+    "gender": "женский",
+    "price": 6160,
+    "color": "Коричневый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "38",
+        "count": 1
+      },
+      {
+        "size": "39",
+        "count": 2
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 6
+  },
+  {
+    "name": "Ботинки женские PAL395-3Z",
+    "article": "PAL395-3Z",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Ботинки",
+    "gender": "женский",
+    "price": 6160,
+    "color": "Бежевый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "37",
+        "count": 1
+      },
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "39",
+        "count": 2
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 7
+  },
+  {
+    "name": "Ботинки женские PAM405-2",
+    "article": "PAM405-2",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Ботинки",
+    "gender": "женский",
+    "price": 6960,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 1
+      },
+      {
+        "size": "38",
+        "count": 1
+      },
+      {
+        "size": "39",
+        "count": 2
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 7
+  },
+  {
+    "name": "Ботинки женские PAM406-1",
+    "article": "PAM406-1",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Ботинки",
+    "gender": "женский",
+    "price": 6960,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "39",
+        "count": 2
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 7
+  },
+  {
+    "name": "Ботинки женские PAM487-1",
+    "article": "PAM487-1",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Ботинки",
+    "gender": "женский",
+    "price": 6960,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "37",
+        "count": 1
+      },
+      {
+        "size": "38",
+        "count": 1
+      },
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 5
+  },
+  {
+    "name": "Ботинки женские PAM566-1Z",
+    "article": "PAM566-1Z",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Ботинки",
+    "gender": "женский",
+    "price": 6760,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "39",
+        "count": 2
+      },
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 4
+  },
+  {
+    "name": "Ботинки женские PAM720-1Z",
+    "article": "PAM720-1Z",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Ботинки",
+    "gender": "женский",
+    "price": 6760,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 1
+      },
+      {
+        "size": "38",
+        "count": 1
+      },
+      {
+        "size": "39",
+        "count": 2
+      }
+    ],
+    "totalStock": 5
+  },
+  {
+    "name": "Ботинки женские PAM739-1Z",
+    "article": "PAM739-1Z",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Ботинки",
+    "gender": "женский",
+    "price": 6760,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 1
+      },
+      {
+        "size": "39",
+        "count": 2
+      }
+    ],
+    "totalStock": 4
+  },
+  {
+    "name": "Ботинки женские PAM750-1",
+    "article": "PAM750-1",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Ботинки",
+    "gender": "женский",
+    "price": 7840,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "39",
+        "count": 2
+      },
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 6
+  },
+  {
+    "name": "Ботинки женские PAM751-1",
+    "article": "PAM751-1",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Ботинки",
+    "gender": "женский",
+    "price": 7840,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 1
+      },
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "39",
+        "count": 2
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 8
+  },
+  {
+    "name": "Ботинки женские RS2125-702R",
+    "article": "RS2125-702R",
+    "catalogDescription": "Женские",
+    "type": "Женские",
+    "category": "Ботинки",
+    "gender": "женский",
+    "price": 2499,
+    "color": "черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 2
+  },
+  {
+    "name": "Ботинки женские RS2130H-17-2",
+    "article": "RS2130H-17-2",
+    "catalogDescription": "Женские",
+    "type": "Женские",
+    "category": "Ботинки",
+    "gender": "женский",
+    "price": 4999,
+    "color": "хаки",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "37",
+        "count": 1
+      },
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 4
+  },
+  {
+    "name": "Ботинки женские RS2159-602R",
+    "article": "RS2159-602R",
+    "catalogDescription": "Женские",
+    "type": "Женские",
+    "category": "Ботинки",
+    "gender": "женский",
+    "price": 4999,
+    "color": "черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 2
+  },
+  {
+    "name": "Ботинки женские RS320-02-P314",
+    "article": "RS320-02-P314",
+    "catalogDescription": "Женские",
+    "type": "Женские",
+    "category": "Ботинки",
+    "gender": "женский",
+    "price": 2999,
+    "color": "хаки",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "37",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Ботинки мужские 15454BC-B",
+    "article": "15454BC-B",
+    "catalogDescription": "Мужские",
+    "type": "Мужские",
+    "category": "Ботинки",
+    "gender": "мужской",
+    "price": 3499,
+    "color": "черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "45",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Ботинки мужские BT043B-206-1A",
+    "article": "BT043B-206-1A",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Ботинки",
+    "gender": "мужской",
+    "price": 3499,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Ботинки мужские BT101-6",
+    "article": "BT101-6",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Ботинки",
+    "gender": "мужской",
+    "price": 8999,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "40",
+        "count": 2
+      },
+      {
+        "size": "45",
+        "count": 1
+      }
+    ],
+    "totalStock": 3
+  },
+  {
+    "name": "Ботинки мужские BT112-1",
+    "article": "BT112-1",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Ботинки",
+    "gender": "мужской",
+    "price": 3499,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "45",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Ботинки мужские BT137-1",
+    "article": "BT137-1",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Ботинки",
+    "gender": "мужской",
+    "price": 8999,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 2
+      },
+      {
+        "size": "41",
+        "count": 2
+      },
+      {
+        "size": "43",
+        "count": 1
+      },
+      {
+        "size": "45",
+        "count": 1
+      }
+    ],
+    "totalStock": 7
+  },
+  {
+    "name": "Ботинки мужские BT22103-1",
+    "article": "BT22103-1",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Ботинки",
+    "gender": "мужской",
+    "price": 8999,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "40",
+        "count": 2
+      },
+      {
+        "size": "41",
+        "count": 3
+      },
+      {
+        "size": "42",
+        "count": 1
+      },
+      {
+        "size": "43",
+        "count": 5
+      },
+      {
+        "size": "44",
+        "count": 3
+      }
+    ],
+    "totalStock": 14
+  },
+  {
+    "name": "Ботинки мужские BT22106H-5",
+    "article": "BT22106H-5",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Ботинки",
+    "gender": "мужской",
+    "price": 8999,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "40",
+        "count": 2
+      },
+      {
+        "size": "44",
+        "count": 1
+      },
+      {
+        "size": "45",
+        "count": 1
+      }
+    ],
+    "totalStock": 4
+  },
+  {
+    "name": "Ботинки мужские BT2247B-8-D120",
+    "article": "BT2247B-8-D120",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Ботинки",
+    "gender": "мужской",
+    "price": 3499,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Ботинки мужские BT302B-5-C57",
+    "article": "BT302B-5-C57",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Ботинки",
+    "gender": "мужской",
+    "price": 8999,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "42",
+        "count": 1
+      }
+    ],
+    "totalStock": 2
+  },
+  {
+    "name": "Ботинки мужские BT302B-6-C286",
+    "article": "BT302B-6-C286",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Ботинки",
+    "gender": "мужской",
+    "price": 8999,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "45",
+        "count": 1
+      }
+    ],
+    "totalStock": 3
+  },
+  {
+    "name": "Ботинки мужские BT317B-2-C286",
+    "article": "BT317B-2-C286",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Ботинки",
+    "gender": "мужской",
+    "price": 8999,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 2
+      },
+      {
+        "size": "41",
+        "count": 1
+      },
+      {
+        "size": "44",
+        "count": 1
+      },
+      {
+        "size": "45",
+        "count": 1
+      }
+    ],
+    "totalStock": 6
+  },
+  {
+    "name": "Ботинки мужские BT5-2",
+    "article": "BT5-2",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Ботинки",
+    "gender": "мужской",
+    "price": 8999,
+    "color": "Коричневый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "45",
+        "count": 1
+      }
+    ],
+    "totalStock": 3
+  },
+  {
+    "name": "Ботинки мужские BT87B-216-9X",
+    "article": "BT87B-216-9X",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Ботинки",
+    "gender": "мужской",
+    "price": 3499,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Ботинки мужские FM203B-1M-A",
+    "article": "FM203B-1M-A",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Ботинки",
+    "gender": "мужской",
+    "price": 6520,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      },
+      {
+        "size": "42",
+        "count": 1
+      },
+      {
+        "size": "43",
+        "count": 1
+      }
+    ],
+    "totalStock": 4
+  },
+  {
+    "name": "Ботинки мужские RS010H-20E-A15",
+    "article": "RS010H-20E-A15",
+    "catalogDescription": "Мужские",
+    "type": "Мужские",
+    "category": "Ботинки",
+    "gender": "мужской",
+    "price": 8999,
+    "color": "черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 2
+  },
+  {
+    "name": "Ботинки мужские RS125H-01E-A15",
+    "article": "RS125H-01E-A15",
+    "catalogDescription": "",
+    "type": "Мужские",
+    "category": "Ботинки",
+    "gender": "мужской",
+    "price": 8999,
+    "color": "черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "45",
+        "count": 1
+      }
+    ],
+    "totalStock": 2
+  },
+  {
+    "name": "Ботинки мужские RS152H-05E-A15",
+    "article": "RS152H-05E-A15",
+    "catalogDescription": "",
+    "type": "Мужские",
+    "category": "Ботинки",
+    "gender": "мужской",
+    "price": 8999,
+    "color": "черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      },
+      {
+        "size": "45",
+        "count": 1
+      }
+    ],
+    "totalStock": 3
+  },
+  {
+    "name": "Ботинки мужские RS337A-5-S25",
+    "article": "RS337A-5-S25",
+    "catalogDescription": "",
+    "type": "Мужские",
+    "category": "Ботинки",
+    "gender": "мужской",
+    "price": 3499,
+    "color": "черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Ботинки мужские RS339A-1-H27-S11",
+    "article": "RS339A-1-H27-S11",
+    "catalogDescription": "Мужские",
+    "type": "Мужские",
+    "category": "Ботинки",
+    "gender": "мужской",
+    "price": 3499,
+    "color": "черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Кеды женские 400296B-YP",
+    "article": "400296B-YP",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Кеды",
+    "gender": "женский",
+    "price": 2999,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "38",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Кеды женские A10708B-YP",
+    "article": "A10708B-YP",
+    "catalogDescription": "Женские",
+    "type": "Женские",
+    "category": "Кеды",
+    "gender": "женский",
+    "price": 2999,
+    "color": "белый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "37",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Кеды женские DFC237-1",
+    "article": "DFC237-1",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Кеды",
+    "gender": "женский",
+    "price": 5600,
+    "color": "Бежевый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 1
+      },
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "39",
+        "count": 2
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 8
+  },
+  {
+    "name": "Кеды женские DMG109-1",
+    "article": "DMG109-1",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Кеды",
+    "gender": "женский",
+    "price": 3570,
+    "color": "Бежевый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "37",
+        "count": 1
+      },
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "39",
+        "count": 1
+      }
+    ],
+    "totalStock": 4
+  },
+  {
+    "name": "Кеды женские DR823-1",
+    "article": "DR823-1",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Кеды",
+    "gender": "женский",
+    "price": 3440,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 1
+      },
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 5
+  },
+  {
+    "name": "Кеды женские DR826-2",
+    "article": "DR826-2",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Кеды",
+    "gender": "женский",
+    "price": 3440,
+    "color": "Коричневый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "37",
+        "count": 1
+      },
+      {
+        "size": "38",
+        "count": 1
+      }
+    ],
+    "totalStock": 2
+  },
+  {
+    "name": "Кеды женские DR826-3",
+    "article": "DR826-3",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Кеды",
+    "gender": "женский",
+    "price": 2999,
+    "color": "Бежевый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "38",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Кеды женские GG138-1",
+    "article": "GG138-1",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Кеды",
+    "gender": "женский",
+    "price": 5915,
+    "color": "Белый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 2
+  },
+  {
+    "name": "Кеды женские GG158-3",
+    "article": "GG158-3",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Кеды",
+    "gender": "женский",
+    "price": 5915,
+    "color": "Бежевый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "37",
+        "count": 1
+      },
+      {
+        "size": "38",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 3
+  },
+  {
+    "name": "Кеды женские GG158-4",
+    "article": "GG158-4",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Кеды",
+    "gender": "женский",
+    "price": 5915,
+    "color": "Бежевый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 1
+      },
+      {
+        "size": "38",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 4
+  },
+  {
+    "name": "Кеды женские GG161-5",
+    "article": "GG161-5",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Кеды",
+    "gender": "женский",
+    "price": 5915,
+    "color": "Коричневый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 4
+  },
+  {
+    "name": "Кеды женские GG62-2",
+    "article": "GG62-2",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Кеды",
+    "gender": "женский",
+    "price": 5915,
+    "color": "Белый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 3
+  },
+  {
+    "name": "Кеды женские P65-1",
+    "article": "P65-1",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Кеды",
+    "gender": "женский",
+    "price": 2699,
+    "color": "Белый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 2
+  },
+  {
+    "name": "Кеды женские P8201-1",
+    "article": " P8201-1",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Кеды",
+    "gender": "женский",
+    "price": 2499,
+    "color": "Белый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Кеды женские P8201-2",
+    "article": " P8201-2",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Кеды",
+    "gender": "женский",
+    "price": 2499,
+    "color": "Бежевый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Кеды женские PDA233-2",
+    "article": "PDA233-2",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Кеды",
+    "gender": "женский",
+    "price": 2999,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Кеды женские PDD117-2",
+    "article": "PDD117-2",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Кеды",
+    "gender": "женский",
+    "price": 2699,
+    "color": "Белый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "37",
+        "count": 1
+      },
+      {
+        "size": "39",
+        "count": 1
+      }
+    ],
+    "totalStock": 2
+  },
+  {
+    "name": "Кеды женские PDD261-7",
+    "article": "PDD261-7",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Кеды",
+    "gender": "женский",
+    "price": 4650,
+    "color": "Бежевый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 2
+      },
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 8
+  },
+  {
+    "name": "Кеды женские PDF82-1",
+    "article": "PDF82-1",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Кеды",
+    "gender": "женский",
+    "price": 3399,
+    "color": "Белый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "38",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 2
+  },
+  {
+    "name": "Кеды женские PDH281-1",
+    "article": "PDH281-1",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Кеды",
+    "gender": "женский",
+    "price": 2999,
+    "color": "Бежевый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 2
+      }
+    ],
+    "totalStock": 2
+  },
+  {
+    "name": "Кеды женские PDH313-1",
+    "article": "PDH351-2",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Кеды",
+    "gender": "женский",
+    "price": 2999,
+    "color": "Белый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Кеды женские PDHJ106-5",
+    "article": "PDJ106-5",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Кеды",
+    "gender": "женский",
+    "price": 2999,
+    "color": "Бежевый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Кеды женские PDRX03-1",
+    "article": "PDRX03-1",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Кеды",
+    "gender": "женский",
+    "price": 2999,
+    "color": "Бежевый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Кеды женские PDXT266-2",
+    "article": "PDXT266-2",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Кеды",
+    "gender": "женский",
+    "price": 4650,
+    "color": "Бежевый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 2
+      },
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 8
+  },
+  {
+    "name": "Кеды мужские 31071B-YP",
+    "article": "31071B-YP",
+    "catalogDescription": "Мужские",
+    "type": "Мужские",
+    "category": "Кеды",
+    "gender": "мужской",
+    "price": 3499,
+    "color": "серый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "45",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Кеды мужские A33136B-YP",
+    "article": "A33136B-YP",
+    "catalogDescription": "Мужские",
+    "type": "Мужские",
+    "category": "Кеды",
+    "gender": "мужской",
+    "price": 3499,
+    "color": "белый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "44",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Кеды мужские BR05-1A-1",
+    "article": "BR05-1A-1",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Кеды",
+    "gender": "мужской",
+    "price": 6520,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "44",
+        "count": 1
+      },
+      {
+        "size": "45",
+        "count": 1
+      }
+    ],
+    "totalStock": 3
+  },
+  {
+    "name": "Кеды мужские BR1-55",
+    "article": "BR1-55",
+    "catalogDescription": "Мужские",
+    "type": "Обувь",
+    "category": "Кеды",
+    "gender": "мужской",
+    "price": 3499,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Кеды мужские BR1305NP",
+    "article": "BR1305NP",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Кеды",
+    "gender": "мужской",
+    "price": 6520,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "42",
+        "count": 1
+      }
+    ],
+    "totalStock": 2
+  },
+  {
+    "name": "Кеды мужские BR3-6-1",
+    "article": "BR3-6-1",
+    "catalogDescription": "Мужские",
+    "type": "Обувь",
+    "category": "Кеды",
+    "gender": "мужской",
+    "price": 3499,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Кеды мужские BT115-2",
+    "article": "BT115-2",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Кеды",
+    "gender": "мужской",
+    "price": 5999,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 2
+      },
+      {
+        "size": "41",
+        "count": 1
+      },
+      {
+        "size": "44",
+        "count": 1
+      }
+    ],
+    "totalStock": 5
+  },
+  {
+    "name": "Кеды мужские BT115-3",
+    "article": "BT115-3",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Кеды",
+    "gender": "мужской",
+    "price": 3499,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "40",
+        "count": 2
+      }
+    ],
+    "totalStock": 2
+  },
+  {
+    "name": "Кеды мужские FM0106-1",
+    "article": "0106-1",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Кеды",
+    "gender": "мужской",
+    "price": 3999,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      },
+      {
+        "size": "42",
+        "count": 1
+      },
+      {
+        "size": "45",
+        "count": 1
+      }
+    ],
+    "totalStock": 5
+  },
+  {
+    "name": "Кеды мужские FM0106-10",
+    "article": "0106-10",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Кеды",
+    "gender": "мужской",
+    "price": 3999,
+    "color": "Белый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "43",
+        "count": 1
+      }
+    ],
+    "totalStock": 2
+  },
+  {
+    "name": "Кеды мужские FM055-10",
+    "article": "KW055-10",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Кеды",
+    "gender": "мужской",
+    "price": 3499,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Кеды мужские FM255-1",
+    "article": "P255-1",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Кеды",
+    "gender": "мужской",
+    "price": 5999,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "42",
+        "count": 1
+      }
+    ],
+    "totalStock": 2
+  },
+  {
+    "name": "Кеды мужские FM255-4A",
+    "article": "P255-4A",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Кеды",
+    "gender": "мужской",
+    "price": 5999,
+    "color": "Хаки",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "41",
+        "count": 1
+      },
+      {
+        "size": "44",
+        "count": 1
+      }
+    ],
+    "totalStock": 2
+  },
+  {
+    "name": "Кеды мужские FM30221-F1",
+    "article": "X30221-F1",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Кеды",
+    "gender": "мужской",
+    "price": 5999,
+    "color": "Синий",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Кеды мужские FM30223-70",
+    "article": "X30223-70",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Кеды",
+    "gender": "мужской",
+    "price": 3499,
+    "color": "Хаки",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Кеды мужские FM6517-BW10",
+    "article": "6517-BW10",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Кеды",
+    "gender": "мужской",
+    "price": 3499,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Кеды мужские FM69870-12-3",
+    "article": "A69870-12-3",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Кеды",
+    "gender": "мужской",
+    "price": 3499,
+    "color": "Коричневый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Кеды мужские N-5945",
+    "article": "N-5945",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Кеды",
+    "gender": "мужской",
+    "price": 8100,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 2
+  },
+  {
+    "name": "Кеды мужские N-6025",
+    "article": "N-6025",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Кеды",
+    "gender": "мужской",
+    "price": 3499,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "41",
+        "count": 2
+      }
+    ],
+    "totalStock": 2
+  },
+  {
+    "name": "Кеды мужские RM11-811",
+    "article": "RM11-811",
+    "catalogDescription": "Мужские",
+    "type": "Обувь",
+    "category": "Кеды",
+    "gender": "мужской",
+    "price": 3499,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Кеды мужские RM2-864",
+    "article": "RM2-864",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Кеды",
+    "gender": "мужской",
+    "price": 6930,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 2
+      },
+      {
+        "size": "42",
+        "count": 2
+      },
+      {
+        "size": "44",
+        "count": 1
+      }
+    ],
+    "totalStock": 7
+  },
+  {
+    "name": "Кеды мужские RM2-865",
+    "article": "RM2-865",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Кеды",
+    "gender": "мужской",
+    "price": 6930,
+    "color": "Синий",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 2
+      },
+      {
+        "size": "42",
+        "count": 2
+      },
+      {
+        "size": "44",
+        "count": 1
+      }
+    ],
+    "totalStock": 7
+  },
+  {
+    "name": "Кеды мужские RM21-144",
+    "article": "RM21-144",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Кеды",
+    "gender": "мужской",
+    "price": 3499,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "42",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Кеды мужские RM3-552",
+    "article": "RM3-552",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Кеды",
+    "gender": "мужской",
+    "price": 3499,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Кеды мужские RM34-153",
+    "article": "RM34-153",
+    "catalogDescription": "Мужские",
+    "type": "Обувь",
+    "category": "Кеды",
+    "gender": "мужской",
+    "price": 3499,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Кеды мужские RM50-238",
+    "article": "RM50-238",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Кеды",
+    "gender": "мужской",
+    "price": 6580,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "44",
+        "count": 1
+      }
+    ],
+    "totalStock": 2
+  },
+  {
+    "name": "Кеды мужские RS130A-31E-A15",
+    "article": "RS130A-31E-A15",
+    "catalogDescription": "Мужские",
+    "type": "Мужские",
+    "category": "Кеды",
+    "gender": "мужской",
+    "price": 3499,
+    "color": "черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Кеды мужские RT34-226",
+    "article": "RT34-226",
+    "catalogDescription": "Мужские",
+    "type": "Обувь",
+    "category": "Кеды",
+    "gender": "мужской",
+    "price": 5999,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      },
+      {
+        "size": "43",
+        "count": 1
+      }
+    ],
+    "totalStock": 3
+  },
+  {
+    "name": "Кеды мужские RT40-73",
+    "article": "RT40-73",
+    "catalogDescription": "Мужские",
+    "type": "Обувь",
+    "category": "Кеды",
+    "gender": "мужской",
+    "price": 3499,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Кеды мужские Z-424",
+    "article": "Z-424",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Кеды",
+    "gender": "мужской",
+    "price": 8120,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "45",
+        "count": 1
+      }
+    ],
+    "totalStock": 2
+  },
+  {
+    "name": "Кеды мужские Z-428",
+    "article": "Z-428",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Кеды",
+    "gender": "мужской",
+    "price": 8120,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 2
+      },
+      {
+        "size": "44",
+        "count": 1
+      }
+    ],
+    "totalStock": 4
+  },
+  {
+    "name": "Кеды мужские Z-530",
+    "article": "Z-530",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Кеды",
+    "gender": "мужской",
+    "price": 8120,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "41",
+        "count": 1
+      },
+      {
+        "size": "45",
+        "count": 1
+      }
+    ],
+    "totalStock": 2
+  },
+  {
+    "name": "Кеды мужские Z-534",
+    "article": "Z-534",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Кеды",
+    "gender": "мужской",
+    "price": 8120,
+    "color": "Синий",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 2
+      },
+      {
+        "size": "42",
+        "count": 2
+      },
+      {
+        "size": "44",
+        "count": 1
+      }
+    ],
+    "totalStock": 6
+  },
+  {
+    "name": "Кроссовки женские  AP205-1",
+    "article": "AP205-1",
+    "catalogDescription": "Мужские",
+    "type": "Обувь",
+    "category": "Кроссовки",
+    "gender": "женский",
+    "price": 1999,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "37",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 2
+  },
+  {
+    "name": "Кроссовки женские  AP205-3",
+    "article": "AP205-3",
+    "catalogDescription": "Мужские",
+    "type": "Обувь",
+    "category": "Кроссовки",
+    "gender": "женский",
+    "price": 1999,
+    "color": "Серый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 1
+      },
+      {
+        "size": "38",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 5
+  },
+  {
+    "name": "Кроссовки женские  AP205-6",
+    "article": "AP205-6",
+    "catalogDescription": "Мужские",
+    "type": "Обувь",
+    "category": "Кроссовки",
+    "gender": "женский",
+    "price": 1999,
+    "color": "Белый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Кроссовки женские  AP2319-1",
+    "article": "AP2319-1",
+    "catalogDescription": "Мужские",
+    "type": "Обувь",
+    "category": "Кроссовки",
+    "gender": "женский",
+    "price": 1999,
+    "color": "Серый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "37",
+        "count": 1
+      },
+      {
+        "size": "39",
+        "count": 1
+      }
+    ],
+    "totalStock": 2
+  },
+  {
+    "name": "Кроссовки женские 10105B-YP",
+    "article": "10105B-YP",
+    "catalogDescription": "Женские",
+    "type": "Женские",
+    "category": "Кроссовки",
+    "gender": "женский",
+    "price": 3999,
+    "color": "серый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "38",
+        "count": 1
+      },
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 3
+  },
+  {
+    "name": "Кроссовки женские 10367B-YP",
+    "article": "10367B-YP",
+    "catalogDescription": "Женские",
+    "type": "Женские",
+    "category": "Кроссовки",
+    "gender": "женский",
+    "price": 2999,
+    "color": "черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "38",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Кроссовки женские 10485B-YP",
+    "article": "10485B-YP",
+    "catalogDescription": "Женские",
+    "type": "Женские",
+    "category": "Кроссовки",
+    "gender": "женский",
+    "price": 2999,
+    "color": "черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Кроссовки женские A10670B-YP",
+    "article": "A10670B-YP",
+    "catalogDescription": "Женские",
+    "type": "Женские",
+    "category": "Кроссовки",
+    "gender": "женский",
+    "price": 2999,
+    "color": "серый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "37",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Кроссовки женские A10678B-YP",
+    "article": "A10678B-YP",
+    "catalogDescription": "Женские",
+    "type": "Женские",
+    "category": "Кроссовки",
+    "gender": "женский",
+    "price": 2999,
+    "color": "белый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "38",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Кроссовки женские B100068B-YP",
+    "article": "B100068B-YP",
+    "catalogDescription": "Женские",
+    "type": "Женские",
+    "category": "Кроссовки",
+    "gender": "женский",
+    "price": 2999,
+    "color": "черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "37",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Кроссовки женские BT1781B-300-1M",
+    "article": "BT1781B-300-1M",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Кроссовки",
+    "gender": "женский",
+    "price": 2999,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "37",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Кроссовки женские BT2216В-15-8M",
+    "article": "BT2216В-15-8",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Кроссовки",
+    "gender": "женский",
+    "price": 2999,
+    "color": "Хаки",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Кроссовки женские BT2221В-8-2",
+    "article": "BT2221В-8-2",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Кроссовки",
+    "gender": "женский",
+    "price": 5999,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 2
+      },
+      {
+        "size": "37",
+        "count": 1
+      },
+      {
+        "size": "38",
+        "count": 1
+      }
+    ],
+    "totalStock": 4
+  },
+  {
+    "name": "Кроссовки женские BT2301-5",
+    "article": "BT2301-5",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Кроссовки",
+    "gender": "женский",
+    "price": 5999,
+    "color": "Белый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 2
+  },
+  {
+    "name": "Кроссовки женские BT2368-2-1M",
+    "article": "BT2368-2-1M",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Кроссовки",
+    "gender": "женский",
+    "price": 2999,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "37",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Кроссовки женские BT2368-2-2M",
+    "article": "BT2368-2-2M",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Кроссовки",
+    "gender": "женский",
+    "price": 5999,
+    "color": "Бежевый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "39",
+        "count": 2
+      }
+    ],
+    "totalStock": 3
+  },
+  {
+    "name": "Кроссовки женские BT976S-G01-N128",
+    "article": "BT976S-G01-N128",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Кроссовки",
+    "gender": "женский",
+    "price": 5999,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "37",
+        "count": 1
+      },
+      {
+        "size": "38",
+        "count": 2
+      }
+    ],
+    "totalStock": 3
+  },
+  {
+    "name": "Кроссовки женские DFC233-1",
+    "article": "DFC233-1",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Кроссовки",
+    "gender": "женский",
+    "price": 5900,
+    "color": "Белый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 1
+      },
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "39",
+        "count": 2
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 7
+  },
+  {
+    "name": "Кроссовки женские GG-71",
+    "article": "GG-71",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Кроссовки",
+    "gender": "женский",
+    "price": 2999,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "38",
+        "count": 2
+      }
+    ],
+    "totalStock": 2
+  },
+  {
+    "name": "Кроссовки женские GG100-5",
+    "article": "GG100-5",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Кроссовки",
+    "gender": "женский",
+    "price": 6230,
+    "color": "Бежевый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 2
+  },
+  {
+    "name": "Кроссовки женские GL4286-022-2",
+    "article": "GL4286-022-2",
+    "catalogDescription": "Женские",
+    "type": "Женские",
+    "category": "Кроссовки",
+    "gender": "женский",
+    "price": 1999,
+    "color": "бронзовый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Кроссовки женские P113-2",
+    "article": "P113-2",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Кроссовки",
+    "gender": "женский",
+    "price": 2999,
+    "color": "Бежевый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Кроссовки женские PAFC22-1Z",
+    "article": "PAFC22-1Z",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Кроссовки",
+    "gender": "женский",
+    "price": 5560,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "39",
+        "count": 2
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 7
+  },
+  {
+    "name": "Кроссовки женские PAFC22-5Z",
+    "article": "PAFC22-5Z",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Кроссовки",
+    "gender": "женский",
+    "price": 5560,
+    "color": "Бежевый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "37",
+        "count": 1
+      },
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "39",
+        "count": 2
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 7
+  },
+  {
+    "name": "Кроссовки женские PAFC23-1Z",
+    "article": "PAFC23-1Z",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Кроссовки",
+    "gender": "женский",
+    "price": 5560,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "38",
+        "count": 1
+      },
+      {
+        "size": "39",
+        "count": 2
+      },
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 5
+  },
+  {
+    "name": "Кроссовки женские PAFC23-2Z",
+    "article": "PAFC23-2Z",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Кроссовки",
+    "gender": "женский",
+    "price": 5560,
+    "color": "Бежевый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "37",
+        "count": 1
+      },
+      {
+        "size": "38",
+        "count": 1
+      },
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 4
+  },
+  {
+    "name": "Кроссовки женские PAFC23-3Z",
+    "article": "PAFC23-3Z",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Кроссовки",
+    "gender": "женский",
+    "price": 5560,
+    "color": "Коричневый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "37",
+        "count": 1
+      },
+      {
+        "size": "38",
+        "count": 1
+      },
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 4
+  },
+  {
+    "name": "Кроссовки женские PAJ120-1Z",
+    "article": "PAJ120-1Z",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Кроссовки",
+    "gender": "женский",
+    "price": 5920,
+    "color": "Коричневый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 1
+      },
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "39",
+        "count": 2
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 8
+  },
+  {
+    "name": "Кроссовки женские PAJ120-2Z",
+    "article": "PAJ120-2Z",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Кроссовки",
+    "gender": "женский",
+    "price": 5920,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 1
+      },
+      {
+        "size": "38",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 4
+  },
+  {
+    "name": "Кроссовки женские PAJ95-1Z",
+    "article": "PAJ95-1Z",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Кроссовки",
+    "gender": "женский",
+    "price": 4160,
+    "color": "Бежевый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 1
+      },
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "39",
+        "count": 2
+      },
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 7
+  },
+  {
+    "name": "Кроссовки женские PAJW10-1",
+    "article": "PAJW10-1",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Кроссовки",
+    "gender": "женский",
+    "price": 4160,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 2
+  },
+  {
+    "name": "Кроссовки женские PAJW45-1Z",
+    "article": "PAJW45-1Z",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Кроссовки",
+    "gender": "женский",
+    "price": 5560,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "38",
+        "count": 1
+      },
+      {
+        "size": "39",
+        "count": 2
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 6
+  },
+  {
+    "name": "Кроссовки женские PAJW45-2Z",
+    "article": "PAJW45-2Z",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Кроссовки",
+    "gender": "женский",
+    "price": 5560,
+    "color": "Коричневый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 5
+  },
+  {
+    "name": "Кроссовки женские PCML20-3",
+    "article": "PCML20-3",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Кроссовки",
+    "gender": "женский",
+    "price": 4160,
+    "color": "Коричневый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 1
+      },
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "39",
+        "count": 2
+      },
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 7
+  },
+  {
+    "name": "Кроссовки женские PCML25-3",
+    "article": "PCML25-3",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Кроссовки",
+    "gender": "женский",
+    "price": 4160,
+    "color": "Коричневый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "38",
+        "count": 2
+      }
+    ],
+    "totalStock": 3
+  },
+  {
+    "name": "Кроссовки женские PDA322-3",
+    "article": "PDA322-3",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Кроссовки",
+    "gender": "женский",
+    "price": 4950,
+    "color": "Бежевый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 2
+      },
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 8
+  },
+  {
+    "name": "Кроссовки женские PDD230-1",
+    "article": "PDD230-1",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Кроссовки",
+    "gender": "женский",
+    "price": 2999,
+    "color": "Белый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Кроссовки женские PDJ88-1",
+    "article": "PDJ88-1",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Кроссовки",
+    "gender": "женский",
+    "price": 4160,
+    "color": "Желтый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 1
+      },
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 6
+  },
+  {
+    "name": "Кроссовки женские PDRX02-1",
+    "article": "PDRX02-1",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Кроссовки",
+    "gender": "женский",
+    "price": 2999,
+    "color": "Бежевый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "38",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Кроссовки женские PDXT224-1",
+    "article": "PDXT224-1",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Кроссовки",
+    "gender": "женский",
+    "price": 2999,
+    "color": "Белый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "38",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Кроссовки женские PDXT236-1",
+    "article": "PDXT236-1",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Кроссовки",
+    "gender": "женский",
+    "price": 3399,
+    "color": "Бежевый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "37",
+        "count": 1
+      },
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 3
+  },
+  {
+    "name": "Кроссовки женские RS1732B-91-2M",
+    "article": "RS1732B-91-2M",
+    "catalogDescription": "Женские",
+    "type": "Женские",
+    "category": "Кроссовки",
+    "gender": "женский",
+    "price": 5999,
+    "color": "серый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "38",
+        "count": 1
+      },
+      {
+        "size": "39",
+        "count": 2
+      }
+    ],
+    "totalStock": 3
+  },
+  {
+    "name": "Кроссовки женские RS1732B-91-3M",
+    "article": "RS1732B-91-3M",
+    "catalogDescription": "Женские",
+    "type": "Женские",
+    "category": "Кроссовки",
+    "gender": "женский",
+    "price": 5999,
+    "color": "пудровый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 3
+  },
+  {
+    "name": "Кроссовки женские Y3-2",
+    "article": "Y3-2",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Кроссовки",
+    "gender": "женский",
+    "price": 5915,
+    "color": "Бежевый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 1
+      },
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 6
+  },
+  {
+    "name": "Кроссовки мужские 14083B-YP",
+    "article": "14083B-YP",
+    "catalogDescription": "Мужские",
+    "type": "Мужские",
+    "category": "Кроссовки",
+    "gender": "мужской",
+    "price": 3499,
+    "color": "черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Кроссовки мужские 14199BC-P",
+    "article": "14199BC-P",
+    "catalogDescription": "Мужские",
+    "type": "Мужские",
+    "category": "Кроссовки",
+    "gender": "мужской",
+    "price": 3499,
+    "color": "черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Кроссовки мужские AP03-1",
+    "article": "AP03-1",
+    "catalogDescription": "Мужские",
+    "type": "Обувь",
+    "category": "Кроссовки",
+    "gender": "мужской",
+    "price": 1999,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 2
+      },
+      {
+        "size": "45",
+        "count": 1
+      }
+    ],
+    "totalStock": 4
+  },
+  {
+    "name": "Кроссовки мужские AP03-3",
+    "article": "AP03-3",
+    "catalogDescription": "Мужские",
+    "type": "Обувь",
+    "category": "Кроссовки",
+    "gender": "мужской",
+    "price": 1999,
+    "color": "Серый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      },
+      {
+        "size": "44",
+        "count": 2
+      }
+    ],
+    "totalStock": 4
+  },
+  {
+    "name": "Кроссовки мужские AP05-2",
+    "article": "AP05-2",
+    "catalogDescription": "Мужские",
+    "type": "Обувь",
+    "category": "Кроссовки",
+    "gender": "мужской",
+    "price": 1999,
+    "color": "Синий",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 2
+      },
+      {
+        "size": "42",
+        "count": 1
+      },
+      {
+        "size": "44",
+        "count": 2
+      },
+      {
+        "size": "45",
+        "count": 1
+      }
+    ],
+    "totalStock": 7
+  },
+  {
+    "name": "Кроссовки мужские AP06-1",
+    "article": "AP06-1",
+    "catalogDescription": "Мужские",
+    "type": "Обувь",
+    "category": "Кроссовки",
+    "gender": "мужской",
+    "price": 1999,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "41",
+        "count": 2
+      },
+      {
+        "size": "44",
+        "count": 1
+      },
+      {
+        "size": "45",
+        "count": 1
+      }
+    ],
+    "totalStock": 4
+  },
+  {
+    "name": "Кроссовки мужские AP08-3",
+    "article": "AP08-3",
+    "catalogDescription": "Мужские",
+    "type": "Обувь",
+    "category": "Кроссовки",
+    "gender": "мужской",
+    "price": 1999,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "41",
+        "count": 1
+      },
+      {
+        "size": "44",
+        "count": 2
+      }
+    ],
+    "totalStock": 3
+  },
+  {
+    "name": "Кроссовки мужские AP0981-2",
+    "article": "AP0981-2",
+    "catalogDescription": "Мужские",
+    "type": "Обувь",
+    "category": "Кроссовки",
+    "gender": "мужской",
+    "price": 1999,
+    "color": "Синий",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "44",
+        "count": 1
+      },
+      {
+        "size": "45",
+        "count": 1
+      }
+    ],
+    "totalStock": 3
+  },
+  {
+    "name": "Кроссовки мужские BR16-1A-M",
+    "article": "BR16-1A-M",
+    "catalogDescription": "Мужские",
+    "type": "Обувь",
+    "category": "Кроссовки",
+    "gender": "мужской",
+    "price": 3499,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "42",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Кроссовки мужские FM2340-9M-S13A329",
+    "article": " FM2340-9M-S13A329",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Кроссовки",
+    "gender": "мужской",
+    "price": 6520,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      },
+      {
+        "size": "42",
+        "count": 1
+      }
+    ],
+    "totalStock": 4
+  },
+  {
+    "name": "Кроссовки мужские FM25H79-1",
+    "article": "FM25H79-1",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Кроссовки",
+    "gender": "мужской",
+    "price": 6500,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      },
+      {
+        "size": "42",
+        "count": 2
+      },
+      {
+        "size": "45",
+        "count": 1
+      }
+    ],
+    "totalStock": 6
+  },
+  {
+    "name": "Кроссовки мужские FM3506-2",
+    "article": "FM3506-2",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Кроссовки",
+    "gender": "мужской",
+    "price": 6500,
+    "color": "Синий",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      },
+      {
+        "size": "42",
+        "count": 2
+      },
+      {
+        "size": "44",
+        "count": 1
+      },
+      {
+        "size": "45",
+        "count": 1
+      }
+    ],
+    "totalStock": 7
+  },
+  {
+    "name": "Кроссовки мужские FM79172-1",
+    "article": "X79172-1",
+    "catalogDescription": "Мужские",
+    "type": "Обувь",
+    "category": "Кроссовки",
+    "gender": "мужской",
+    "price": 5999,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "44",
+        "count": 1
+      },
+      {
+        "size": "45",
+        "count": 1
+      }
+    ],
+    "totalStock": 3
+  },
+  {
+    "name": "Кроссовки мужские FM858-1",
+    "article": "858-1",
+    "catalogDescription": "Мужские",
+    "type": "Обувь",
+    "category": "Кроссовки",
+    "gender": "мужской",
+    "price": 3499,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Кроссовки мужские FM90999-A3",
+    "article": "H90999-A3",
+    "catalogDescription": "Мужские",
+    "type": "Обувь",
+    "category": "Кроссовки",
+    "gender": "мужской",
+    "price": 3499,
+    "color": "Бело-зеленый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "44",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Кроссовки мужские MO1074",
+    "article": "MO1074",
+    "catalogDescription": "Мужские",
+    "type": "Обувь",
+    "category": "Кроссовки",
+    "gender": "мужской",
+    "price": 3499,
+    "color": "Зеленый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Кроссовки мужские PR2766-4",
+    "article": "PR2766-4",
+    "catalogDescription": "Мужские",
+    "type": "Обувь",
+    "category": "Кроссовки",
+    "gender": "мужской",
+    "price": 5999,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "41",
+        "count": 1
+      },
+      {
+        "size": "42",
+        "count": 1
+      }
+    ],
+    "totalStock": 2
+  },
+  {
+    "name": "Кроссовки мужские PR5115-891",
+    "article": "PR5115-891",
+    "catalogDescription": "Мужские",
+    "type": "Обувь",
+    "category": "Кроссовки",
+    "gender": "мужской",
+    "price": 3499,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Кроссовки мужские RM1-822",
+    "article": " RM1-822",
+    "catalogDescription": "Мужские",
+    "type": "Обувь",
+    "category": "Кроссовки",
+    "gender": "мужской",
+    "price": 3499,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Кроссовки мужские RM1-824",
+    "article": " RM1-824",
+    "catalogDescription": "Мужские",
+    "type": "Обувь",
+    "category": "Кроссовки",
+    "gender": "мужской",
+    "price": 5999,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 2
+  },
+  {
+    "name": "Кроссовки мужские RM2-1000",
+    "article": " RM2-1000",
+    "catalogDescription": "Мужские",
+    "type": "Обувь",
+    "category": "Кроссовки",
+    "gender": "мужской",
+    "price": 3499,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Кроссовки мужские RS340A-3-S25",
+    "article": "RS340A-3-S25",
+    "catalogDescription": "Мужские",
+    "type": "Мужские",
+    "category": "Кроссовки",
+    "gender": "мужской",
+    "price": 3499,
+    "color": "черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "42",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Кроссовки мужские RT3-437",
+    "article": "RT3-437",
+    "catalogDescription": "Мужские",
+    "type": "Обувь",
+    "category": "Кроссовки",
+    "gender": "мужской",
+    "price": 3499,
+    "color": "Коричневый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Кроссовки мужские RT3-440",
+    "article": "RT3-440",
+    "catalogDescription": "Мужские",
+    "type": "Обувь",
+    "category": "Кроссовки",
+    "gender": "мужской",
+    "price": 3499,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Кроссовки мужские RT5696-1",
+    "article": "RT5696-1",
+    "catalogDescription": "Мужские",
+    "type": "Обувь",
+    "category": "Кроссовки",
+    "gender": "мужской",
+    "price": 3499,
+    "color": "Синий",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "42",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Кроссовки мужские Z-395",
+    "article": "Z-395",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Кроссовки",
+    "gender": "мужской",
+    "price": 6520,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "41",
+        "count": 1
+      },
+      {
+        "size": "42",
+        "count": 1
+      },
+      {
+        "size": "43",
+        "count": 1
+      }
+    ],
+    "totalStock": 3
+  },
+  {
+    "name": "Лоферы женские D385-1",
+    "article": "D385-1",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Лоферы",
+    "gender": "женский",
+    "price": 4760,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 1
+      },
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "39",
+        "count": 2
+      }
+    ],
+    "totalStock": 6
+  },
+  {
+    "name": "Лоферы женские DA143-1",
+    "article": "DA143-1",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Лоферы",
+    "gender": "женский",
+    "price": 4760,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "38",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 3
+  },
+  {
+    "name": "Лоферы женские DD93-1",
+    "article": "DD93-1",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Лоферы",
+    "gender": "женский",
+    "price": 5950,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "37",
+        "count": 1
+      },
+      {
+        "size": "38",
+        "count": 1
+      },
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 4
+  },
+  {
+    "name": "Лоферы женские DFC243-3",
+    "article": "DFC243-3",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Лоферы",
+    "gender": "женский",
+    "price": 6200,
+    "color": "Бежевый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 1
+      },
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "39",
+        "count": 2
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 8
+  },
+  {
+    "name": "Лоферы женские DFC243-4",
+    "article": "DFC243-4",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Лоферы",
+    "gender": "женский",
+    "price": 6200,
+    "color": "Коричневый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "37",
+        "count": 1
+      },
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "39",
+        "count": 2
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 7
+  },
+  {
+    "name": "Лоферы женские DK212-3",
+    "article": "DK212-3",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Лоферы",
+    "gender": "женский",
+    "price": 4760,
+    "color": "Бежевый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "37",
+        "count": 2
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 4
+  },
+  {
+    "name": "Лоферы женские DK223-3",
+    "article": "DK223-3",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Лоферы",
+    "gender": "женский",
+    "price": 4760,
+    "color": "Бежевый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 5
+  },
+  {
+    "name": "Лоферы женские DK318-3",
+    "article": "DK318-3",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Лоферы",
+    "gender": "женский",
+    "price": 2999,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "37",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Лоферы женские DQ100-1",
+    "article": "DQ100-1",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Лоферы",
+    "gender": "женский",
+    "price": 5950,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 1
+      },
+      {
+        "size": "38",
+        "count": 1
+      },
+      {
+        "size": "39",
+        "count": 2
+      },
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 6
+  },
+  {
+    "name": "Лоферы женские PDJ104-2",
+    "article": "PDJ104-2",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Лоферы",
+    "gender": "женский",
+    "price": 4100,
+    "color": "Бежевый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "39",
+        "count": 2
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 7
+  },
+  {
+    "name": "Лоферы женские PDJW71-5",
+    "article": "PDJW71-5",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Лоферы",
+    "gender": "женский",
+    "price": 4950,
+    "color": "Коричневый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "37",
+        "count": 1
+      },
+      {
+        "size": "38",
+        "count": 1
+      },
+      {
+        "size": "39",
+        "count": 2
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 6
+  },
+  {
+    "name": "Лоферы мужские AE401-302-A982-M",
+    "article": "AE401-302-A982-M",
+    "catalogDescription": "Мужские",
+    "type": "Обувь",
+    "category": "Лоферы",
+    "gender": "мужской",
+    "price": 8240,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "42",
+        "count": 1
+      }
+    ],
+    "totalStock": 2
+  },
+  {
+    "name": "Лоферы мужские BR1-58",
+    "article": "BR1-58",
+    "catalogDescription": "Мужские",
+    "type": "Обувь",
+    "category": "Лоферы",
+    "gender": "мужской",
+    "price": 6500,
+    "color": "Черный",
+    "warehouse": "Проспект Победы 1",
+    "sizes": [
+      {
+        "size": "43",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Лоферы мужские BR1-58",
+    "article": "BR1-58",
+    "catalogDescription": "Мужские",
+    "type": "Обувь",
+    "category": "Лоферы",
+    "gender": "мужской",
+    "price": 6520,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "42",
+        "count": 1
+      },
+      {
+        "size": "45",
+        "count": 1
+      }
+    ],
+    "totalStock": 2
+  },
+  {
+    "name": "Лоферы мужские BR1265Z",
+    "article": "BR1265Z",
+    "catalogDescription": "Мужские",
+    "type": "Обувь",
+    "category": "Лоферы",
+    "gender": "мужской",
+    "price": 9120,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "42",
+        "count": 2
+      },
+      {
+        "size": "43",
+        "count": 1
+      },
+      {
+        "size": "44",
+        "count": 1
+      },
+      {
+        "size": "45",
+        "count": 1
+      }
+    ],
+    "totalStock": 7
+  },
+  {
+    "name": "Лоферы мужские BR18-2A",
+    "article": "BR18-2A",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Лоферы",
+    "gender": "мужской",
+    "price": 10850,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 2
+      },
+      {
+        "size": "42",
+        "count": 2
+      },
+      {
+        "size": "43",
+        "count": 1
+      },
+      {
+        "size": "44",
+        "count": 1
+      }
+    ],
+    "totalStock": 8
+  },
+  {
+    "name": "Лоферы мужские BR2-245",
+    "article": "BR2-245",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Лоферы",
+    "gender": "мужской",
+    "price": 10850,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 2
+      },
+      {
+        "size": "42",
+        "count": 2
+      },
+      {
+        "size": "43",
+        "count": 1
+      },
+      {
+        "size": "44",
+        "count": 1
+      }
+    ],
+    "totalStock": 8
+  },
+  {
+    "name": "Лоферы мужские BR2-248",
+    "article": "BR2-248",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Лоферы",
+    "gender": "мужской",
+    "price": 10850,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 2
+      },
+      {
+        "size": "42",
+        "count": 2
+      },
+      {
+        "size": "43",
+        "count": 1
+      },
+      {
+        "size": "44",
+        "count": 1
+      }
+    ],
+    "totalStock": 8
+  },
+  {
+    "name": "Лоферы мужские BR2-297",
+    "article": "BR2-297",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Лоферы",
+    "gender": "мужской",
+    "price": 10850,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 2
+      },
+      {
+        "size": "42",
+        "count": 2
+      },
+      {
+        "size": "43",
+        "count": 1
+      },
+      {
+        "size": "44",
+        "count": 1
+      }
+    ],
+    "totalStock": 8
+  },
+  {
+    "name": "Лоферы мужские BR253",
+    "article": "BR253",
+    "catalogDescription": "Мужские",
+    "type": "Обувь",
+    "category": "Лоферы",
+    "gender": "мужской",
+    "price": 9360,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "42",
+        "count": 1
+      }
+    ],
+    "totalStock": 2
+  },
+  {
+    "name": "Лоферы мужские BR345-2-13",
+    "article": "BR345-2-13",
+    "catalogDescription": "Мужские",
+    "type": "Обувь",
+    "category": "Лоферы",
+    "gender": "мужской",
+    "price": 5760,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      },
+      {
+        "size": "44",
+        "count": 1
+      }
+    ],
+    "totalStock": 4
+  },
+  {
+    "name": "Лоферы мужские BR483-G19-D033-1",
+    "article": "BR483-G19-D033-1",
+    "catalogDescription": "Мужские",
+    "type": "Обувь",
+    "category": "Лоферы",
+    "gender": "мужской",
+    "price": 5760,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "42",
+        "count": 2
+      }
+    ],
+    "totalStock": 3
+  },
+  {
+    "name": "Лоферы мужские BR50-2-1",
+    "article": "BR50-2-1",
+    "catalogDescription": "Мужские",
+    "type": "Обувь",
+    "category": "Лоферы",
+    "gender": "мужской",
+    "price": 9120,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "43",
+        "count": 1
+      },
+      {
+        "size": "44",
+        "count": 1
+      }
+    ],
+    "totalStock": 4
+  },
+  {
+    "name": "Лоферы мужские BRJ3-66",
+    "article": "BRJ3-66",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Лоферы",
+    "gender": "мужской",
+    "price": 10850,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 2
+      },
+      {
+        "size": "42",
+        "count": 2
+      },
+      {
+        "size": "43",
+        "count": 1
+      },
+      {
+        "size": "44",
+        "count": 1
+      }
+    ],
+    "totalStock": 8
+  },
+  {
+    "name": "Лоферы мужские BRJ3-68",
+    "article": "BRJ3-68",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Лоферы",
+    "gender": "мужской",
+    "price": 10850,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 2
+      },
+      {
+        "size": "42",
+        "count": 2
+      },
+      {
+        "size": "43",
+        "count": 1
+      },
+      {
+        "size": "44",
+        "count": 1
+      }
+    ],
+    "totalStock": 8
+  },
+  {
+    "name": "Лоферы мужские FMD501-3AN",
+    "article": "FMD501-3AN",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Лоферы",
+    "gender": "мужской",
+    "price": 8700,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      },
+      {
+        "size": "42",
+        "count": 2
+      },
+      {
+        "size": "45",
+        "count": 1
+      }
+    ],
+    "totalStock": 6
+  },
+  {
+    "name": "Лоферы мужские FMD501-9CQ",
+    "article": "FMD501-9CQ",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Лоферы",
+    "gender": "мужской",
+    "price": 8700,
+    "color": "Коричневый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      },
+      {
+        "size": "42",
+        "count": 2
+      },
+      {
+        "size": "44",
+        "count": 1
+      },
+      {
+        "size": "45",
+        "count": 1
+      }
+    ],
+    "totalStock": 7
+  },
+  {
+    "name": "Лоферы мужские FME056-5E",
+    "article": "FME056-5E",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Лоферы",
+    "gender": "мужской",
+    "price": 8700,
+    "color": "Синий",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      },
+      {
+        "size": "42",
+        "count": 2
+      },
+      {
+        "size": "43",
+        "count": 1
+      },
+      {
+        "size": "44",
+        "count": 1
+      },
+      {
+        "size": "45",
+        "count": 1
+      }
+    ],
+    "totalStock": 8
+  },
+  {
+    "name": "Лоферы мужские FME056-5K",
+    "article": "FME056-5K",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Лоферы",
+    "gender": "мужской",
+    "price": 8700,
+    "color": "Коричневый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      },
+      {
+        "size": "42",
+        "count": 1
+      },
+      {
+        "size": "43",
+        "count": 1
+      },
+      {
+        "size": "44",
+        "count": 1
+      },
+      {
+        "size": "45",
+        "count": 1
+      }
+    ],
+    "totalStock": 7
+  },
+  {
+    "name": "Лоферы мужские FME056-5N",
+    "article": "FME056-5N",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Лоферы",
+    "gender": "мужской",
+    "price": 8700,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      },
+      {
+        "size": "42",
+        "count": 2
+      },
+      {
+        "size": "43",
+        "count": 1
+      },
+      {
+        "size": "44",
+        "count": 1
+      },
+      {
+        "size": "45",
+        "count": 1
+      }
+    ],
+    "totalStock": 8
+  },
+  {
+    "name": "Лоферы мужские FME056-9CN",
+    "article": "FME056-9CN",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Лоферы",
+    "gender": "мужской",
+    "price": 8700,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      },
+      {
+        "size": "42",
+        "count": 2
+      },
+      {
+        "size": "43",
+        "count": 1
+      },
+      {
+        "size": "44",
+        "count": 1
+      },
+      {
+        "size": "45",
+        "count": 1
+      }
+    ],
+    "totalStock": 8
+  },
+  {
+    "name": "Лоферы мужские FME056-9E",
+    "article": "FME056-9E",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Лоферы",
+    "gender": "мужской",
+    "price": 8700,
+    "color": "Синий",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      },
+      {
+        "size": "42",
+        "count": 2
+      },
+      {
+        "size": "43",
+        "count": 1
+      },
+      {
+        "size": "44",
+        "count": 1
+      },
+      {
+        "size": "45",
+        "count": 1
+      }
+    ],
+    "totalStock": 8
+  },
+  {
+    "name": "Лоферы мужские FME056-9T",
+    "article": "FME056-9T",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Лоферы",
+    "gender": "мужской",
+    "price": 8700,
+    "color": "Коричневый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      },
+      {
+        "size": "42",
+        "count": 2
+      },
+      {
+        "size": "43",
+        "count": 1
+      },
+      {
+        "size": "44",
+        "count": 1
+      },
+      {
+        "size": "45",
+        "count": 1
+      }
+    ],
+    "totalStock": 7
+  },
+  {
+    "name": "Лоферы мужские FME099-2N",
+    "article": "FME099-2N",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Лоферы",
+    "gender": "мужской",
+    "price": 8700,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      },
+      {
+        "size": "42",
+        "count": 2
+      },
+      {
+        "size": "43",
+        "count": 1
+      },
+      {
+        "size": "44",
+        "count": 1
+      }
+    ],
+    "totalStock": 7
+  },
+  {
+    "name": "Мокасины женские DK379-4",
+    "article": "DK379-4",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Мокасины",
+    "gender": "женский",
+    "price": 5950,
+    "color": "Бежевый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 1
+      },
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 6
+  },
+  {
+    "name": "Мокасины женские DK379-6",
+    "article": "DK379-6",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Мокасины",
+    "gender": "женский",
+    "price": 5950,
+    "color": "Коричневый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "37",
+        "count": 2
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 3
+  },
+  {
+    "name": "Мокасины женские FDRX01-2",
+    "article": "FDRX01-2",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Мокасины",
+    "gender": "женский",
+    "price": 3100,
+    "color": "Бежевый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 1
+      },
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 7
+  },
+  {
+    "name": "Мокасины женские PDD255-3",
+    "article": "PDD255-3",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Мокасины",
+    "gender": "женский",
+    "price": 4500,
+    "color": "Коричневый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 2
+      },
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 8
+  },
+  {
+    "name": "Мокасины женские PDD255-5",
+    "article": "PDD255-5",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Мокасины",
+    "gender": "женский",
+    "price": 4500,
+    "color": "Бежевый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 1
+      },
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 7
+  },
+  {
+    "name": "Мокасины женские PDRX24-5",
+    "article": "PDRX24-5",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Мокасины",
+    "gender": "женский",
+    "price": 4650,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 2
+      },
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 8
+  },
+  {
+    "name": "Мокасины женские PDXL110-1",
+    "article": "PDXL110-1",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Мокасины",
+    "gender": "женский",
+    "price": 2499,
+    "color": "Белый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Мокасины женские PDXL243-3",
+    "article": "PDXL243-3",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Мокасины",
+    "gender": "женский",
+    "price": 4350,
+    "color": "Серый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 2
+      },
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 8
+  },
+  {
+    "name": "Мокасины женские PDXL243-5",
+    "article": "PDXL243-5",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Мокасины",
+    "gender": "женский",
+    "price": 4350,
+    "color": "Коричневый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 2
+      },
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 8
+  },
+  {
+    "name": "Мокасины женские PDXT257-3",
+    "article": "PDXT257-3",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Мокасины",
+    "gender": "женский",
+    "price": 4650,
+    "color": "Коричневый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 2
+      },
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 7
+  },
+  {
+    "name": "Мокасины женские PDXT257-5",
+    "article": "PDXT257-5",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Мокасины",
+    "gender": "женский",
+    "price": 4650,
+    "color": "Бежевый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 2
+      },
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 8
+  },
+  {
+    "name": "Мокасины женские PDXT257-6",
+    "article": "PDXT257-6",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Мокасины",
+    "gender": "женский",
+    "price": 4650,
+    "color": "Бежевый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 2
+      },
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 8
+  },
+  {
+    "name": "Мокасины женские PDXT267-3",
+    "article": "PDXT267-3",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Мокасины",
+    "gender": "женский",
+    "price": 4350,
+    "color": "Коричневый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 1
+      },
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 7
+  },
+  {
+    "name": "Мокасины женские PDYL204-3",
+    "article": "PDYL204-3",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Мокасины",
+    "gender": "женский",
+    "price": 4650,
+    "color": "Коричневый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 1
+      },
+      {
+        "size": "39",
+        "count": 2
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 6
+  },
+  {
+    "name": "Мокасины мужские BR149A-5-TA29",
+    "article": "BR149A-5-TA29",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Мокасины",
+    "gender": "мужской",
+    "price": 3499,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Мокасины мужские BR149B-5-M80",
+    "article": "BR149B-5-M80",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Мокасины",
+    "gender": "мужской",
+    "price": 3499,
+    "color": "Коричневый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "41",
+        "count": 2
+      }
+    ],
+    "totalStock": 2
+  },
+  {
+    "name": "Мокасины мужские BR583B-59-B18",
+    "article": "BR583B-59-B18",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Мокасины",
+    "gender": "мужской",
+    "price": 3499,
+    "color": "Синий",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Мокасины мужские BR651B-75-329",
+    "article": "BR651B-75-329",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Мокасины",
+    "gender": "мужской",
+    "price": 3499,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Мокасины мужские FM020-1N",
+    "article": "FM020-1N",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Мокасины",
+    "gender": "мужской",
+    "price": 3499,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "43",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Мокасины мужские FM020-3H",
+    "article": "FM020-3H",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Мокасины",
+    "gender": "мужской",
+    "price": 3499,
+    "color": "Коричневый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Мокасины мужские FM10-01",
+    "article": "FM10-01",
+    "catalogDescription": "Мужские",
+    "type": "Обувь",
+    "category": "Мокасины",
+    "gender": "мужской",
+    "price": 6499,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "42",
+        "count": 1
+      },
+      {
+        "size": "45",
+        "count": 1
+      }
+    ],
+    "totalStock": 4
+  },
+  {
+    "name": "Мокасины мужские FM10-06",
+    "article": "FM10-06",
+    "catalogDescription": "Мужские",
+    "type": "Обувь",
+    "category": "Мокасины",
+    "gender": "мужской",
+    "price": 3499,
+    "color": "Серый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Мокасины мужские FM10-13",
+    "article": "FM10-13",
+    "catalogDescription": "Мужские",
+    "type": "Обувь",
+    "category": "Мокасины",
+    "gender": "мужской",
+    "price": 6499,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "44",
+        "count": 1
+      }
+    ],
+    "totalStock": 2
+  },
+  {
+    "name": "Мокасины мужские FM10-86",
+    "article": "FM10-86",
+    "catalogDescription": "Мужские",
+    "type": "Обувь",
+    "category": "Мокасины",
+    "gender": "мужской",
+    "price": 6499,
+    "color": "Синий",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "45",
+        "count": 1
+      }
+    ],
+    "totalStock": 2
+  },
+  {
+    "name": "Мокасины мужские FM149A-5-TA29",
+    "article": "FM149A-5-TA29",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Мокасины",
+    "gender": "мужской",
+    "price": 8700,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "42",
+        "count": 1
+      },
+      {
+        "size": "43",
+        "count": 1
+      },
+      {
+        "size": "45",
+        "count": 1
+      }
+    ],
+    "totalStock": 5
+  },
+  {
+    "name": "Мокасины мужские FM57777-XM10",
+    "article": "FM57777-XM10",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Мокасины",
+    "gender": "мужской",
+    "price": 8700,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "42",
+        "count": 1
+      },
+      {
+        "size": "43",
+        "count": 1
+      },
+      {
+        "size": "45",
+        "count": 1
+      }
+    ],
+    "totalStock": 5
+  },
+  {
+    "name": "Мокасины мужские MO24-175",
+    "article": "MO24-175",
+    "catalogDescription": "Мужские",
+    "type": "Обувь",
+    "category": "Мокасины",
+    "gender": "мужской",
+    "price": 4499,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 2
+  },
+  {
+    "name": "Мокасины мужские MO24-180",
+    "article": "MO24-180",
+    "catalogDescription": "Мужские",
+    "type": "Обувь",
+    "category": "Мокасины",
+    "gender": "мужской",
+    "price": 3499,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Мокасины мужские PR1312-10",
+    "article": "PR1312-10",
+    "catalogDescription": "Мужские",
+    "type": "Обувь",
+    "category": "Мокасины",
+    "gender": "мужской",
+    "price": 3499,
+    "color": "Синий",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "42",
+        "count": 2
+      }
+    ],
+    "totalStock": 2
+  },
+  {
+    "name": "Мокасины мужские PR1312-3",
+    "article": "PR1312-3",
+    "catalogDescription": "Мужские",
+    "type": "Обувь",
+    "category": "Мокасины",
+    "gender": "мужской",
+    "price": 6499,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "42",
+        "count": 1
+      },
+      {
+        "size": "43",
+        "count": 1
+      }
+    ],
+    "totalStock": 3
+  },
+  {
+    "name": "Мокасины мужские PR181-286",
+    "article": "PR181-286",
+    "catalogDescription": "Мужские",
+    "type": "Обувь",
+    "category": "Мокасины",
+    "gender": "мужской",
+    "price": 3499,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Мокасины мужские RT3-463",
+    "article": "RT3-463",
+    "catalogDescription": "Мужские",
+    "type": "Обувь",
+    "category": "Мокасины",
+    "gender": "мужской",
+    "price": 6499,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 2
+  },
+  {
+    "name": "Оксфорды мужские BR1-132",
+    "article": "BR1-132",
+    "catalogDescription": "Мужские",
+    "type": "Обувь",
+    "category": "Оксфорды",
+    "gender": "мужской",
+    "price": 9120,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      },
+      {
+        "size": "42",
+        "count": 1
+      },
+      {
+        "size": "43",
+        "count": 1
+      },
+      {
+        "size": "44",
+        "count": 1
+      },
+      {
+        "size": "45",
+        "count": 1
+      }
+    ],
+    "totalStock": 7
+  },
+  {
+    "name": "Оксфорды мужские BR1-239",
+    "article": "BR1-239",
+    "catalogDescription": "Мужские",
+    "type": "Обувь",
+    "category": "Оксфорды",
+    "gender": "мужской",
+    "price": 9360,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "42",
+        "count": 2
+      },
+      {
+        "size": "43",
+        "count": 1
+      },
+      {
+        "size": "44",
+        "count": 1
+      },
+      {
+        "size": "45",
+        "count": 1
+      }
+    ],
+    "totalStock": 6
+  },
+  {
+    "name": "Оксфорды мужские BR195-2-17",
+    "article": "BR195-2-17",
+    "catalogDescription": "Мужские",
+    "type": "Обувь",
+    "category": "Оксфорды",
+    "gender": "мужской",
+    "price": 9360,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      },
+      {
+        "size": "42",
+        "count": 2
+      },
+      {
+        "size": "44",
+        "count": 1
+      }
+    ],
+    "totalStock": 5
+  },
+  {
+    "name": "Оксфорды мужские BR295-2506-AB16P",
+    "article": "BR295-2506-AB16P",
+    "catalogDescription": "Мужские",
+    "type": "Обувь",
+    "category": "Оксфорды",
+    "gender": "мужской",
+    "price": 9360,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 2
+      },
+      {
+        "size": "43",
+        "count": 1
+      },
+      {
+        "size": "44",
+        "count": 1
+      }
+    ],
+    "totalStock": 6
+  },
+  {
+    "name": "Оксфорды мужские BR453-01A",
+    "article": "BR453-01A",
+    "catalogDescription": "Мужские",
+    "type": "Обувь",
+    "category": "Оксфорды",
+    "gender": "мужской",
+    "price": 9360,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 2
+      },
+      {
+        "size": "42",
+        "count": 2
+      },
+      {
+        "size": "43",
+        "count": 1
+      }
+    ],
+    "totalStock": 7
+  },
+  {
+    "name": "Оксфорды мужские BR477-48-T1",
+    "article": "BR477-48-T1",
+    "catalogDescription": "Мужские",
+    "type": "Обувь",
+    "category": "Оксфорды",
+    "gender": "мужской",
+    "price": 6520,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      },
+      {
+        "size": "42",
+        "count": 2
+      },
+      {
+        "size": "44",
+        "count": 1
+      }
+    ],
+    "totalStock": 5
+  },
+  {
+    "name": "Полуботинки женские 71361BC-P",
+    "article": "71361BC-P",
+    "catalogDescription": "Женские",
+    "type": "Женские",
+    "category": "Полуботинки",
+    "gender": "женский",
+    "price": 2999,
+    "color": "серый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Полуботинки женские AM526-2",
+    "article": "AM526-2",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Полуботинки",
+    "gender": "женский",
+    "price": 2999,
+    "color": "Бежевый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Полуботинки женские B80286B-YP",
+    "article": "B80286B-YP",
+    "catalogDescription": "Женские",
+    "type": "Женские",
+    "category": "Полуботинки",
+    "gender": "женский",
+    "price": 3999,
+    "color": "черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "35",
+        "count": 1
+      },
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 2
+      }
+    ],
+    "totalStock": 4
+  },
+  {
+    "name": "Полуботинки женские PARX09-1Z",
+    "article": "PARX09-1Z",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Полуботинки",
+    "gender": "женский",
+    "price": 5560,
+    "color": "Коричневый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 2
+      },
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 3
+  },
+  {
+    "name": "Полуботинки женские PARX14-2Z",
+    "article": "PARX14-2Z",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Полуботинки",
+    "gender": "женский",
+    "price": 2999,
+    "color": "Коричневый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Полуботинки женские PAYH21-3Z",
+    "article": "PAYH21-3Z",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Полуботинки",
+    "gender": "женский",
+    "price": 5120,
+    "color": "Бежевый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 2
+  },
+  {
+    "name": "Полуботинки женские RS2331-8",
+    "article": "RS2331-8",
+    "catalogDescription": "Женские",
+    "type": "Женские",
+    "category": "Полуботинки",
+    "gender": "женский",
+    "price": 2999,
+    "color": "черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "38",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Полуботинки женские RS3598S-Y03-7",
+    "article": "RS3598S-Y03-7",
+    "catalogDescription": "",
+    "type": "Женские",
+    "category": "Полуботинки",
+    "gender": "женский",
+    "price": 1999,
+    "color": "бордовый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Полуботинки женские RS3598S-Y03-8",
+    "article": "RS3598S-Y03-8",
+    "catalogDescription": "",
+    "type": "Женские",
+    "category": "Полуботинки",
+    "gender": "женский",
+    "price": 3999,
+    "color": "оранжевый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "38",
+        "count": 1
+      },
+      {
+        "size": "39",
+        "count": 2
+      }
+    ],
+    "totalStock": 3
+  },
+  {
+    "name": "Полуботинки мужские 23363B-YP",
+    "article": "23363B-YP",
+    "catalogDescription": "Мужские",
+    "type": "Обувь",
+    "category": "Полуботинки",
+    "gender": "мужской",
+    "price": 3499,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Полусапоги B28025B-B",
+    "article": "B28025B-B",
+    "catalogDescription": "Женские",
+    "type": "Женские",
+    "category": "Полусапоги ",
+    "gender": null,
+    "price": 2999,
+    "color": "черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Полусапоги B80303B-B",
+    "article": "B80303B-B",
+    "catalogDescription": "Женские",
+    "type": "Женские",
+    "category": "Полусапоги ",
+    "gender": null,
+    "price": 4999,
+    "color": "белый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "35",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 1
+      },
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 6
+  },
+  {
+    "name": "Полусапоги RS2161-705R",
+    "article": "RS2161-705R",
+    "catalogDescription": "Женские",
+    "type": "Женские",
+    "category": "Полусапоги ",
+    "gender": null,
+    "price": 4999,
+    "color": "черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 2
+  },
+  {
+    "name": "Сабо женские DEQ214-1",
+    "article": "DEQ214-1",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Сабо",
+    "gender": "женский",
+    "price": 5950,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 1
+      },
+      {
+        "size": "38",
+        "count": 2
+      }
+    ],
+    "totalStock": 4
+  },
+  {
+    "name": "Сабо женские DL20-1",
+    "article": "DL20-1",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Сабо",
+    "gender": "женский",
+    "price": 4725,
+    "color": "Бежевый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "37",
+        "count": 1
+      },
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 3
+  },
+  {
+    "name": "Сабо женские DL36-3",
+    "article": "DL36-3",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Сабо",
+    "gender": "женский",
+    "price": 4725,
+    "color": "Бежевый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 1
+      },
+      {
+        "size": "38",
+        "count": 2
+      }
+    ],
+    "totalStock": 4
+  },
+  {
+    "name": "Сабо женские DL55-4",
+    "article": "DL55-4",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Сабо",
+    "gender": "женский",
+    "price": 2999,
+    "color": "Коричневый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Сабо женские DL9-4",
+    "article": "DL9-4",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Сабо",
+    "gender": "женский",
+    "price": 4725,
+    "color": "Бежевый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 1
+      },
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "39",
+        "count": 1
+      }
+    ],
+    "totalStock": 5
+  },
+  {
+    "name": "Сабо женские DL9-5",
+    "article": "DL9-5",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Сабо",
+    "gender": "женский",
+    "price": 4725,
+    "color": "Коричневый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 2
+      },
+      {
+        "size": "37",
+        "count": 1
+      },
+      {
+        "size": "38",
+        "count": 3
+      },
+      {
+        "size": "39",
+        "count": 1
+      }
+    ],
+    "totalStock": 7
+  },
+  {
+    "name": "Сабо женские DL9-6",
+    "article": "DL9-6",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Сабо",
+    "gender": "женский",
+    "price": 4725,
+    "color": "Голубой",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "39",
+        "count": 1
+      }
+    ],
+    "totalStock": 3
+  },
+  {
+    "name": "Сабо женские FEG387-3",
+    "article": "FEG387-3",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Сабо",
+    "gender": "женский",
+    "price": 3400,
+    "color": "Бронзовый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 2
+      },
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "39",
+        "count": 1
+      }
+    ],
+    "totalStock": 6
+  },
+  {
+    "name": "Сабо женские FEG387-6",
+    "article": "FEG387-6",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Сабо",
+    "gender": "женский",
+    "price": 3400,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 2
+      },
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "39",
+        "count": 2
+      },
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 8
+  },
+  {
+    "name": "Сабо женские HP-137",
+    "article": "HP-137",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Сабо",
+    "gender": "женский",
+    "price": 2499,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Сабо женские HP-140",
+    "article": "HP-140",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Сабо",
+    "gender": "женский",
+    "price": 2499,
+    "color": "Бежевый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 2
+      }
+    ],
+    "totalStock": 2
+  },
+  {
+    "name": "Сабо женские HP-148",
+    "article": "HP-148",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Сабо",
+    "gender": "женский",
+    "price": 2499,
+    "color": "Коричневый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "38",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Сабо женские PDH385-2",
+    "article": "PDH385-2",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Сабо",
+    "gender": "женский",
+    "price": 3400,
+    "color": "Бежевый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 1
+      },
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 6
+  },
+  {
+    "name": "Сабо женские PDH385-3",
+    "article": "PDH385-3",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Сабо",
+    "gender": "женский",
+    "price": 3400,
+    "color": "Коричневый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 2
+      },
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 8
+  },
+  {
+    "name": "Сабо женские PE6905-1",
+    "article": "PE6905-1",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Сабо",
+    "gender": "женский",
+    "price": 4350,
+    "color": "Белый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 1
+      },
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 7
+  },
+  {
+    "name": "Сабо женские PE6905-3",
+    "article": "PE6905-3",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Сабо",
+    "gender": "женский",
+    "price": 4350,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 1
+      },
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 7
+  },
+  {
+    "name": "Сабо женские PEA312-3",
+    "article": "PEA312-3",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Сабо",
+    "gender": "женский",
+    "price": 4350,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 2
+      },
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 8
+  },
+  {
+    "name": "Сабо женские PEA313-3",
+    "article": "PEA313-3",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Сабо",
+    "gender": "женский",
+    "price": 4350,
+    "color": "Коричневый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 2
+      },
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 8
+  },
+  {
+    "name": "Сабо женские PEA313-6",
+    "article": "PEA313-6",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Сабо",
+    "gender": "женский",
+    "price": 4350,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 2
+      },
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 8
+  },
+  {
+    "name": "Сабо женские PEG391-6",
+    "article": "PEG391-6",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Сабо",
+    "gender": "женский",
+    "price": 4650,
+    "color": "Бежевый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 2
+      },
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "39",
+        "count": 2
+      },
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 8
+  },
+  {
+    "name": "Сабо женские PEM770-3",
+    "article": "PEM770-3",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Сабо",
+    "gender": "женский",
+    "price": 5450,
+    "color": "Коричневый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 1
+      },
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 6
+  },
+  {
+    "name": "Сабо женские PEM770-5",
+    "article": "PEM770-5",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Сабо",
+    "gender": "женский",
+    "price": 5300,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 1
+      },
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "39",
+        "count": 2
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 8
+  },
+  {
+    "name": "Сабо женские PEXL254-3",
+    "article": "PEXL254-3",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Сабо",
+    "gender": "женский",
+    "price": 4950,
+    "color": "Коричневый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 2
+      },
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 8
+  },
+  {
+    "name": "Сабо женские PEXL254-5",
+    "article": "PEXL254-5",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Сабо",
+    "gender": "женский",
+    "price": 4950,
+    "color": "Бежевый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 2
+      },
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 8
+  },
+  {
+    "name": "Сабо женские PEXL256-3",
+    "article": "PEXL256-3",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Сабо",
+    "gender": "женский",
+    "price": 4350,
+    "color": "Коричневый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 2
+      },
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 7
+  },
+  {
+    "name": "Сабо женские V130-1",
+    "article": "V130-1",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Сабо",
+    "gender": "женский",
+    "price": 2999,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Сабо женские V130-7",
+    "article": "V130-7",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Сабо",
+    "gender": "женский",
+    "price": 2999,
+    "color": "Коричневый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Сабо мужские A31571B-YP",
+    "article": "A31571B-YP",
+    "catalogDescription": "Мужские",
+    "type": "Мужские",
+    "category": "Сабо",
+    "gender": "мужской",
+    "price": 3499,
+    "color": "черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 2
+  },
+  {
+    "name": "Сабо мужские A31578B-YP",
+    "article": "A31578B-YP",
+    "catalogDescription": "Мужские",
+    "type": "Мужские",
+    "category": "Сабо",
+    "gender": "мужской",
+    "price": 3499,
+    "color": "синий",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Сабо мужские FM11063",
+    "article": "FM11063",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Сабо",
+    "gender": "мужской",
+    "price": 3499,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Сабо мужские FM56019",
+    "article": "FM56019",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Сабо",
+    "gender": "мужской",
+    "price": 3499,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Сабо мужские FM56062",
+    "article": "FM56062",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Сабо",
+    "gender": "мужской",
+    "price": 3499,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Сабо мужские FM56063",
+    "article": "FM56063",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Сабо",
+    "gender": "мужской",
+    "price": 3499,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Сабо мужские FM56063-7",
+    "article": "FM56063-7",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Сабо",
+    "gender": "мужской",
+    "price": 3499,
+    "color": "Синий",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 2
+  },
+  {
+    "name": "Сабо мужские FM71279",
+    "article": "FM71279",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Сабо",
+    "gender": "мужской",
+    "price": 3499,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Сабо мужские FM71286",
+    "article": "FM71286",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Сабо",
+    "gender": "мужской",
+    "price": 3499,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 2
+  },
+  {
+    "name": "Сабо мужские FM71286-7",
+    "article": "FM71286-7",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Сабо",
+    "gender": "мужской",
+    "price": 3499,
+    "color": "Синий",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 2
+  },
+  {
+    "name": "Сабо мужские FM98520",
+    "article": "FM98520",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Сабо",
+    "gender": "мужской",
+    "price": 3499,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Сандали мужские FM56009",
+    "article": "FM56009",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Сандали",
+    "gender": "мужской",
+    "price": 3499,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Сандали мужские FM56009-7",
+    "article": "FM56009-7",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Сандали",
+    "gender": "мужской",
+    "price": 3499,
+    "color": "Синий",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 2
+  },
+  {
+    "name": "Сандали мужские FM56011",
+    "article": "FM56011",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Сандали",
+    "gender": "мужской",
+    "price": 3499,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Сандали мужские FM56011-7",
+    "article": "FM56011-7",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Сандали",
+    "gender": "мужской",
+    "price": 3499,
+    "color": "Синий",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 2
+  },
+  {
+    "name": "Сандали мужские FM56036",
+    "article": "FM56036",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Сандали",
+    "gender": "мужской",
+    "price": 3499,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "42",
+        "count": 1
+      }
+    ],
+    "totalStock": 3
+  },
+  {
+    "name": "Сандалии женские PEXL253-3",
+    "article": "PEXL253-3",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Сандалии",
+    "gender": "женский",
+    "price": 5150,
+    "color": "Коричневый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 2
+      },
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 8
+  },
+  {
+    "name": "Сандалии женские PEXL253-5",
+    "article": "PEXL253-5",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Сандалии",
+    "gender": "женский",
+    "price": 5150,
+    "color": "Бежевый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 2
+      },
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 7
+  },
+  {
+    "name": "Сапоги B80090B-B",
+    "article": "B80090B-B",
+    "catalogDescription": "Женские",
+    "type": "Женские",
+    "category": "Сапоги ",
+    "gender": null,
+    "price": 5999,
+    "color": "черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 2
+      },
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "39",
+        "count": 1
+      }
+    ],
+    "totalStock": 6
+  },
+  {
+    "name": "Сапоги B80180B-B",
+    "article": "B80180B-B",
+    "catalogDescription": "Женские",
+    "type": "Женские",
+    "category": "Сапоги ",
+    "gender": null,
+    "price": 2999,
+    "color": "черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "37",
+        "count": 2
+      }
+    ],
+    "totalStock": 2
+  },
+  {
+    "name": "Сапоги RS2125-1201R",
+    "article": "RS2125-1201R",
+    "catalogDescription": "Женские",
+    "type": "Женские",
+    "category": "Сапоги ",
+    "gender": null,
+    "price": 2999,
+    "color": "черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 2
+      }
+    ],
+    "totalStock": 2
+  },
+  {
+    "name": "Сапоги RS2125-1701R",
+    "article": "RS2125-1701R",
+    "catalogDescription": "Женские",
+    "type": "Женские",
+    "category": "Сапоги ",
+    "gender": null,
+    "price": 2999,
+    "color": "черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Сапоги RS2159-1201R",
+    "article": "RS2159-1201R",
+    "catalogDescription": "Женские",
+    "type": "Женские",
+    "category": "Сапоги ",
+    "gender": null,
+    "price": 5999,
+    "color": "черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 2
+  },
+  {
+    "name": "Туфли женские 71580BC-P",
+    "article": "71580BC-P",
+    "catalogDescription": "Женские",
+    "type": "Женские",
+    "category": "Туфли",
+    "gender": "женский",
+    "price": 2999,
+    "color": "бордовый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "35",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Туфли женские A12779B-YP",
+    "article": "A12779B-YP",
+    "catalogDescription": "Женские",
+    "type": "Женские",
+    "category": "Туфли",
+    "gender": "женский",
+    "price": 10600,
+    "color": "черный",
+    "warehouse": "Магазин Проспект Победы",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Туфли женские A12780B-YP",
+    "article": "A12780B-YP",
+    "catalogDescription": "Женские",
+    "type": "Женские",
+    "category": "Туфли",
+    "gender": "женский",
+    "price": 7100,
+    "color": "белый",
+    "warehouse": "Магазин Проспект Победы",
+    "sizes": [
+      {
+        "size": "37",
+        "count": 1
+      },
+      {
+        "size": "38",
+        "count": 1
+      }
+    ],
+    "totalStock": 2
+  },
+  {
+    "name": "Туфли женские A72846B-YP",
+    "article": "A72846B-YP",
+    "catalogDescription": "Женские",
+    "type": "Женские",
+    "category": "Туфли",
+    "gender": "женский",
+    "price": 2999,
+    "color": "розовый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "35",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Туфли женские BT556-15-17",
+    "article": "BT556-15-17",
+    "catalogDescription": "",
+    "type": "Обувь",
+    "category": "Туфли",
+    "gender": "женский",
+    "price": 2999,
+    "color": "Бежевый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Туфли женские D8947-1",
+    "article": "D8947-1",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Туфли",
+    "gender": "женский",
+    "price": 5950,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "37",
+        "count": 1
+      },
+      {
+        "size": "38",
+        "count": 1
+      }
+    ],
+    "totalStock": 2
+  },
+  {
+    "name": "Туфли женские DK534-03A",
+    "article": " DK534-03A",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Туфли",
+    "gender": "женский",
+    "price": 2999,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Туфли женские DP140-2",
+    "article": "DP140-2",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Туфли",
+    "gender": "женский",
+    "price": 4445,
+    "color": "Бежевый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 2
+      },
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "39",
+        "count": 2
+      }
+    ],
+    "totalStock": 7
+  },
+  {
+    "name": "Туфли женские DP144-2",
+    "article": "DP144-2",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Туфли",
+    "gender": "женский",
+    "price": 4445,
+    "color": "Пудровый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 2
+      },
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "39",
+        "count": 2
+      },
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 8
+  },
+  {
+    "name": "Туфли женские DP169-1",
+    "article": "DP169-1",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Туфли",
+    "gender": "женский",
+    "price": 4445,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 1
+      }
+    ],
+    "totalStock": 2
+  },
+  {
+    "name": "Туфли женские DP180-1",
+    "article": "DP180-1",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Туфли",
+    "gender": "женский",
+    "price": 4445,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "37",
+        "count": 2
+      },
+      {
+        "size": "38",
+        "count": 2
+      }
+    ],
+    "totalStock": 4
+  },
+  {
+    "name": "Туфли женские DP180-4",
+    "article": "DP180-4",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Туфли",
+    "gender": "женский",
+    "price": 4445,
+    "color": "Бежевый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "35",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 2
+      },
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 4
+  },
+  {
+    "name": "Туфли женские DP291-5",
+    "article": "DP291-5",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Туфли",
+    "gender": "женский",
+    "price": 5950,
+    "color": "Хаки",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 2
+      },
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "39",
+        "count": 1
+      }
+    ],
+    "totalStock": 6
+  },
+  {
+    "name": "Туфли женские DP291-6",
+    "article": "DP291-6",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Туфли",
+    "gender": "женский",
+    "price": 5950,
+    "color": "Красный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 2
+      },
+      {
+        "size": "38",
+        "count": 1
+      },
+      {
+        "size": "39",
+        "count": 2
+      }
+    ],
+    "totalStock": 6
+  },
+  {
+    "name": "Туфли женские DZ02-1",
+    "article": "DZ02-1",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Туфли",
+    "gender": "женский",
+    "price": 2999,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "38",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Туфли мужские 22134BC-P",
+    "article": "22134BC-P",
+    "catalogDescription": "Мужские",
+    "type": "Мужские",
+    "category": "Туфли",
+    "gender": "мужской",
+    "price": 3499,
+    "color": "черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Туфли мужские AE401-307-A982",
+    "article": "AE401-307-A982",
+    "catalogDescription": "Мужские",
+    "type": "Обувь",
+    "category": "Туфли",
+    "gender": "мужской",
+    "price": 8240,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "43",
+        "count": 1
+      },
+      {
+        "size": "44",
+        "count": 1
+      },
+      {
+        "size": "45",
+        "count": 1
+      }
+    ],
+    "totalStock": 4
+  },
+  {
+    "name": "Туфли мужские BR111-251-A33",
+    "article": "BR111-251-A33",
+    "catalogDescription": "Мужские",
+    "type": "Обувь",
+    "category": "Туфли",
+    "gender": "мужской",
+    "price": 9360,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "42",
+        "count": 2
+      },
+      {
+        "size": "43",
+        "count": 1
+      },
+      {
+        "size": "44",
+        "count": 1
+      }
+    ],
+    "totalStock": 6
+  },
+  {
+    "name": "Туфли мужские BR129-531-A01P",
+    "article": "BR129-531-A01P",
+    "catalogDescription": "Мужские",
+    "type": "Обувь",
+    "category": "Туфли",
+    "gender": "мужской",
+    "price": 3499,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Туфли мужские BR2982-207-A33",
+    "article": "J2982-207-A33",
+    "catalogDescription": "Мужские",
+    "type": "Обувь",
+    "category": "Туфли",
+    "gender": "мужской",
+    "price": 3499,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Туфли мужские BR8146-30-F166",
+    "article": "8146-30-F166",
+    "catalogDescription": "Мужские",
+    "type": "Обувь",
+    "category": "Туфли",
+    "gender": "мужской",
+    "price": 3499,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "41",
+        "count": 1
+      }
+    ],
+    "totalStock": 1
+  },
+  {
+    "name": "Туфли мужские BR818-13P",
+    "article": "BR818-13P",
+    "catalogDescription": "Мужские",
+    "type": "Обувь",
+    "category": "Туфли",
+    "gender": "мужской",
+    "price": 9360,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 2
+      },
+      {
+        "size": "44",
+        "count": 1
+      }
+    ],
+    "totalStock": 5
+  },
+  {
+    "name": "Туфли мужские BR83-238-A01",
+    "article": "BR83-238-A01",
+    "catalogDescription": "Мужские",
+    "type": "Обувь",
+    "category": "Туфли",
+    "gender": "мужской",
+    "price": 9360,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 2
+      },
+      {
+        "size": "42",
+        "count": 1
+      }
+    ],
+    "totalStock": 5
+  },
+  {
+    "name": "Туфли мужские BRS305-8-1",
+    "article": "BRS305-8-1",
+    "catalogDescription": "Мужские",
+    "type": "Обувь",
+    "category": "Туфли",
+    "gender": "мужской",
+    "price": 9360,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "42",
+        "count": 2
+      },
+      {
+        "size": "43",
+        "count": 1
+      },
+      {
+        "size": "45",
+        "count": 1
+      }
+    ],
+    "totalStock": 4
+  },
+  {
+    "name": "Туфли мужские FM11-86",
+    "article": "FM11-86",
+    "catalogDescription": "Мужские",
+    "type": "Обувь",
+    "category": "Туфли",
+    "gender": "мужской",
+    "price": 6520,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "39",
+        "count": 1
+      },
+      {
+        "size": "40",
+        "count": 1
+      },
+      {
+        "size": "41",
+        "count": 1
+      },
+      {
+        "size": "42",
+        "count": 1
+      },
+      {
+        "size": "43",
+        "count": 1
+      },
+      {
+        "size": "44",
+        "count": 1
+      }
+    ],
+    "totalStock": 6
+  },
+  {
+    "name": "Угги женские PAJW12-1Z",
+    "article": "PAJW12-1Z",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Угги",
+    "gender": "женский",
+    "price": 5120,
+    "color": "Черный",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "36",
+        "count": 1
+      },
+      {
+        "size": "37",
+        "count": 1
+      },
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "39",
+        "count": 1
+      }
+    ],
+    "totalStock": 5
+  },
+  {
+    "name": "Угги женские PAJW12-5Z",
+    "article": "PAJW12-5Z",
+    "catalogDescription": "Женские",
+    "type": "Обувь",
+    "category": "Угги",
+    "gender": "женский",
+    "price": 5120,
+    "color": "Коричневый",
+    "warehouse": "Магазин ТРЦ ФМ",
+    "sizes": [
+      {
+        "size": "38",
+        "count": 2
+      },
+      {
+        "size": "39",
+        "count": 2
+      },
+      {
+        "size": "40",
+        "count": 1
+      }
+    ],
+    "totalStock": 5
+  }
+]

@@ -91,7 +91,7 @@ const submitOrder = () => {
 				>
 					<div class="cart__item-image-wrap">
 						<img
-							:src="item.product.images[0]"
+							:src="item.product.image"
 							:alt="item.product.name"
 							class="cart__item-image"
 							loading="lazy"

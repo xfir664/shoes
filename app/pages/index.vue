@@ -1,11 +1,8 @@
 <script setup lang="ts">
 import { Swiper, SwiperSlide } from "swiper/vue";
 import { Pagination, Autoplay } from "swiper/modules";
-import {
-	mockProducts,
-	mockPromos,
-	categoryLabels,
-} from "~/utils/mockProducts";
+import type { ProductsResponse, FilterOptions } from "~/types/product";
+import { mockPromos } from "~/utils/mockProducts";
 
 useSeoMeta({
 	title: "ShoeStore — Обувь с характером",
@@ -14,21 +11,35 @@ useSeoMeta({
 	ogImage: "/img/main.jpg",
 });
 
-const categories = [
-	{ key: "sneakers", icon: "mdi-shoe-sneaker" },
-	{ key: "trainers", icon: "mdi-shoe-formal" },
-	{ key: "boots", icon: "mdi-shoe-print" },
-	{ key: "loafers", icon: "mdi-shoe-cleat" },
-	{ key: "sandals", icon: "mdi-shoe-ballet" },
-	{ key: "flats", icon: "mdi-shoe-ballet" },
-	{ key: "slippers", icon: "mdi-shoe-print" },
-	{ key: "heels", icon: "mdi-shoe-heel" },
-];
+/** Загрузка категорий с сервера */
+const { data: filterOptions } = useFetch<FilterOptions>("/api/products/filters");
+
+/** Загрузка товаров для секции «Популярные» (первые 12) */
+const { data: popularData } = useFetch<ProductsResponse>("/api/products", {
+	query: { perPage: 12 },
+});
+
+const popularProducts = computed(() => popularData.value?.items ?? []);
+const categories = computed(() => filterOptions.value?.categories ?? []);
 
 const promos = mockPromos.slice(0, 3);
-const popularProducts = mockProducts.filter(p => p.isPopular);
 const swiperModules = [Pagination, Autoplay];
 
+/** Иконки для категорий */
+function getCategoryIcon(cat: string): string {
+	const lower = cat.toLowerCase();
+	if (lower.includes("кроссовк")) return "mdi-shoe-sneaker";
+	if (lower.includes("ботин") || lower.includes("ботиль")) return "mdi-shoe-print";
+	if (lower.includes("сапог") || lower.includes("полусапог")) return "mdi-shoe-print";
+	if (lower.includes("сандал") || lower.includes("босоно")) return "mdi-shoe-ballet";
+	if (lower.includes("туфл") || lower.includes("оксфорд")) return "mdi-shoe-formal";
+	if (lower.includes("кед")) return "mdi-shoe-formal";
+	if (lower.includes("лофер") || lower.includes("мокасин")) return "mdi-shoe-cleat";
+	if (lower.includes("сабо")) return "mdi-shoe-heel";
+	if (lower.includes("угг")) return "mdi-shoe-print";
+	if (lower.includes("полубот")) return "mdi-shoe-print";
+	return "mdi-shoe-sneaker";
+}
 </script>
 
 <template>
@@ -56,12 +67,12 @@ const swiperModules = [Pagination, Autoplay];
 				<div class="categories__grid">
 					<NuxtLink
 						v-for="cat in categories"
-						:key="cat.key"
-						:to="`/catalog?category=${cat.key}`"
+						:key="cat"
+						:to="`/catalog?category=${encodeURIComponent(cat)}`"
 						class="categories__item"
 					>
-						<span class="categories__icon mdi" :class="cat.icon" />
-						<span class="categories__label">{{ categoryLabels[cat.key] }}</span>
+						<span class="categories__icon mdi" :class="getCategoryIcon(cat)" />
+						<span class="categories__label">{{ cat }}</span>
 					</NuxtLink>
 				</div>
 				<div class="categories__footer">
