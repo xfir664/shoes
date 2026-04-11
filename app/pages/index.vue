@@ -13,7 +13,11 @@ let marqueeOffset = 0;
 let marqueeHalfWidth = 0;
 let rafId = 0;
 let lastTimestamp = 0;
+/** Указатель нажат (но не обязательно перетаскивается). */
+let isPointerDown = false;
+/** Реальное перетаскивание (после превышения порога) — тогда блокируем автоскролл. */
 let isDragging = false;
+let capturedPointerId: number | null = null;
 let dragStartX = 0;
 let dragStartOffset = 0;
 let dragDistance = 0;
@@ -36,7 +40,8 @@ function applyTransform() {
 }
 
 function marqueeTick(timestamp: number) {
-	if (!isDragging && marqueeHalfWidth > 0) {
+	// Автоскролл работает, когда не перетаскивают И не удерживают мышь.
+	if (!isPointerDown && !isDragging && marqueeHalfWidth > 0) {
 		if (!lastTimestamp) lastTimestamp = timestamp;
 		const dt = (timestamp - lastTimestamp) / 1000;
 		marqueeOffset -= MARQUEE_SPEED * dt;
@@ -48,28 +53,46 @@ function marqueeTick(timestamp: number) {
 }
 
 function onMarqueeDown(e: PointerEvent) {
-	isDragging = true;
+	isPointerDown = true;
+	isDragging = false;
 	dragStartX = e.clientX;
 	dragStartOffset = marqueeOffset;
 	dragDistance = 0;
-	(e.currentTarget as HTMLElement).setPointerCapture(e.pointerId);
+	// ВАЖНО: pointer capture НЕ ставим сразу, иначе pointerup уходит
+	// с ссылки на контейнер и браузер не генерирует click по NuxtLink.
 }
 
 function onMarqueeMove(e: PointerEvent) {
-	if (!isDragging) return;
+	if (!isPointerDown) return;
 	const delta = e.clientX - dragStartX;
 	dragDistance = Math.abs(delta);
-	marqueeOffset = dragStartOffset + delta;
-	normalizeOffset();
-	applyTransform();
+	// Включаем drag-режим только после превышения порога.
+	if (!isDragging && dragDistance > DRAG_THRESHOLD) {
+		isDragging = true;
+		try {
+			(e.currentTarget as HTMLElement).setPointerCapture(e.pointerId);
+			capturedPointerId = e.pointerId;
+		} catch {}
+	}
+	if (isDragging) {
+		marqueeOffset = dragStartOffset + delta;
+		normalizeOffset();
+		applyTransform();
+	}
 }
 
 function onMarqueeUp(e: PointerEvent) {
-	if (!isDragging) return;
-	isDragging = false;
-	try {
-		(e.currentTarget as HTMLElement).releasePointerCapture(e.pointerId);
-	} catch {}
+	isPointerDown = false;
+	if (capturedPointerId !== null) {
+		try {
+			(e.currentTarget as HTMLElement).releasePointerCapture(capturedPointerId);
+		} catch {}
+		capturedPointerId = null;
+	}
+	// isDragging оставляем до следующего pointerdown, чтобы click.capture успел сработать
+	requestAnimationFrame(() => {
+		isDragging = false;
+	});
 }
 
 /** Блокировка клика после drag'а (иначе NuxtLink сработает). */
@@ -89,7 +112,9 @@ useSeoMeta({
 });
 
 /** Загрузка категорий с сервера */
-const { data: filterOptions } = useFetch<FilterOptions>("/api/products/filters");
+const { data: filterOptions } = useFetch<FilterOptions>(
+	"/api/products/filters"
+);
 
 /** Загрузка товаров для секции «Популярные» (первые 12) */
 const { data: popularData } = useFetch<ProductsResponse>("/api/products", {
@@ -133,12 +158,17 @@ onBeforeUnmount(() => {
 function getCategoryIcon(cat: string): string {
 	const lower = cat.toLowerCase();
 	if (lower.includes("кроссовк")) return "mdi-shoe-sneaker";
-	if (lower.includes("ботин") || lower.includes("ботиль")) return "mdi-shoe-print";
-	if (lower.includes("сапог") || lower.includes("полусапог")) return "mdi-shoe-print";
-	if (lower.includes("сандал") || lower.includes("босоно")) return "mdi-shoe-ballet";
-	if (lower.includes("туфл") || lower.includes("оксфорд")) return "mdi-shoe-formal";
+	if (lower.includes("ботин") || lower.includes("ботиль"))
+		return "mdi-shoe-print";
+	if (lower.includes("сапог") || lower.includes("полусапог"))
+		return "mdi-shoe-print";
+	if (lower.includes("сандал") || lower.includes("босоно"))
+		return "mdi-shoe-ballet";
+	if (lower.includes("туфл") || lower.includes("оксфорд"))
+		return "mdi-shoe-formal";
 	if (lower.includes("кед")) return "mdi-shoe-formal";
-	if (lower.includes("лофер") || lower.includes("мокасин")) return "mdi-shoe-cleat";
+	if (lower.includes("лофер") || lower.includes("мокасин"))
+		return "mdi-shoe-cleat";
 	if (lower.includes("сабо")) return "mdi-shoe-heel";
 	if (lower.includes("угг")) return "mdi-shoe-print";
 	if (lower.includes("полубот")) return "mdi-shoe-print";
@@ -185,7 +215,10 @@ function getCategoryIcon(cat: string): string {
 							class="categories__item"
 							draggable="false"
 						>
-							<span class="categories__icon mdi" :class="getCategoryIcon(cat)" />
+							<span
+								class="categories__icon mdi"
+								:class="getCategoryIcon(cat)"
+							/>
 							<span class="categories__label">{{ cat }}</span>
 						</NuxtLink>
 					</div>
@@ -441,7 +474,9 @@ function getCategoryIcon(cat: string): string {
 		border-radius: var(--radius-lg);
 		text-decoration: none;
 		color: var(--c-text);
-		transition: border-color 0.2s ease, box-shadow 0.2s ease;
+		transition:
+			border-color 0.2s ease,
+			box-shadow 0.2s ease;
 
 		@media (min-width: $breakpoint-tablet) {
 			width: 220px;
@@ -498,16 +533,35 @@ function getCategoryIcon(cat: string): string {
 
 // ── Promos ───────────────────────────────────────────────────────────────────
 .promos {
+	// overflow: clip — клиппит слайды за viewport, но НЕ создаёт scroll-контейнер.
+	// Padding даёт карточкам воздух для hover-transform и тени,
+	// отрицательный margin возвращает swiper в исходные границы контейнера.
+	:deep(.swiper) {
+		overflow: clip;
+		padding: 16px 16px 40px;
+		margin: -16px -16px 0;
+	}
+
+	:deep(.swiper-slide) {
+		height: auto;
+	}
+
+	:deep(.swiper-pagination) {
+		bottom: 8px;
+		z-index: 2;
+	}
+
 	padding: var(--spacing-3xl) var(--spacing-lg);
 	background: var(--c-surface);
 
 	&__container {
+		position: relative;
 		max-width: var(--container-max);
 		margin: 0 auto;
 	}
 
 	&__swiper {
-		padding-bottom: var(--spacing-xl);
+		position: relative;
 	}
 
 	&__card {
@@ -517,10 +571,16 @@ function getCategoryIcon(cat: string): string {
 		aspect-ratio: 16 / 9;
 		cursor: pointer;
 		transition: var(--transition-base);
+		isolation: isolate;
+		// Тонкий светлый inset-border поверх всего — чтобы край карточки
+		// был виден, даже когда низ градиента совпадает с фоном секции.
+		box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
 
 		&:hover {
-			transform: translateY(-4px);
-			box-shadow: var(--shadow-lg);
+			transform: translate3d(0, -4px, 0);
+			box-shadow:
+				inset 0 0 0 1px rgba(255, 255, 255, 0.12),
+				var(--shadow-lg);
 
 			.promos__card-image {
 				transform: scale(1.05);
@@ -538,11 +598,15 @@ function getCategoryIcon(cat: string): string {
 	&__card-overlay {
 		position: absolute;
 		inset: 0;
+		// Плотный низ (alpha 1) гарантирует отсутствие просвечивания картинки.
+		// Цвет подобран чуть темнее фона секции, чтобы inset-border карточки
+		// оставался заметным на нижнем крае.
 		background: linear-gradient(
 			to top,
-			rgba(26, 26, 26, 0.92) 0%,
-			rgba(26, 26, 26, 0.5) 50%,
-			rgba(26, 26, 26, 0.25) 100%
+			rgba(12, 12, 12, 1) 0%,
+			rgba(18, 18, 18, 0.95) 18%,
+			rgba(26, 26, 26, 0.5) 55%,
+			rgba(26, 26, 26, 0.2) 100%
 		);
 	}
 
@@ -602,13 +666,29 @@ function getCategoryIcon(cat: string): string {
 	padding: var(--spacing-3xl) var(--spacing-lg);
 	background: var(--c-page-bg);
 
+	:deep(.swiper) {
+		overflow: clip;
+		padding: 16px 16px 40px;
+		margin: -16px -16px 0;
+	}
+
+	:deep(.swiper-slide) {
+		height: auto;
+	}
+
+	:deep(.swiper-pagination) {
+		bottom: 8px;
+		z-index: 2;
+	}
+
 	&__container {
+		position: relative;
 		max-width: var(--container-max);
 		margin: 0 auto;
 	}
 
 	&__swiper {
-		padding-bottom: var(--spacing-xl);
+		position: relative;
 	}
 }
 </style>

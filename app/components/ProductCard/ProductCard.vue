@@ -63,11 +63,16 @@ defineProps<{
 	border-radius: var(--radius-lg);
 	border: 1px solid var(--c-border-light);
 	overflow: hidden;
+	// Форсируем composite-слой — иначе Chrome при hover-transform
+	// на родителе + scale на ребёнке теряет border-radius-клиппинг.
+	isolation: isolate;
+	transform: translateZ(0);
+	will-change: transform;
 	transition: var(--transition-slow);
 
 	&:hover {
 		box-shadow: var(--shadow-lg);
-		transform: translateY(-2px);
+		transform: translate3d(0, -2px, 0);
 	}
 
 	&__image-link {
@@ -76,6 +81,11 @@ defineProps<{
 		aspect-ratio: 1 / 1;
 		overflow: hidden;
 		background: var(--c-beige-100);
+		// Скругляем сверху напрямую у контейнера картинки,
+		// а не полагаемся на клиппинг через предка — иначе при
+		// transform у swiper/карточки Chrome теряет border-radius.
+		border-top-left-radius: calc(var(--radius-lg) - 1px);
+		border-top-right-radius: calc(var(--radius-lg) - 1px);
 	}
 
 	&__image {
