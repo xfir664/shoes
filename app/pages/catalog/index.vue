@@ -15,6 +15,9 @@ useSeoMeta({
 
 const route = useRoute();
 
+/** Ключ localStorage для состояния каталога */
+const STORAGE_KEY = "shoes:catalog-state";
+
 /** Фильтры */
 const isDrawerOpen = ref(false);
 const isSortDrawerOpen = ref(false);
@@ -33,14 +36,70 @@ const currentSort = ref<SortOption>("name");
 const currentPage = ref(1);
 const perPage = 12;
 
-/** Опции сортировки */
+/** Опции сортировки (для мобильного drawer-а) */
 const sortOptions: { value: SortOption; label: string }[] = [
+	{ value: "cheap", label: "Дешевле" },
+	{ value: "expensive", label: "Дороже" },
+	{ value: "name", label: "По названию (А–Я)" },
+	{ value: "name-desc", label: "По названию (Я–А)" },
+];
+
+/**
+ * Десктопные кнопки сортировки — кнопка "По названию" двухрежимная.
+ * При повторном клике переключает направление.
+ */
+const sortButtons: { value: SortOption; label: string }[] = [
 	{ value: "cheap", label: "Дешевле" },
 	{ value: "expensive", label: "Дороже" },
 	{ value: "name", label: "По названию" },
 ];
 
-/** Инициализация из query-параметров */
+/** Активна ли кнопка "По названию" (любое направление) */
+const isNameSortActive = computed(
+	() => currentSort.value === "name" || currentSort.value === "name-desc",
+);
+
+/** Клик по кнопке сортировки */
+function onSortClick(value: SortOption) {
+	if (value === "name") {
+		currentSort.value =
+			currentSort.value === "name" ? "name-desc" : "name";
+		return;
+	}
+	currentSort.value = value;
+}
+
+/** Состояние для персиста в localStorage */
+interface CatalogPersistState {
+	categories: string[];
+	genders: string[];
+	colors: string[];
+	sizes: string[];
+	priceFrom: string;
+	priceTo: string;
+	sort: SortOption;
+}
+
+/** Восстановление состояния из localStorage (только на клиенте) */
+function restoreFromStorage() {
+	if (typeof localStorage === "undefined") return;
+	try {
+		const raw = localStorage.getItem(STORAGE_KEY);
+		if (!raw) return;
+		const parsed = JSON.parse(raw) as CatalogPersistState;
+		selectedCategories.value = parsed.categories ?? [];
+		selectedGenders.value = parsed.genders ?? [];
+		selectedColors.value = parsed.colors ?? [];
+		selectedSizes.value = parsed.sizes ?? [];
+		priceFrom.value = parsed.priceFrom ?? "";
+		priceTo.value = parsed.priceTo ?? "";
+		if (parsed.sort) currentSort.value = parsed.sort;
+	} catch (error) {
+		console.warn("[catalog] Не удалось восстановить состояние:", error);
+	}
+}
+
+/** Инициализация из query-параметров (переопределяет персист) */
 const initFromQuery = () => {
 	const q = route.query.q;
 	const category = route.query.category;
@@ -53,7 +112,41 @@ const initFromQuery = () => {
 	}
 };
 
+if (import.meta.client) {
+	restoreFromStorage();
+}
 initFromQuery();
+
+/** Сохранение в localStorage при любом изменении */
+watch(
+	[
+		selectedCategories,
+		selectedGenders,
+		selectedColors,
+		selectedSizes,
+		priceFrom,
+		priceTo,
+		currentSort,
+	],
+	() => {
+		if (typeof localStorage === "undefined") return;
+		const state: CatalogPersistState = {
+			categories: selectedCategories.value,
+			genders: selectedGenders.value,
+			colors: selectedColors.value,
+			sizes: selectedSizes.value,
+			priceFrom: priceFrom.value,
+			priceTo: priceTo.value,
+			sort: currentSort.value,
+		};
+		try {
+			localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+		} catch (error) {
+			console.warn("[catalog] Не удалось сохранить состояние:", error);
+		}
+	},
+	{ deep: true },
+);
 
 /** Синхронизация с query при навигации (поиск из хедера на том же роуте) */
 watch(
@@ -90,6 +183,7 @@ const resetFilters = () => {
 	priceFrom.value = "";
 	priceTo.value = "";
 	searchQuery.value = "";
+	currentSort.value = "name";
 	currentPage.value = 1;
 };
 
@@ -256,14 +350,28 @@ watch(
 			<span class="catalog__sort-label">Сортировка:</span>
 			<div class="catalog__sort-options">
 				<button
-					v-for="option in sortOptions"
+					v-for="option in sortButtons"
 					:key="option.value"
 					class="catalog__sort-btn"
-					:class="{ 'catalog__sort-btn--active': currentSort === option.value }"
+					:class="{
+						'catalog__sort-btn--active':
+							option.value === 'name'
+								? isNameSortActive
+								: currentSort === option.value,
+					}"
 					type="button"
-					@click="currentSort = option.value"
+					@click="onSortClick(option.value)"
 				>
 					{{ option.label }}
+					<span
+						v-if="option.value === 'name' && isNameSortActive"
+						class="mdi catalog__sort-btn-icon"
+						:class="
+							currentSort === 'name'
+								? 'mdi-sort-alphabetical-ascending'
+								: 'mdi-sort-alphabetical-descending'
+						"
+					/>
 				</button>
 			</div>
 			<span class="catalog__results-count">
@@ -545,6 +653,9 @@ watch(
 	}
 
 	&__sort-btn {
+		display: inline-flex;
+		align-items: center;
+		gap: var(--spacing-xs);
 		padding: var(--spacing-xs) var(--spacing-sm);
 		background: transparent;
 		border: 1px solid transparent;
@@ -570,6 +681,11 @@ watch(
 				color: var(--c-primary-text);
 			}
 		}
+	}
+
+	&__sort-btn-icon {
+		font-size: 16px;
+		line-height: 1;
 	}
 
 	&__results-count {

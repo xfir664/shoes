@@ -44,7 +44,7 @@ export interface CatalogFilters {
 }
 
 /** Сортировка */
-export type SortOption = "cheap" | "expensive" | "name";
+export type SortOption = "cheap" | "expensive" | "name" | "name-desc";
 
 /** Опции фильтров (с сервера) */
 export interface FilterOptions {

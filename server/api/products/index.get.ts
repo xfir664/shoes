@@ -95,6 +95,11 @@ export default defineEventHandler((event) => {
 				a.name.localeCompare(b.name, "ru"),
 			);
 			break;
+		case "name-desc":
+			products = [...products].sort((a, b) =>
+				b.name.localeCompare(a.name, "ru"),
+			);
+			break;
 	}
 
 	const total = products.length;
