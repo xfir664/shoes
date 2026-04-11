@@ -23,6 +23,11 @@ const MOCK_IMAGES = [
 
 const products = productsData as RawProduct[];
 
+function pickImages(globalIndex: number): string[] {
+	const n = MOCK_IMAGES.length;
+	return [0, 1, 2, 3].map((offset) => MOCK_IMAGES[(globalIndex + offset) % n]);
+}
+
 export default defineEventHandler((event) => {
 	const article = getRouterParam(event, "article");
 	const index = products.findIndex((p) => p.article === article);
@@ -35,6 +40,7 @@ export default defineEventHandler((event) => {
 	}
 
 	const p = products[index];
+	const images = pickImages(index);
 
 	return {
 		id: index + 1,
@@ -45,6 +51,7 @@ export default defineEventHandler((event) => {
 		price: p.price,
 		color: p.color,
 		sizes: p.sizes,
-		image: MOCK_IMAGES[index % MOCK_IMAGES.length],
+		image: images[0],
+		images,
 	};
 });

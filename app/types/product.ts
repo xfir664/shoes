@@ -15,6 +15,7 @@ export interface Product {
 	color: string;
 	sizes: ProductSize[];
 	image: string;
+	images: string[];
 }
 
 /** Элемент корзины */

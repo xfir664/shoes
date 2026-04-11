@@ -8,6 +8,10 @@ const props = defineProps<{
 	discount?: number;
 }>();
 
+const emit = defineEmits<{
+	open: [index: number];
+}>();
+
 const activeImageIndex = ref(0);
 const activeImage = computed(() => props.images[activeImageIndex.value] ?? "");
 
@@ -83,6 +87,7 @@ function onZoomMove(e: MouseEvent) {
 			@mousemove="onZoomMove"
 			@mouseenter="(e) => { zoomVisible = true; onZoomMove(e); }"
 			@mouseleave="zoomVisible = false"
+			@click="emit('open', activeImageIndex)"
 		>
 			<img
 				ref="mainImgRef"

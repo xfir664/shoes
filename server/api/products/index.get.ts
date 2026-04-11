@@ -23,6 +23,11 @@ const MOCK_IMAGES = [
 
 const allProductsRaw = productsData as RawProduct[];
 
+function pickImages(globalIndex: number): string[] {
+	const n = MOCK_IMAGES.length;
+	return [0, 1, 2, 3].map((offset) => MOCK_IMAGES[(globalIndex + offset) % n]);
+}
+
 export default defineEventHandler((event) => {
 	const query = getQuery(event);
 
@@ -100,6 +105,7 @@ export default defineEventHandler((event) => {
 	// Маппинг в формат ответа с моковыми картинками
 	const items = paged.map((p) => {
 		const globalIndex = allProductsRaw.indexOf(p);
+		const images = pickImages(globalIndex);
 		return {
 			id: globalIndex + 1,
 			name: p.name,
@@ -109,7 +115,8 @@ export default defineEventHandler((event) => {
 			price: p.price,
 			color: p.color,
 			sizes: p.sizes,
-			image: MOCK_IMAGES[globalIndex % MOCK_IMAGES.length],
+			image: images[0],
+			images,
 		};
 	});
 

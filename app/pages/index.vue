@@ -4,6 +4,83 @@ import { Pagination, Autoplay } from "swiper/modules";
 import type { ProductsResponse, FilterOptions } from "~/types/product";
 import { mockPromos } from "~/utils/mockProducts";
 
+/** Бесконечная лента категорий — transform + RAF, без Swiper loop. */
+const MARQUEE_SPEED = 40;
+const DRAG_THRESHOLD = 5;
+
+const trackRef = ref<HTMLElement | null>(null);
+let marqueeOffset = 0;
+let marqueeHalfWidth = 0;
+let rafId = 0;
+let lastTimestamp = 0;
+let isDragging = false;
+let dragStartX = 0;
+let dragStartOffset = 0;
+let dragDistance = 0;
+
+function measureMarquee() {
+	if (!trackRef.value) return;
+	marqueeHalfWidth = trackRef.value.scrollWidth / 2;
+}
+
+function normalizeOffset() {
+	if (marqueeHalfWidth <= 0) return;
+	if (marqueeOffset <= -marqueeHalfWidth) marqueeOffset += marqueeHalfWidth;
+	if (marqueeOffset > 0) marqueeOffset -= marqueeHalfWidth;
+}
+
+function applyTransform() {
+	if (trackRef.value) {
+		trackRef.value.style.transform = `translate3d(${marqueeOffset}px, 0, 0)`;
+	}
+}
+
+function marqueeTick(timestamp: number) {
+	if (!isDragging && marqueeHalfWidth > 0) {
+		if (!lastTimestamp) lastTimestamp = timestamp;
+		const dt = (timestamp - lastTimestamp) / 1000;
+		marqueeOffset -= MARQUEE_SPEED * dt;
+		normalizeOffset();
+		applyTransform();
+	}
+	lastTimestamp = timestamp;
+	rafId = requestAnimationFrame(marqueeTick);
+}
+
+function onMarqueeDown(e: PointerEvent) {
+	isDragging = true;
+	dragStartX = e.clientX;
+	dragStartOffset = marqueeOffset;
+	dragDistance = 0;
+	(e.currentTarget as HTMLElement).setPointerCapture(e.pointerId);
+}
+
+function onMarqueeMove(e: PointerEvent) {
+	if (!isDragging) return;
+	const delta = e.clientX - dragStartX;
+	dragDistance = Math.abs(delta);
+	marqueeOffset = dragStartOffset + delta;
+	normalizeOffset();
+	applyTransform();
+}
+
+function onMarqueeUp(e: PointerEvent) {
+	if (!isDragging) return;
+	isDragging = false;
+	try {
+		(e.currentTarget as HTMLElement).releasePointerCapture(e.pointerId);
+	} catch {}
+}
+
+/** Блокировка клика после drag'а (иначе NuxtLink сработает). */
+function onMarqueeClickCapture(e: MouseEvent) {
+	if (dragDistance > DRAG_THRESHOLD) {
+		e.preventDefault();
+		e.stopPropagation();
+		dragDistance = 0;
+	}
+}
+
 useSeoMeta({
 	title: "ShoeStore — Обувь с характером",
 	description:
@@ -22,8 +99,35 @@ const { data: popularData } = useFetch<ProductsResponse>("/api/products", {
 const popularProducts = computed(() => popularData.value?.items ?? []);
 const categories = computed(() => filterOptions.value?.categories ?? []);
 
+/** Удвоенный список для бесшовной ленты. */
+const categoriesDoubled = computed(() => [
+	...categories.value,
+	...categories.value,
+]);
+
 const promos = mockPromos.slice(0, 3);
 const swiperModules = [Pagination, Autoplay];
+
+onMounted(async () => {
+	await nextTick();
+	measureMarquee();
+	if (typeof window !== "undefined") {
+		window.addEventListener("resize", measureMarquee);
+	}
+	rafId = requestAnimationFrame(marqueeTick);
+});
+
+watch(categories, async () => {
+	await nextTick();
+	measureMarquee();
+});
+
+onBeforeUnmount(() => {
+	if (rafId) cancelAnimationFrame(rafId);
+	if (typeof window !== "undefined") {
+		window.removeEventListener("resize", measureMarquee);
+	}
+});
 
 /** Иконки для категорий */
 function getCategoryIcon(cat: string): string {
@@ -64,16 +168,27 @@ function getCategoryIcon(cat: string): string {
 		<section class="categories">
 			<div class="categories__container">
 				<h2 class="section-title">Категории</h2>
-				<div class="categories__grid">
-					<NuxtLink
-						v-for="cat in categories"
-						:key="cat"
-						:to="`/catalog?category=${encodeURIComponent(cat)}`"
-						class="categories__item"
-					>
-						<span class="categories__icon mdi" :class="getCategoryIcon(cat)" />
-						<span class="categories__label">{{ cat }}</span>
-					</NuxtLink>
+				<div
+					v-if="categories.length"
+					class="categories__marquee"
+					@pointerdown="onMarqueeDown"
+					@pointermove="onMarqueeMove"
+					@pointerup="onMarqueeUp"
+					@pointercancel="onMarqueeUp"
+					@click.capture="onMarqueeClickCapture"
+				>
+					<div ref="trackRef" class="categories__track">
+						<NuxtLink
+							v-for="(cat, idx) in categoriesDoubled"
+							:key="`${cat}-${idx}`"
+							:to="`/catalog?category=${encodeURIComponent(cat)}`"
+							class="categories__item"
+							draggable="false"
+						>
+							<span class="categories__icon mdi" :class="getCategoryIcon(cat)" />
+							<span class="categories__label">{{ cat }}</span>
+						</NuxtLink>
+					</div>
 				</div>
 				<div class="categories__footer">
 					<NuxtLink to="/catalog" class="categories__all-link">
@@ -293,18 +408,29 @@ function getCategoryIcon(cat: string): string {
 		margin: 0 auto;
 	}
 
-	&__grid {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		gap: var(--spacing-md);
+	&__marquee {
+		width: 100%;
+		overflow: hidden;
+		padding: var(--spacing-sm) 0;
+		cursor: grab;
+		touch-action: pan-y;
+		user-select: none;
 
-		@media (min-width: $breakpoint-tablet) {
-			grid-template-columns: repeat(4, 1fr);
-			gap: var(--spacing-lg);
+		&:active {
+			cursor: grabbing;
 		}
 	}
 
+	&__track {
+		display: flex;
+		gap: var(--spacing-md);
+		will-change: transform;
+		// transform управляется JS (RAF + pointer)
+	}
+
 	&__item {
+		flex: 0 0 auto;
+		width: 180px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -315,11 +441,14 @@ function getCategoryIcon(cat: string): string {
 		border-radius: var(--radius-lg);
 		text-decoration: none;
 		color: var(--c-text);
-		transition: var(--transition-base);
+		transition: border-color 0.2s ease, box-shadow 0.2s ease;
+
+		@media (min-width: $breakpoint-tablet) {
+			width: 220px;
+		}
 
 		&:hover {
 			border-color: var(--c-primary);
-			transform: translateY(-4px);
 			box-shadow: var(--shadow-md);
 
 			.categories__icon {
