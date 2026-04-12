@@ -251,13 +251,15 @@ function getCategoryIcon(cat: string): string {
 					>
 						<SwiperSlide v-for="promo in promos" :key="promo.id">
 							<div class="promos__card">
-								<img
-									:src="promo.image"
-									:alt="promo.title"
-									class="promos__card-image"
-									loading="lazy"
-								/>
-								<div class="promos__card-overlay" />
+								<div class="promos__card-media">
+									<img
+										:src="promo.image"
+										:alt="promo.title"
+										class="promos__card-image"
+										loading="lazy"
+									/>
+									<div class="promos__card-overlay" />
+								</div>
 								<div class="promos__card-content">
 									<h3 class="promos__card-title">{{ promo.title }}</h3>
 									<p class="promos__card-desc">{{ promo.description }}</p>
@@ -566,21 +568,27 @@ function getCategoryIcon(cat: string): string {
 
 	&__card {
 		position: relative;
+		border: 2px solid #d4b76e;
 		border-radius: var(--radius-lg);
-		overflow: hidden;
 		aspect-ratio: 16 / 9;
 		cursor: pointer;
 		transition: var(--transition-base);
 		isolation: isolate;
-		// Тонкий светлый inset-border поверх всего — чтобы край карточки
-		// был виден, даже когда низ градиента совпадает с фоном секции.
-		box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+
+		&::after {
+			position: absolute;
+			content: "";
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 10%;
+			background: #d4b76e;
+			border-radius: var(--radius-lg);
+		}
 
 		&:hover {
 			transform: translate3d(0, -4px, 0);
-			box-shadow:
-				inset 0 0 0 1px rgba(255, 255, 255, 0.12),
-				var(--shadow-lg);
+			box-shadow: var(--shadow-lg);
 
 			.promos__card-image {
 				transform: scale(1.05);
@@ -588,25 +596,38 @@ function getCategoryIcon(cat: string): string {
 		}
 	}
 
+	// Обёртка медиа-слоя — клиппит картинку и оверлей по своей форме,
+	// не полагаясь на overflow:hidden карточки. Текст (content) лежит
+	// снаружи, поверх, и не подвержен hover-scale картинки.
+	&__card-media {
+		position: absolute;
+		inset: 0;
+		border-radius: inherit;
+		overflow: hidden;
+		z-index: 1;
+	}
+
 	&__card-image {
+		display: block;
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
 		transition: var(--transition-slow);
+		z-index: 10;
 	}
 
 	&__card-overlay {
 		position: absolute;
 		inset: 0;
-		// Плотный низ (alpha 1) гарантирует отсутствие просвечивания картинки.
-		// Цвет подобран чуть темнее фона секции, чтобы inset-border карточки
-		// оставался заметным на нижнем крае.
+		// ВАЖНО: низ градиента ДОЛЖЕН точно совпадать с фоном секции
+		// (var(--c-surface)). Иначе антиалиасинг скруглённых углов карточки
+		// «размазывает» разницу цветов и она видна как отдельный скругл-прямоугольник.
 		background: linear-gradient(
 			to top,
-			rgba(12, 12, 12, 1) 0%,
-			rgba(18, 18, 18, 0.95) 18%,
-			rgba(26, 26, 26, 0.5) 55%,
-			rgba(26, 26, 26, 0.2) 100%
+			rgba(26, 26, 26, 1) 0%,
+			rgba(26, 26, 26, 0.85) 25%,
+			rgba(26, 26, 26, 0.45) 55%,
+			rgba(26, 26, 26, 0.15) 100%
 		);
 	}
 
@@ -617,6 +638,7 @@ function getCategoryIcon(cat: string): string {
 		right: 0;
 		padding: var(--spacing-lg);
 		color: var(--c-white);
+		z-index: 20;
 	}
 
 	&__card-title {
